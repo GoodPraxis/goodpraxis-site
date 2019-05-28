@@ -1,0 +1,72 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'fonts';
+@import 'layout';
+@import 'typography';
+
+::selection {
+  @include color_palette_transition('background', 'tertiary');
+}
+
+body {
+  @include color_palette_transition('background-color', 'secondary');
+  color: $text-color;
+  font-family: $font-stack-main;
+  margin: 0;
+}
+
+footer,
+main {
+  margin: 20px auto;
+  padding-bottom: 20px;
+
+  @include lg {
+    margin: 40px auto;
+    max-width: 1160px;
+    padding-bottom: 40px;
+  }
+}
+
+main a {
+  text-decoration: none;
+  color: $text-color;
+
+  // Recreate palette mixin below due to complicated value
+  background: linear-gradient(to bottom, transparent 0%, transparent 60%,
+                              map-get($main_palette, 'primary') 60%,
+                              map-get($main_palette, 'primary') 85%,
+                              $white-alt 85%,
+                              map-get($main_palette, 'primary') 81%,
+                              transparent 81%, transparent 81%);
+
+  @each $name, $colors in $alternative_palettes {
+    html.palette-#{$name} & {
+      background: linear-gradient(to bottom, transparent 0%, transparent 60%,
+                                  map-get($colors, 'primary') 60%,
+                                  map-get($colors, 'primary') 85%,
+                                  $white-alt 85%,
+                                  map-get($colors, 'primary') 81%,
+                                  transparent 81%, transparent 81%);
+    }
+  }
+  transition: background $global-transition-duration;
+}
+
+.cuk-logo {
+  background: none;
+  width: 100%;
+  grid-column: 7/7;
+
+  @include md {
+    grid-column: 11/11;
+  }
+
+  @include lg {
+    grid-column: 15/15;
+  }
+
+  > img {
+    width: 100%;
+  }
+}

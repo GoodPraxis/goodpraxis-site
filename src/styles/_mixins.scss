@@ -1,0 +1,49 @@
+// Extra small devices
+@mixin xs {
+  @media (min-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+@mixin color_palette($property, $color) {
+  #{$property}: map-get($main_palette, $color);
+
+  @each $name, $colors in $alternative_palettes {
+    html.palette-#{$name} & {
+      #{$property}: map-get($colors, $color);
+    }
+  }
+}
+
+@mixin color_palette_transition($property, $color) {
+  transition: #{$property} $global-transition-duration;
+  @include color_palette($property, $color);
+}

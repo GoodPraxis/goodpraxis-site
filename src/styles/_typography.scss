@@ -1,0 +1,55 @@
+@import 'modularscale';
+
+$modularscale: (
+  $screen-sm-min: (
+    base: 18px,
+    ratio: 1.2,
+  ),
+
+  $screen-lg-min: (
+    base: 22px,
+    ratio: 1.33,
+  ),
+);
+
+body {
+  @include ms-respond(font-size, 0);
+}
+
+h1,
+.alpha {
+  @include ms-respond(font-size, 5);
+  line-height: 1.1;
+}
+
+h2,
+.beta {
+  @include ms-respond(font-size, 3);
+  line-height: 1.1;
+}
+
+h3,
+.gamma {
+  @include ms-respond(font-size, 2);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+
+  > li {
+    position: relative;
+
+    &::before {
+      content: '\2014';
+      line-height: 1em;
+      padding-right: .5em;
+
+      @include lg {
+        left: -.75em;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders default type correctly 1`] = `
+<div
+  className="card-component -primary grid-full-sm grid-two-lg"
+>
+  <div
+    className="content"
+  >
+    Unit test
+  </div>
+</div>
+`;
+
+exports[`Card renders empty card correctly 1`] = `
+<div
+  className="card-component -primary grid-full-sm grid-two-lg"
+>
+  <div
+    className="content"
+  />
+</div>
+`;
+
+exports[`Card renders primary type correctly 1`] = `
+<div
+  className="card-component -primary grid-full-sm grid-two-lg"
+>
+  <div
+    className="content"
+  >
+    Unit test
+  </div>
+</div>
+`;
+
+exports[`Card renders secondary type correctly 1`] = `
+<div
+  className="card-component -secondary grid-full-sm grid-two-lg"
+>
+  <div
+    className="content"
+  >
+    Unit test
+  </div>
+</div>
+`;
+
+exports[`Card renders tertiary type correctly 1`] = `
+<div
+  className="card-component -tertiary grid-full-sm grid-two-lg"
+>
+  <div
+    className="content"
+  >
+    Unit test
+  </div>
+</div>
+`;

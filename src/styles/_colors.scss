@@ -1,0 +1,34 @@
+// Color definitions
+$black: #000;
+$light-blue: #d5fff3;
+$light-grey: #ddd;
+$white: #fff;
+$white-alt: #fcfcfc;
+$yellow: #feee95;
+
+// Element definitions
+$primary-color: $yellow;
+$secondary-color: $light-blue;
+$tertiary-color: $light-grey;
+$text-color: $black;
+
+$main_palette: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'tertiary': $tertiary-color,
+);
+
+$alternative_palettes: (
+  'alternative': (
+    'primary': $light-blue,
+    'secondary': $light-grey,
+    'tertiary': $yellow,
+  )
+);
+
+// Exports
+:export {
+  PRIMARY_COLOR: $primary-color;
+  SECONDARY_COLOR: $secondary-color;
+  TEXT_COLOR: $text-color;
+}

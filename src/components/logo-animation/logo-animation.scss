@@ -1,0 +1,29 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.logo-animation {
+  opacity: 0;
+  transition: opacity 1s;
+
+  &.is-ready {
+    opacity: 1;
+  }
+
+  > canvas {
+    object-fit: cover;
+    width: 100%;
+    max-height: 66vw;
+
+    @include md {
+      max-width: 100%;
+      transform-origin: left bottom;
+      transform: scale(1.25, 1.25);
+      width: 256px;
+    }
+  }
+}
+
+:export {
+  HEIGHT: $logo-animation-height;
+  WIDTH: $logo-animation-width;
+}

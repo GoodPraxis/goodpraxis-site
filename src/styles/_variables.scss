@@ -1,0 +1,25 @@
+@import 'colors';
+
+// Fonts
+$font-stack-main: 'CalibreTest-Regular', monospace;
+
+// Breakpoints
+$screen-xs-min: 380px;
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+$global-transition-duration: 1s;
+
+$logo-animation-width: 256px;
+$logo-animation-height: 256px;
+
+:export {
+  LOGO_HEIGHT: $logo-animation-height;
+  LOGO_WIDTH: $logo-animation-width;
+}

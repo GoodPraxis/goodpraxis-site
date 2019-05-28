@@ -1,0 +1,123 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.card-component {
+  box-sizing: border-box;
+  padding: 1.25em 1em;
+
+  &:nth-child(even) {
+    grid-column: 2/7;
+    padding-bottom: 0;
+  }
+
+  &:nth-child(odd) {
+    grid-column: 4/8;
+    grid-row: 2;
+    text-align: right;
+  }
+
+  @include md {
+    grid-row: 1;
+
+    &.-primary {
+      @include color_palette_transition('background-color', 'primary');
+    }
+
+    &.-secondary {
+      background-color: $white;
+    }
+
+    &:nth-child(odd) {
+      grid-column: 2/9;
+      grid-row: 1;
+      position: relative;
+      top: 20px;
+      text-align: initial;
+    }
+
+    &:nth-child(even) {
+      grid-column: 6/13;
+      text-align: right;
+    }
+
+    &:nth-child(n+3),
+    &:nth-child(n+4) {
+      grid-row: 2;
+    }
+  }
+
+  @include lg {
+    &:nth-child(odd) {
+      position: static;
+    }
+
+    &:nth-child(even) {
+      text-align: initial;
+    }
+  }
+
+  .logo {
+    > img {
+      width: 120px;
+
+      @include xs {
+        width: 160px;
+      }
+    }
+
+    @include md {
+      display: flex;
+      padding: 2em 0;
+      justify-content: center;
+
+      > img {
+        width: 355px;
+      }
+
+    }
+  }
+}
+
+.card-container {
+  position: relative;
+  background-image: linear-gradient(to right,
+                                    transparent,
+                                    transparent 20px,
+                                    $white 20px,
+                                    $white calc(100% - 40px),
+                                    transparent calc(100% - 40px));
+  margin-bottom: 24px;
+  row-gap: 0;
+
+  &::after,
+  &::before {
+    @include color_palette_transition('background-color', 'primary');
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+  }
+
+  &::before {
+    height: 24px;
+    left: 40px;
+    right: 20px;
+    top: 100%;
+  }
+
+  @include md {
+    background-image: none;
+    margin-bottom: 0;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
