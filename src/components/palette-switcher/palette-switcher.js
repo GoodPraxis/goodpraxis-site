@@ -1,5 +1,5 @@
 export default class PalleteSwitcher {
-  constructor(pallete, threshold = 0.5) {
+  constructor(pallete, threshold = 0.4) {
     this.pallete = pallete;
     this.threshold = threshold;
     this.rootNode = document.documentElement;

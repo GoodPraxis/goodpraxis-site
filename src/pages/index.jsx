@@ -1,9 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import Card from '../components/card/card';
 import EmailAddress from '../components/email-address/email-address';
 import LogoAnimation from '../components/logo-animation/logo-animation';
 import PictureElement from '../components/picture-element/picture-element';
+import SEOComponent from '../components/seo-component/seo-component';
 import getGrid from '../helpers/grid-helper';
 
 import '../styles/global.scss';
@@ -11,27 +11,21 @@ import '../styles/global.scss';
 export default () => (
   <div>
     <main>
-      <Helmet
-        title="Good Praxis"
-        meta={[
-          { name: 'description', content: 'London based digital co-op' },
-          { name: 'keywords', content: 'digital agency, co-op' },
-        ]}
-      />
+      <SEOComponent />
       <div className="page-content">
         <section className="grid-context section-no-gap">
           <LogoAnimation src="/images/gplogo.png" />
           <div className={getGrid('full', 'one', 'one')}>
             Good Praxis Ltd.
             <br />
-            321 Karl Marx Street
+            18-22 Ashwin Street
             <br />
-            London EE 123
+            London E8 3DL
           </div>
           <div className={getGrid('full', 'one', 'one')}>
             <EmailAddress />
             <br />
-            02&nbsp;123&nbsp;456&nbsp;789
+            07&nbsp;803&nbsp;171&nbsp;093
           </div>
         </section>
         <section className="section-no-gap">
@@ -39,27 +33,36 @@ export default () => (
             Good Praxis is a digital co-op based in London
           </h1>
         </section>
+        <section className="section-no-gap">
+          <p className={`beta ${getGrid()}`}>
+            We are a worker-owned co-operative established to build creative and
+            thoughtful work that is in line with our values. We believe in being
+            socially-aware, considerate and fair to everyone involved. It’s
+            important to respect our communities and support meaningful causes
+            that can make a lasting change.
+          </p>
+        </section>
+        <section className="picture-collection">
+          <PictureElement src="/images/logo-closeup.png" />
+          <PictureElement src="/images/photo-1.jpg" />
+          <PictureElement src="/images/photo-2.jpg" />
+        </section>
         <section>
           <div className={getGrid('full-narrow', 'full-narrow', 'two-narrow')}>
             <h2>We offer</h2>
             <p className="beta">
-              Consultancy, design, and creation of digital products
+              Consultancy, design and creation of digital products
             </p>
           </div>
           <div className={getGrid('full-narrow', 'full-narrow', 'two-narrow')}>
             <h2>For</h2>
             <ul className="beta">
-              <li>Ethical companies</li>
+              <li>Socially-aware companies and co-operatives</li>
               <li>Local businesses</li>
-              <li>NGOs</li>
-              <li>Charities</li>
+              <li>NGOs and charities</li>
+              <li>Cultural and political groups</li>
             </ul>
           </div>
-        </section>
-        <section className="picture-collection">
-          <PictureElement src="/images/photo-1.jpg" />
-          <PictureElement src="/images/photo-2.jpg" />
-          <PictureElement src="/images/photo-3.jpg" />
         </section>
         <section className="card-container">
           <Card>
@@ -70,22 +73,20 @@ export default () => (
           <Card type="secondary">
             Good Praxis Ltd.
             <br />
-            123 Karl Marx Street
+            18-22 Ashwin Street
             <br />
-            London EE 123
+            London E8 3DL
           </Card>
         </section>
         <section className="-no-gaps">
           <p className={`beta ${getGrid()}`}>
-            Our members have in the past worked on projects for the BBC, F.T,
-            Sony, Google, Plan International, ActionAid, Shelter. We offer
-            thoughtful + affordable digital services to NGOs, cultural
-            instutions and political groups that share our ideals.
+          In the past, our members have worked on projects for the BBC, F.T.,
+          Sony, Google and Shelter, amongst many others.
           </p>
           <p className={`beta ${getGrid()}`}>
-            <EmailAddress label="Contact us" />
+            Want to work with us?
             {' '}
-            for more details.
+            <EmailAddress label="Drop us a line." />
           </p>
         </section>
       </div>

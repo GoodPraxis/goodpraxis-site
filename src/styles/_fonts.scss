@@ -1,23 +1,9 @@
 @font-face {
   font-display: fallback;
-  font-family: 'CalibreTest-Medium';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../../static/fonts/CalibreTest-Medium.eot?#iefix') format('embedded-opentype'),
-       url('../../static/fonts/CalibreTest-Medium.otf') format('opentype'),
-       url('../../static/fonts/CalibreTest-Medium.woff') format('woff'),
-       url('../../static/fonts/CalibreTest-Medium.ttf') format('truetype'),
-       url('../../static/fonts/CalibreTest-Medium.svg#CalibreTest-Medium') format('svg');
-}
-
-@font-face {
-  font-display: fallback;
-  font-family: 'CalibreTest-Regular';
+  font-family: 'CalibreWeb-Regular';
   font-style: normal;
   font-weight: normal;
-  src: url('../../static/fonts/CalibreTest-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../../static/fonts/CalibreTest-Regular.otf') format('opentype'),
-       url('../../static/fonts/CalibreTest-Regular.svg#CalibreTest-Regular') format('svg'),
-       url('../../static/fonts/CalibreTest-Regular.ttf') format('truetype'),
-       url('../../static/fonts/CalibreTest-Regular.woff') format('woff');
+  src: url('../../static/fonts/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../../static/fonts/CalibreWeb-Regular.woff') format('woff'),
+       url('../../static/fonts/CalibreWeb-Regular.woff2') format('woff2');
 }
