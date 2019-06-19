@@ -1,5 +1,6 @@
 // Color definitions
 $black: #000;
+$blue: #b9f7ff;
 $light-blue: #d5fff3;
 $light-grey: #ddd;
 $white: #fff;
@@ -8,7 +9,7 @@ $yellow: #feee95;
 
 // Element definitions
 $primary-color: $yellow;
-$secondary-color: $light-blue;
+$secondary-color: $blue;
 $tertiary-color: $light-grey;
 $text-color: $black;
 
@@ -20,7 +21,7 @@ $main_palette: (
 
 $alternative_palettes: (
   'alternative': (
-    'primary': $light-blue,
+    'primary': $blue,
     'secondary': $light-grey,
     'tertiary': $yellow,
   )
