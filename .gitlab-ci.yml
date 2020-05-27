@@ -7,18 +7,23 @@ stages:
   - review
   - deploy
 
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+  CYPRESS_CACHE_FOLDER: "$CI_PROJECT_DIR/cache/Cypress"
+
 # This folder is cached between builds
 # http://docs.gitlab.com/ce/ci/yaml/README.html#cache
 cache:
   paths:
-    - node_modules/
-
+    - .npm
+    - cache/Cypress
+    - node_modules
 build:static:
   stage: build
-  image: node:latest
+  image: cypress/base:10
   script:
   - npm install
-  - ./node_modules/.bin/gatsby build --prefix-paths
+  - npx gatsby build --prefix-paths
   artifacts:
     paths:
       - public/
@@ -29,15 +34,16 @@ build:static:
 
 test:
   stage: test
-  image: node:latest
+  image: cypress/base:10
   script:
   - npm install
-  - npm lint
+  - npx cypress cache path
+  - npx cypress cache list
+  - npm run lint
   - npm test
   coverage: /All\sfiles.*?\s+(\d+.\d+)/
   artifacts:
     expire_in: 1 week
-    when: on_failure
     paths:
     - cypress/screenshots
     - cypress/videos
@@ -98,3 +104,22 @@ deploy:staging:
     - nginx
     - review-apps
     - goodpraxis
+
+deploy:live:
+  stage: deploy
+  script:
+    - rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress public/ root@$LIVE_DOMAIN:/var/www/html
+  dependencies:
+    - build:static
+  environment:
+    name: live
+    url: https://$LIVE_DOMAIN
+  only:
+    refs:
+      - master
+      - alt-master
+  tags:
+    - nginx
+    - review-apps
+    - goodpraxis
+  when: manual
