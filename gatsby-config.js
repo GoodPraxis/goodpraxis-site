@@ -41,5 +41,6 @@ module.exports = {
     },
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-typescript',
+    'gatsby-plugin-remove-serviceworker',
   ],
 };
