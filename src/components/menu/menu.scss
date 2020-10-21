@@ -1,0 +1,44 @@
+@import 'variables';
+
+.main-menu {
+  height: 0;
+  left: 0;
+  max-height: 921px;
+  overflow: hidden;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: height .25s ease-in-out;
+  z-index: 9;
+
+  &.is-open {
+    height: calc(100vh - 49px);
+  }
+
+  .menu-inner {
+    background-color: $yellow;
+    height: calc(100vh - 49px);
+    position: relative;
+  }
+
+  @media (min-width: $breakpoint-m) {
+    .menu-inner-details {
+      bottom: 7px;
+      position: absolute;
+    }
+  }
+}
+
+.main-menu-wrapper {
+  height: 100%;
+  margin: 0 auto;
+  max-width: $main-max-width;
+  position: relative;
+
+  .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

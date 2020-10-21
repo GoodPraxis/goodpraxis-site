@@ -1,0 +1,14 @@
+.main-layout-wrapper.menu-is-open {
+  //overflow-y: scroll;
+}
+
+.header {
+  font-weight: 500;
+  height: 110px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.header-description {
+  grid-column: 2 / span 2;
+}

@@ -1,0 +1,17 @@
+@font-face {
+  font-display: fallback;
+  font-family: Calibre;
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/CalibreWeb-Regular.woff') format('woff'),
+    url('/fonts/CalibreWeb-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Calibre;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/CalibreWeb-Medium.woff') format('woff'),
+    url('/fonts/CalibreWeb-Medium.woff2') format('woff2');
+}

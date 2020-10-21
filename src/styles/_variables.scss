@@ -1,8 +1,6 @@
-$black: #000;
-$white: #eee;
-$yellow: #fff8ac;
+@import '../../node_modules/@goodpraxis/components/src/scss/variables';
 
-$color-background: $yellow;
+$color-background: $white;
 $color-text: $black;
 
-$font-family-main: Arial, sans-serif;
+$font-family-main: Calibre, Arial, sans-serif;

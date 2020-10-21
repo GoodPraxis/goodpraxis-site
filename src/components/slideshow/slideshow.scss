@@ -1,0 +1,46 @@
+@import 'variables';
+
+.slideshow {
+  box-sizing: border-box;
+  height: calc(100vh - 110px);
+  max-height: 860px;
+  padding-bottom: 49px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  &::after {
+    background-color: $yellow;
+    border-radius: 50%;
+    bottom: -23px;
+    content: '';
+    height: 46px;
+    left: calc(50% - 23px);
+    position: absolute;
+    width: 46px;
+  }
+}
+
+.slideshow-logo {
+  bottom: 30px + 49px;
+  position: absolute;
+  right: 30px;
+  width: 200px;
+}
+
+.slideshow-image-container {
+  display: none;
+  height: 100%;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &.is-visible {
+    display: block;
+  }
+}
