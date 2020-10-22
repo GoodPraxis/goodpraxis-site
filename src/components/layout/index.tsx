@@ -4,6 +4,7 @@ import MenuToggle from '../menu-toggle';
 import MainMenu from '../menu';
 
 import './layout.scss';
+import MenuInner from '../menu-inner';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -35,6 +36,9 @@ const Layout: React.FC = ({ children, activeItem } : LayoutProps) => {
       <main className="main-layout grid-lines">
         {children}
       </main>
+      <footer className="footer grid-lines">
+        <MenuInner activeItem={activeItem} />
+      </footer>
     </div>
   );
 };

@@ -43,7 +43,11 @@ main {
   margin-top: 8px;
 
   @media (min-width: $breakpoint-m) {
-    margin-top: 16px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin-top: 30px;
   }
 }
 

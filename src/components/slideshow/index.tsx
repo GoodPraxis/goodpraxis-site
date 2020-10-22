@@ -10,14 +10,15 @@ interface SlideshowImage {
 
 interface SlideshowProps {
   images: SlideshowImage[];
+  delay?: number;
 }
 
-const Slideshow = ({ images }: SlideshowProps) => {
+const Slideshow = ({ images, delay }: SlideshowProps) => {
   const [index, setIndex] = useState(0);
 
   useInterval(() => {
     setIndex((currentIndex) => (currentIndex + 1) % images.length);
-  }, 5000);
+  }, delay);
 
   return (
     <div className="slideshow">
@@ -34,6 +35,10 @@ const Slideshow = ({ images }: SlideshowProps) => {
       </div>
     </div>
   );
+};
+
+Slideshow.defaultProps = {
+  delay: 5000,
 };
 
 export default Slideshow;

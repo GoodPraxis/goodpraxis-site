@@ -5,8 +5,12 @@
   .menu-list {
     @extend %grid;
     grid-row-gap: 0;
-    margin-top: 40px;
-    padding-top: 0;
+    margin: 40px 8px 0;
+    padding: 0;
+
+    @media (min-width: $breakpoint-m) {
+      margin: 40px 16px 0;
+    }
   }
 
   .menu-list-item {

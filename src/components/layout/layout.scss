@@ -1,6 +1,4 @@
-.main-layout-wrapper.menu-is-open {
-  //overflow-y: scroll;
-}
+@import 'variables';
 
 .header {
   font-weight: 500;
@@ -11,4 +9,10 @@
 
 .header-description {
   grid-column: 2 / span 2;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: $main-max-width;
+  padding-top: 180px;
 }
