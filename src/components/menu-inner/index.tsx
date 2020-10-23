@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import { DetailsBox, MenuList } from '@goodpraxis/components';
+import MenuContext from '../menu-provider/context';
 import './menu-inner.scss';
 
 export const MENU_ITEMS = [
@@ -9,18 +10,16 @@ export const MENU_ITEMS = [
   { href: '/studio', title: 'Studio' },
 ];
 
-const renderLink = ({ href, title } : {href: string, title: string}) => (
-  <Link to={href}>
-    {title}
-  </Link>
-);
-
 interface MenuInnerProps {
   activeItem: string;
 }
 
 const MenuInner = ({ activeItem }: MenuInnerProps) => {
   const active = MENU_ITEMS.map((item) => item.title).indexOf(activeItem);
+  const { setMenuOpen } = useContext(MenuContext);
+  const renderLink = ({ href, title } : {href: string, title: string}) => (
+    <Link to={href} onClick={() => setMenuOpen(false)}>{title}</Link>
+  );
 
   return (
     <section className="menu-inner">

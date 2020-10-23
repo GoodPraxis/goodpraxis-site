@@ -91,3 +91,27 @@ main {
     line-height: 38px;
   }
 }
+
+.team-area {
+  .heading {
+    grid-column: 1 / span 2;
+
+    @media (min-width: $breakpoint-l) {
+      grid-column: 2 / span 3;
+    }
+  }
+
+  .team-list {
+    grid-column: 1 / span 2;
+    margin: 0 -8px;
+
+    @media (min-width: $breakpoint-m) {
+      grid-column: 2 / span 2;
+      margin: 0 -16px;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      grid-column: 1 / span 4;
+    }
+  }
+}
