@@ -115,3 +115,22 @@ main {
     }
   }
 }
+
+hr {
+  background-image: url($svg-lines);
+  background-size: 205.8%;
+  border: 0;
+  margin: 0 8px;
+  padding: 0 0 40.1%;
+
+  @media (min-width: $breakpoint-m) {
+    background-size: 134.4%;
+    margin: 0 15px;
+    padding: 0 0 26.1%;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    background-size: 100%;
+    padding: 0 0 22.1%;
+  }
+}

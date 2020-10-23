@@ -17,6 +17,10 @@
   top: 14px;
   z-index: 99;
 
+  @media (min-width: $breakpoint-m) {
+    right: 16px;
+  }
+
   &:active,
   &:focus {
     outline: 0;
@@ -28,7 +32,7 @@
   }
 
   rect:nth-child(1) {
-    transform-origin: top left;
+    transform-origin: top right;
   }
 
   rect:nth-child(2) {
@@ -36,7 +40,20 @@
   }
 
   rect:nth-child(3) {
-    transform-origin: bottom left;
+    transform-origin: bottom right;
+  }
+
+  svg {
+    height: 17px;
+
+    @media (min-width: $breakpoint-m) {
+      margin-top: 7px;
+    }
+
+    @media (min-width: $breakpoint-l) {
+      height: auto;
+      margin-top: 0;
+    }
   }
 }
 
@@ -54,18 +71,16 @@
   }
 
   rect:nth-child(1) {
-    transform: rotate(43deg) translate(2px, -2px);
+    transform: rotate(-43deg) translate(-2px, -2px);
   }
 
   rect:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);
-    transform-origin: center center;
   }
 
   rect:nth-child(3) {
-    transform: rotate(-43deg) translate(2px, 2px);
-    transform-origin: bottom left;
+    transform: rotate(43deg) translate(-2px, 2px);
   }
 }
 
