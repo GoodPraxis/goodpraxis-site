@@ -3,9 +3,12 @@
 .slideshow {
   box-sizing: border-box;
   height: calc(100vh - 110px);
-  max-height: 860px;
   padding-bottom: 49px;
   position: relative;
+
+  @media (min-width: $breakpoint-m + 1px) {
+    max-height: 860px;
+  }
 
   img {
     width: 100%;
@@ -24,10 +27,16 @@
 }
 
 .slideshow-logo {
-  bottom: 30px + 49px;
+  bottom: 20px + 49px;
   position: absolute;
-  right: 30px;
-  width: 200px;
+  right: 20px;
+  width: 150px;
+
+  @media (min-width: $breakpoint-m) {
+    bottom: 30px + 49px;
+    right: 30px;
+    width: 200px;
+  }
 }
 
 .slideshow-image-container {

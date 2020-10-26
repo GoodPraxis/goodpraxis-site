@@ -3,7 +3,6 @@
 .main-menu {
   height: 0;
   left: 0;
-  max-height: 921px;
   overflow: hidden;
   padding: 0 15px;
   position: absolute;
@@ -11,6 +10,10 @@
   top: 0;
   transition: height .25s ease-in-out;
   z-index: 9;
+
+  @media (min-width: $breakpoint-m + 1px) {
+    max-height: 921px;
+  }
 
   &.is-open {
     height: calc(100vh - 49px);
@@ -20,6 +23,10 @@
     background-color: $yellow;
     height: calc(100vh - 49px);
     position: relative;
+
+    @media (min-width: $breakpoint-m + 1px) {
+      max-height: 921px;
+    }
   }
 
   @media (min-width: $breakpoint-m) {

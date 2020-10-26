@@ -2,13 +2,20 @@
 
 .header {
   font-weight: 500;
-  height: 110px;
   position: relative;
   text-transform: uppercase;
+
+  @media (min-width: $breakpoint-m) {
+    height: 110px;
+  }
 }
 
 .header-description {
-  grid-column: 2 / span 2;
+  grid-column: 1 / span 2;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column: 2 / span 2;
+  }
 }
 
 footer {

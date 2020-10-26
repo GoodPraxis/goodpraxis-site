@@ -8,7 +8,7 @@ import Slideshow from '../components/slideshow';
 import './main.scss';
 
 const images = [
-  { src: 'https://picsum.photos/id/20/1149/588', alt: '' },
+  { src: '/images/photo-studio.jpg', alt: '' },
 ];
 
 const IMAGE_PATH = '/images/member-';

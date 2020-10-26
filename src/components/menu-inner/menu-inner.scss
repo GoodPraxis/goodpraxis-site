@@ -33,9 +33,22 @@
   line-height: 28px;
   text-transform: uppercase;
 
+  &.grid {
+    grid-row-gap: 0;
+  }
+
   @media (min-width: $breakpoint-l) {
     font-size: 35px;
     line-height: 38px;
+  }
+}
+
+.menu-inner-company-name,
+.menu-inner-company-description {
+  grid-column: 1 / span 2;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column: auto;
   }
 }
 
@@ -45,7 +58,9 @@
 }
 
 .menu-inner-company-description {
-  grid-column: 2 / span 2;
+  @media (min-width: $breakpoint-m) {
+    grid-column: 2 / span 2;
+  }
 }
 
 .grid.menu-inner-details {
@@ -53,6 +68,15 @@
     grid-column: 2 / span 3;
   }
   padding-top: 124px;
+}
+
+.menu-inner-address,
+.menu-inner-contact {
+  grid-column: 1 / span 2;
+
+  @media (min-width: $breakpoint-s) {
+    grid-column: auto;
+  }
 }
 
 .menu-inner-photo {

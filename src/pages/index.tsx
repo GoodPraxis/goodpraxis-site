@@ -50,7 +50,7 @@ const IndexPage = () => (
         isNewWork
       />
       <ProjectPromo
-        image=""
+        image="/images/projects/netilradio.svg"
         projectName="Test"
         industry="Testing"
         capabilities="Design"
