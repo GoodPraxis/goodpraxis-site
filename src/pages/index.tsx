@@ -40,7 +40,7 @@ const IndexPage = () => (
         <h2 className="heading">Featured work</h2>
       </div>
       <ProjectPromo
-        image=""
+        image="/images/projects/netilradio.svg"
         projectName="Test"
         industry="Testing"
         capabilities="Design"

@@ -1,10 +1,13 @@
 @import 'variables';
 
 .main-menu {
+  background-color: $yellow;
   height: 0;
   left: 0;
+  margin: 0 auto;
+  max-width: $main-max-width;
   overflow: hidden;
-  padding: 0 15px;
+  padding: 0 8px;
   position: absolute;
   right: 0;
   top: 0;
@@ -13,15 +16,19 @@
 
   @media (min-width: $breakpoint-m + 1px) {
     max-height: 921px;
+    padding: 0 15px;
   }
 
   &.is-open {
-    height: calc(100vh - 49px);
+    height: 100vh;
+
+    @media (min-width: $breakpoint-m) {
+      height: calc(100vh - 59px);
+    }
   }
 
   .menu-inner {
-    background-color: $yellow;
-    height: calc(100vh - 49px);
+    height: calc(100vh - 59px);
     position: relative;
 
     @media (min-width: $breakpoint-m + 1px) {
@@ -29,8 +36,25 @@
     }
   }
 
-  @media (min-width: $breakpoint-m) {
-    .menu-inner-details {
+  .menu-inner-photo>.office-photo {
+    display: none;
+
+    @media (min-height: 600px) and (max-width: $breakpoint-m - 1px) {
+      display: block;
+      height: auto;
+      padding-top: 2.5vh;
+      width: 33vh;
+    }
+
+    @media (min-width: $breakpoint-m) {
+      display: block;
+    }
+  }
+
+  .grid.menu-inner-details {
+    padding-top: 16px;
+
+    @media (min-width: $breakpoint-m) {
       bottom: 7px;
       position: absolute;
     }

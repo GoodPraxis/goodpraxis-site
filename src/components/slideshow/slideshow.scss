@@ -1,5 +1,7 @@
 @import 'variables';
 
+$bottom-area-height: 49px;
+
 .slideshow {
   box-sizing: border-box;
   height: calc(100vh - 110px);
@@ -27,13 +29,13 @@
 }
 
 .slideshow-logo {
-  bottom: 20px + 49px;
+  bottom: 20px + $bottom-area-height;
   position: absolute;
   right: 20px;
   width: 150px;
 
   @media (min-width: $breakpoint-m) {
-    bottom: 30px + 49px;
+    bottom: 30px + $bottom-area-height;
     right: 30px;
     width: 200px;
   }

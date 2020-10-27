@@ -6,6 +6,7 @@
     @extend %grid;
     grid-row-gap: 0;
     margin: 40px 8px 0;
+    overflow: hidden;
     padding: 0;
 
     @media (min-width: $breakpoint-m) {
@@ -14,6 +15,7 @@
   }
 
   .menu-list-item {
+    box-sizing: border-box;
     grid-column: 1 / span 2;
     padding-left: 67px;
     width: 100%;

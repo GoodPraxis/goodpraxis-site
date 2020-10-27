@@ -39,10 +39,6 @@ main {
   position: relative;
 }
 
-.main-layout-wrapper {
-  overflow: hidden;
-}
-
 .project-promos > .project-promo {
   margin-top: 8px;
 
@@ -65,6 +61,7 @@ main {
   grid-column: 1 / span 2;
   line-height: 28px;
   margin: 0;
+  text-transform: uppercase;
 
   @media (min-width: $breakpoint-m) {
     grid-column: 2 / span 2;
