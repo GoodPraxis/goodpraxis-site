@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import Slideshow from '../components/slideshow';
 
 import './main.scss';
+import ContactForm from '../components/contact-form';
 
 const images = [
   { src: '/images/photo-studio.jpg', alt: '' },
@@ -50,6 +51,9 @@ const IndexPage = () => (
     <section className="team-area grid">
       <h2 className="heading">Our team</h2>
       <TeamList members={teamMembers} />
+    </section>
+    <section className="form-area">
+      <ContactForm />
     </section>
   </Layout>
 );

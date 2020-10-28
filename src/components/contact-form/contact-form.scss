@@ -1,0 +1,49 @@
+@import 'variables';
+
+.contact-form {
+  background-color: $pure-white;
+  padding-bottom: 4em;
+
+  .gp-checkbox {
+    margin-right: .5em;
+    vertical-align: middle;
+  }
+
+  .heading {
+    grid-column: 1 / span 2;
+    margin: 1em 0;
+
+    @media (min-width: $breakpoint-m) {
+      grid-column: 2 / span 2;
+    }
+  }
+
+  label {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+.contact-form-details {
+  display: none;
+
+  @media (min-width: $breakpoint-m) {
+    display: block;
+    grid-column: 1;
+    margin-top: 34px;
+    text-align: right;
+  }
+}
+
+.contact-form-field {
+  grid-column: 1 / span 2;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column: 2 / span 2;
+  }
+
+  .gp-input,
+  .gp-textarea {
+    margin-top: 8px;
+  }
+}
