@@ -1,0 +1,77 @@
+@import 'variables';
+
+.project-page {
+  border-top: 1px solid $black;
+}
+
+.project-page-title,
+.project-page-description {
+  font-size: 26px;
+  font-weight: 500;
+  grid-column: 1 / span 2;
+  line-height: 28px;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column: 2 / span 2;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-column: 2 / span 3;
+  }
+}
+
+.project-page-title {
+  margin: 8px 0 45px;
+
+  @media (min-width: $breakpoint-l) {
+    font-size: 35px;
+  }
+}
+
+.project-page-images {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1 / span 2;
+  justify-content: space-between;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column-end: span 3;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-column-end: span 4;
+  }
+}
+
+.project-page-details {
+  grid-column: 1 / span 2;
+  line-height: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 34px 0 0;
+
+
+  @media (min-width: $breakpoint-m) {
+    grid-column-end: span 1;
+  }
+
+  >li {
+    border-top: 1px solid $black;
+  }
+}
+
+.project-page-image {
+  background-color: $blue;
+  padding-bottom: 26.25%;
+  width: calc(50% - 16px);
+
+  &:first-child {
+    padding-bottom: 45%;
+    width: 100%;
+  }
+
+  &~& {
+    margin-top: 32px;
+  }
+}
+

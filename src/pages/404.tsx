@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout activeItem="Home">
     <SEO title="404: Not found" />
     <div className="grid not-found-area">
       <div>4</div>

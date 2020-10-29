@@ -13,7 +13,7 @@ interface LayoutProps {
 
 const SCROLL = 'scroll';
 
-const Layout: React.FC = ({ children, activeItem } : LayoutProps) => {
+const Layout = ({ activeItem, children } : LayoutProps) => {
   const { isMenuOpen, setMenuOpen } = useContext(MenuContext);
 
   const hideMenu = () => setMenuOpen(false);
