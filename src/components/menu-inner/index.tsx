@@ -60,6 +60,24 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
           <DetailsBox title="Email">
             <a href="mailto:hello@goodpraxis.coop">hello@goodpraxis.coop</a>
           </DetailsBox>
+          <DetailsBox title="Follow">
+            <>
+              <a
+                href="https://twitter.com/GoodPraxisCoop"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Twitter
+              </a>
+              <a
+                href="https://www.instagram.com/goodpraxiscraft/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Instagram
+              </a>
+            </>
+          </DetailsBox>
         </div>
       </div>
     </section>

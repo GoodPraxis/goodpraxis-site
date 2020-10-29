@@ -9,8 +9,8 @@ import './main.scss';
 import ClientList from '../components/client-list';
 
 const images = [
-  { src: 'https://picsum.photos/id/237/1149/588', alt: '' },
-  { src: 'https://picsum.photos/id/230/1149/588', alt: '' },
+  { src: '/images/photo-officechris.jpg', alt: '' },
+  { src: '/images/photo-officecandc.jpg', alt: '' },
 ];
 
 const clients = [

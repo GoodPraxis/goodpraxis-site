@@ -8,6 +8,10 @@
   @media (min-width: $breakpoint-m) {
     height: 100px;
   }
+
+  @media (min-width: $breakpoint-l) {
+    height: 110px;
+  }
 }
 
 .header-description {

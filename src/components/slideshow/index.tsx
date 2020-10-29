@@ -38,7 +38,7 @@ const Slideshow = ({ images, delay }: SlideshowProps) => {
 };
 
 Slideshow.defaultProps = {
-  delay: 2500,
+  delay: 5000,
 };
 
 export default Slideshow;

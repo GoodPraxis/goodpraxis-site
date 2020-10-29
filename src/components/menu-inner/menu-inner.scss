@@ -81,6 +81,12 @@
   }
 }
 
+.menu-inner-contact {
+  > .details-box:nth-child(3) {
+    margin-top: 23px;
+  }
+}
+
 .menu-inner-photo {
   grid-column: 1 / span 2;
 

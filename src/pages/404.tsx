@@ -6,7 +6,13 @@ import SEO from '../components/seo';
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
+    <div className="grid not-found-area">
+      <div>4</div>
+      <div>0</div>
+      <div>4</div>
+      <div className="not-found-smaller">NOT</div>
+      <div className="not-found-smaller">FOUND</div>
+    </div>
   </Layout>
 );
 

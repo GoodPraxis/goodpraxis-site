@@ -135,3 +135,31 @@ hr {
     padding: 0 0 22.1%;
   }
 }
+
+.not-found-area {
+  font-size: 128px;
+
+  .not-found-smaller {
+    font-size: 40px;
+    width: 100%;
+
+    @media (min-width: $breakpoint-m) {
+      font-size: 72px;
+    }
+  }
+
+  @media (min-width: $breakpoint-l) {
+    > div:first-child() {
+      grid-column: 2;
+    }
+  }
+
+  &.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $breakpoint-m) {
+      display: grid;
+    }
+  }
+}
