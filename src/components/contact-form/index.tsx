@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="contact-form grid grid-lines" onSubmit={onSubmit}>
+    <form className="contact-form grid grid-lines" onSubmit={onSubmit} id="contact-us">
       <h2 className="heading">Work with us</h2>
       <div className="contact-form-field">
         { /* eslint-disable-next-line */}

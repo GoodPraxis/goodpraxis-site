@@ -1,7 +1,19 @@
 @import 'variables';
 
 .project-page {
-  border-top: 1px solid $black;
+  position: relative;
+
+  &::before {
+    background: $black;
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+  }
 }
 
 .project-page-title,
@@ -46,27 +58,22 @@
 .project-page-details {
   grid-column: 1 / span 2;
   line-height: 24px;
-  list-style-type: none;
-  margin: 0;
   padding: 34px 0 0;
-
 
   @media (min-width: $breakpoint-m) {
     grid-column-end: span 1;
   }
-
-  >li {
-    border-top: 1px solid $black;
-  }
 }
 
 .project-page-image {
-  background-color: $blue;
-  padding-bottom: 26.25%;
   width: calc(50% - 16px);
 
+  img {
+    display: block;
+    width: 100%;
+  }
+
   &:first-child {
-    padding-bottom: 45%;
     width: 100%;
   }
 

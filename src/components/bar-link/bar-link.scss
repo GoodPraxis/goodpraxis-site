@@ -1,0 +1,45 @@
+@import 'variables';
+
+.bar-link {
+  border-bottom: 1px solid $transparent-black;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 41px;
+
+  &:hover {
+    background-image: url($svg-arrow-large);
+    background-position: right center;
+    background-repeat: no-repeat;
+  }
+
+  &:first-child {
+    border-top: 1px solid $black;
+  }
+
+  &.grid {
+    margin: 0 8px;
+    padding: 0;
+
+    @media (min-width: $breakpoint-m) {
+      margin: 0 16px;
+    }
+  }
+}
+
+.bar-link-content {
+  grid-column: 1 / span 2;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column: 2 / span 2;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    font-size: 35px;
+    grid-column: 2 / span 3;
+    line-height: 58px;
+  }
+}
+
+.bar-links {
+  margin-top: 32px;
+}

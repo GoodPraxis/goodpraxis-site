@@ -6,8 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
+        limit: 100
       ) {
         edges {
           node {
@@ -28,7 +27,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.slug,
+      path: `/work/${node.frontmatter.slug}`,
       component: blogPostTemplate,
       context: {
         // additional data can be passed via context

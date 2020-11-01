@@ -43,9 +43,8 @@ const IndexPage = () => (
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">
-        We’re an award-winning digital innovation co-operative. We
-        collaboratively develop tech products for organisations whose aim is to
-        rebalance the inequalities of society.
+        Good Praxis is made up of two designers and two developers, all practitioners.
+        We share a fondness for our craft and an interest in the world around us.
       </div>
     </section>
     <section className="team-area grid">

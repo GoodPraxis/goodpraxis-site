@@ -1,35 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import { DetailsBox } from '@goodpraxis/components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import RelatedProjects from '../components/related-projects';
 
 import './project-page.scss';
-
-import RelatedItemList from '../components/related-items';
-
-const relatedProjects = [
-  {
-    name: 'Test Project',
-    image: '/images/building.jpg',
-    href: 'test',
-  },
-  {
-    name: 'Test Project 2',
-    image: '/images/building.jpg',
-    href: 'test2',
-  },
-  {
-    name: 'Test Project 3',
-    image: '/images/building.jpg',
-    href: 'test',
-  },
-  {
-    name: 'Test Project 4',
-    image: '/images/building.jpg',
-    href: 'test2',
-  },
-];
+import BarLink from '../components/bar-link';
 
 interface TemplateData {
   markdownRemark: {
@@ -42,30 +20,52 @@ export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }: { data: TemplateData }) {
   const { markdownRemark } = data; // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
+  const {
+    frontmatter: {
+      client, title, slug, image_1: image1, image_2: image2, image_3: image3,
+      live_url: liveUrl, type,
+    }, html,
+  } = markdownRemark;
   return (
     <Layout activeItem="Work">
       <SEO title="Work" />
       <div className="project-page grid">
-        <div className="project-page-title">{frontmatter.title}</div>
-        <ul className="project-page-details">
-          <li>Lorem ipsum</li>
-          <li>Dolor sit</li>
-          <li>Amet</li>
-        </ul>
+        <div className="project-page-title">{title}</div>
+        <div className="project-page-details">
+          <DetailsBox title="Client">{client}</DetailsBox>
+          <DetailsBox title="Type of work">{type}</DetailsBox>
+          { liveUrl
+            ? (
+              <DetailsBox title="Website">
+                <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                  {liveUrl}
+                </a>
+              </DetailsBox>
+            )
+            : ''}
+        </div>
         <div
           className="project-page-description"
           // eslint-disable-next-line
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <div className="project-page-images">
-          <div className="project-page-image" />
-          <div className="project-page-image" />
-          <div className="project-page-image" />
+          <div className="project-page-image">
+            <img src={image1} alt="" />
+          </div>
+          <div className="project-page-image">
+            <img src={image2} alt="" />
+          </div>
+          <div className="project-page-image">
+            <img src={image3} alt="" />
+          </div>
         </div>
       </div>
+      <section className="bar-links">
+        <BarLink to="/studio#contact-us">Work with is on your next project</BarLink>
+      </section>
       <hr />
-      <RelatedItemList items={relatedProjects} />
+      <RelatedProjects project={{ client, slug }} />
     </Layout>
   );
 }
@@ -75,9 +75,14 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         slug
         title
+        type
+        client
+        live_url
+        image_1
+        image_2
+        image_3
       }
     }
   }

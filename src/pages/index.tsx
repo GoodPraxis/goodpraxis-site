@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { ProjectPromo } from '@goodpraxis/components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Slideshow from '../components/slideshow';
 
 import './main.scss';
 import ClientList from '../components/client-list';
+import BarLink from '../components/bar-link';
+import ProjectPromoList from '../components/project-promo-list';
 
 const images = [
   { src: '/images/photo-officechris.jpg', alt: '' },
@@ -39,23 +40,11 @@ const IndexPage = () => (
       <div className="grid">
         <h2 className="heading">Featured work</h2>
       </div>
-      <ProjectPromo
-        image="/images/projects/netilradio.svg"
-        projectName="Test"
-        industry="Testing"
-        capabilities="Design"
-        className="grid-lines"
-        backgroundColor="#4CFF8B"
-        promoStyle="light"
-        isNewWork
-      />
-      <ProjectPromo
-        image="/images/projects/netilradio.svg"
-        projectName="Test"
-        industry="Testing"
-        capabilities="Design"
-        className="grid-lines"
-      />
+      <ProjectPromoList featured />
+    </section>
+    <section className="bar-links">
+      <BarLink to="/work">View all work</BarLink>
+      <BarLink to="/studio#contact-us">Work with is on your next project</BarLink>
     </section>
     <hr />
     <section className="client-area">
