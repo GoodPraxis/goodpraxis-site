@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Good Praxis',
-    description: 'Website description',
+    description: 'We’re an award-winning digital innovation co-operative. We collaboratively develop tech products for organisations whose aim is to rebalance the inequalities of society.',
     author: '@goodpraxiscoop',
     siteUrl: 'https://goodpraxis.coop',
     image: 'https://goodpraxis.coop/images/og.png',

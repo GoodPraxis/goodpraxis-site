@@ -28,7 +28,10 @@ const clients = [
 
 const IndexPage = () => (
   <Layout activeItem="Home">
-    <SEO title="Good Praxis" metaTitle="Good Praxis - creative digital agency" />
+    <SEO
+      title="Good Praxis • A digital creative agency"
+      metaTitle="Good Praxis • A digital creative agency"
+    />
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">

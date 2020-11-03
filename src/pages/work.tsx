@@ -8,7 +8,7 @@ import ProjectPromoList from '../components/project-promo-list';
 
 const IndexPage = () => (
   <Layout activeItem="Work">
-    <SEO title="Good Praxis - Our Work" metaTitle="Good Prazis - Our Work" />
+    <SEO title="Good Praxis • Our Work" metaTitle="Good Praxis • Our Work" />
     <ProjectPromoList />
   </Layout>
 );
