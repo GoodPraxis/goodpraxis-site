@@ -7,8 +7,8 @@ thumbnail: "/images/projects/iloveyou/thumbnail.svg"
 live_url: "https://iloveyouinfinity.com"
 main_image: "/images/projects/iloveyou/logo.svg"
 image_1: "/images/projects/iloveyou/mainlogo.svg"
-image_2: "/images/projects/iloveyou/illustration1.png"
-image_3: "/images/projects/iloveyou/illustration2.png"
+image_2: "/images/projects/iloveyou/work-luv-1.png"
+image_3: "/images/projects/iloveyou/work-luv-2.svg"
 new_work: false
 featured: true
 color: "#2C2C2C"
@@ -16,10 +16,12 @@ type: "Creative development"
 style: "dark"
 industry: "Non-profit"
 ---
-_I Love You Infinity_ is an autism awareness campaign by copywriter Lisa
-Berenson and her son William, in partnership with designer Oriana Gaeta (RGA)
-and _Good Praxis_. The project is inspired by the unique, mathematical way
-William expresses his love by counting ‘I love yous’.
+_[I Love You Infinity](https://iloveyouinfinity.com)_ is an autism awareness
+campaign by copywriter [Lisa Berenson](http://thankyouforlookingatmybook.com/)
+and her son William, in partnership with designer [Oriana
+Gaeta](http://www.orianagaeta.com/) (RGA) and _Good Praxis_. The project is
+inspired by the unique, mathematical way William expresses his love by counting
+‘I love yous’.
 
 The team recorded and programmed his voice to allow him to continue counting
 forever online, to share the infinite love that can live inside an autistic

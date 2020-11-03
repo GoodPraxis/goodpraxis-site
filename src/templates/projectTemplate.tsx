@@ -5,6 +5,7 @@ import { DetailsBox } from '@goodpraxis/components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import RelatedProjects from '../components/related-projects';
+import parse from '../utils/parse';
 
 import './project-page.scss';
 import BarLink from '../components/bar-link';
@@ -46,9 +47,9 @@ export default function Template({
         </div>
         <div
           className="project-page-description"
-          // eslint-disable-next-line
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        >
+          { parse(html) }
+        </div>
         <div className="project-page-images">
           <div className="project-page-image">
             <img src={image1} alt="" />

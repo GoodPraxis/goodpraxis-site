@@ -30,6 +30,10 @@
   @media (min-width: $breakpoint-l) {
     grid-column: 2 / span 3;
   }
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 .project-page-title {
