@@ -17,6 +17,16 @@ interface TemplateData {
   };
 }
 
+const getOGImage = (images: string[]) => {
+  const filtered = images.filter((img) => img.endsWith('png') || img.endsWith('jpg'));
+
+  if (filtered.length > 0) {
+    return `https://goodpraxis.coop${filtered[0]}`;
+  }
+
+  return null;
+};
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }: { data: TemplateData }) {
@@ -24,17 +34,32 @@ export default function Template({
   const {
     frontmatter: {
       client, title, slug, image_1: image1, image_2: image2, image_3: image3,
-      live_url: liveUrl, type,
+      live_url: liveUrl, services,
     }, html,
   } = markdownRemark;
   return (
     <Layout activeItem="Work">
-      <SEO title="Work" />
+      <SEO
+        title={`${title} – Good Praxis`}
+        metaTitle={`${title} – Good Praxis`}
+        image={getOGImage([image1, image2, image3])}
+        description={`A project for ${client} created by Good Praxis`}
+      />
       <div className="project-page grid">
         <div className="project-page-title">{title}</div>
         <div className="project-page-details">
           <DetailsBox title="Client">{client}</DetailsBox>
-          <DetailsBox title="Type of work">{type}</DetailsBox>
+          <DetailsBox title="Services">
+            {
+            services.map((service: string) => (
+              <span key={service}>
+                {service}
+                <br />
+              </span>
+            ))
+          }
+
+          </DetailsBox>
           { liveUrl
             ? (
               <DetailsBox title="Website">
@@ -63,7 +88,7 @@ export default function Template({
         </div>
       </div>
       <section className="bar-links">
-        <BarLink to="/studio#contact-us">Work with is on your next project</BarLink>
+        <BarLink to="/studio#contact-us">Work with us on your next project</BarLink>
       </section>
       <hr />
       <RelatedProjects project={{ client, slug }} />
@@ -80,6 +105,7 @@ export const pageQuery = graphql`
         title
         type
         client
+        services
         live_url
         image_1
         image_2

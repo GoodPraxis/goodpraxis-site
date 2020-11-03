@@ -10,24 +10,25 @@ import BarLink from '../components/bar-link';
 import ProjectPromoList from '../components/project-promo-list';
 
 const images = [
-  { src: '/images/photo-officechris.jpg', alt: '' },
-  { src: '/images/photo-officecandc.jpg', alt: '' },
+  { src: '/images/carousel-2.jpg', alt: '' },
+  { src: '/images/carousel-3.jpg', alt: '' },
+  { src: '/images/carousel-1.jpg', alt: '' },
 ];
 
 const clients = [
+  { name: 'Pentagram', image: 'logo-pentagram.svg' },
   { name: 'Hasbro', image: 'logo-hasbro.svg' },
-  { name: 'Magic', image: 'logo-mtg.png' },
+  { name: 'YRS TRULY', image: 'logo-yrstruly.svg' },
   { name: 'Prince\'s Trust', image: 'logo-pt.svg' },
-  { name: 'Islington Council', image: 'logo-islington.png' },
-  { name: 'YRS TRULY', image: 'logo-yt.png' },
   { name: 'Loading Bar', image: 'logo-loading.svg' },
-  { name: 'Loading Bar2', image: 'logo-loading.svg' },
-  { name: 'Loading Bar3', image: 'logo-loading.svg' },
+  { name: 'Netil Radio', image: 'logo-netil.svg' },
+  { name: 'Magic the Gathering', image: 'logo-magic.svg' },
+  { name: 'Islington Council', image: 'logo-islington.svg' },
 ];
 
 const IndexPage = () => (
   <Layout activeItem="Home">
-    <SEO title="Home" />
+    <SEO title="Good Praxis" metaTitle="Good Praxis - creative digital agency" />
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">
@@ -44,7 +45,7 @@ const IndexPage = () => (
     </section>
     <section className="bar-links">
       <BarLink to="/work">View all work</BarLink>
-      <BarLink to="/studio#contact-us">Work with is on your next project</BarLink>
+      <BarLink to="/studio#contact-us">Work with us on your next project</BarLink>
     </section>
     <hr />
     <section className="client-area">

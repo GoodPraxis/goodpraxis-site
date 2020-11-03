@@ -39,7 +39,7 @@ const teamMembers = [
 
 const IndexPage = () => (
   <Layout activeItem="Studio">
-    <SEO title="Studio" />
+    <SEO title="Good Praxis - Studio" metaTitle="Good Praxis - Studio" />
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">

@@ -12,9 +12,9 @@ image_3: "/images/projects/asap/screenshot-2.png"
 new_work: false
 featured: true
 color: "#484848"
-type: "Design and development"
+type: "Design and execution"
 style: "dark"
-industry: "Retro gaming"
+services: ["Design", "Programming", "Music composition"]
 ---
 ASAP PLZ is a free game about working in marketing. Made in partnership with
 marketing gurus [YRS TRULY](https://yrstruly.uk/), it’s a celebration of the

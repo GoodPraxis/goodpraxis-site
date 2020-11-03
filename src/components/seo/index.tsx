@@ -103,12 +103,12 @@ const SEO: React.FC<SEOProps> = ({
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const { title: dataMetaTitle, metaAuthor: dataMetaAuthor, image: dataImage } = site.siteMetadata;
+  const { metaAuthor: dataMetaAuthor, image: dataImage } = site.siteMetadata;
 
   return (
     <PureSEO
       title={title}
-      metaTitle={metaTitle || dataMetaTitle}
+      metaTitle={metaTitle}
       description={metaDescription}
       lang={lang}
       metaAuthor={metaAuthor || dataMetaAuthor}

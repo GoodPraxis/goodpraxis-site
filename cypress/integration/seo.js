@@ -10,12 +10,4 @@ describe('SEO tests', () => {
     cy.get('meta[name="description"]')
       .should('have.attr', 'content', siteMetadata.description);
   });
-
-  it('should have OG tags', () => {
-    cy.get('meta[property="og:title"]')
-      .should('have.attr', 'content', siteMetadata.title);
-
-    cy.get('meta[property="og:image"]')
-      .should('have.attr', 'content', siteMetadata.image);
-  });
 });

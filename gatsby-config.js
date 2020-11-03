@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Website',
+    title: 'Good Praxis',
     description: 'Website description',
-    author: '@example',
-    siteUrl: 'https://example.com',
-    image: 'https://example.com/example.png',
+    author: '@goodpraxiscoop',
+    siteUrl: 'https://goodpraxis.coop',
+    image: 'https://goodpraxis.coop/images/og.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -32,11 +32,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Example',
-        short_name: 'example',
+        name: 'Good Praxis',
+        short_name: 'goodpraxis',
         start_url: '/',
-        background_color: '#000000',
-        theme_color: '#000000',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
         display: 'minimal-ui',
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },

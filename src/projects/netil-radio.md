@@ -10,13 +10,14 @@ image_1: "/images/projects/netilradio/hero.svg"
 image_2: "/images/projects/netilradio/work-1.png"
 image_3: "/images/projects/netilradio/work-2.jpg"
 new_work: false
-featured: false
+featured: true
 color: "#007EFF"
 type: "Web design and development"
 style: "dark"
-industry: "Non-profit"
+services: ["Web Design", "Web Development"]
 ---
-Netil Radio have approached us to design and build a minimalistic but functional
-website for their online radio.
+Netil Radio have approached us to redesign and build a new version of their website for their online radio.
 
-(...)
+The main request was to make the website as straightforward as possible, allowing visitors to listen to the radio straight away.
+
+We looked to legendary product designer Dieter Rams' T3 Radio for inspiration, which resulted in a minimal yet beautiful and functional website.

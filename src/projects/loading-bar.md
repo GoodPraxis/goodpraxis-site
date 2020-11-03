@@ -14,7 +14,7 @@ featured: false
 color: "#B5BBDA"
 type: "Web design and development"
 style: "light"
-industry: "Gaming bar"
+services: ["Front-End Development", "User Experience Design", "User Interface Design"]
 ---
 We created a lightning-fast online publishing platform and online shop outlet
 for Loading Bar, ‘the most popular & least intimidating gaming bars in Greater

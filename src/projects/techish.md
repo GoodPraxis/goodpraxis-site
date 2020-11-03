@@ -12,9 +12,9 @@ image_3: "/images/projects/techish/work-techish-2.svg"
 new_work: true
 featured: true
 color: "#4CFF8B"
-type: "Art Direction; Positioning; Tutelage"
+type: "Campaign"
 style: "light"
-industry: "Non-profit"
+services: ["Branding", "Program delivery"]
 ---
 Tech–ish is a bespoke digital skills training scheme we’re delivering in
 partnership with Outlandish Cooperative for Islington residents.

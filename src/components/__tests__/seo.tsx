@@ -3,16 +3,6 @@ import React from 'react';
 import { getMeta, PureSEO as SEO } from '../seo';
 
 describe('SEO', () => {
-  it('creates correct SEO props', () => {
-    const meta = getMeta({
-      description: 'Foobar description',
-      title: 'FooBar',
-      metaTitle: 'FooBar',
-      image: 'foo.bar',
-    });
-    expect(meta).toMatchSnapshot();
-  });
-
   it('renders the component without any errors', () => {
     renderer.create(<SEO />);
     renderer.create(<SEO title="foobar" />);

@@ -11,7 +11,7 @@ interface ProjectPromoListProps {
           frontmatter: {
             client: string;
             color: string;
-            industry: string;
+            services: string[];
             // eslint-disable-next-line
             main_image: string;
             // eslint-disable-next-line
@@ -41,7 +41,7 @@ const ProjectPromoListPure = (
             <ProjectPromo
               image={project.main_image}
               projectName={project.title}
-              industry={project.industry}
+              industry={project.client}
               capabilities={project.type}
               className="grid-lines"
               backgroundColor={project.color}
@@ -69,7 +69,7 @@ const ProjectPromoList = ({ featured }: {featured?: boolean}) => (
             color
             date(formatString: "MMMM DD, YYYY")
             featured
-            industry
+            services
             main_image
             new_work
             slug

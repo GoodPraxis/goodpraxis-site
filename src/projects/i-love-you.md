@@ -1,7 +1,7 @@
 ---
 title: "I Love You Infinity"
 slug: "i-love-you-infinity"
-client: "I Love You Infinity"
+client: "Lisa Berenson"
 date: "2019-12-04"
 thumbnail: "/images/projects/iloveyou/thumbnail.svg"
 live_url: "https://iloveyouinfinity.com"
@@ -10,11 +10,11 @@ image_1: "/images/projects/iloveyou/mainlogo.svg"
 image_2: "/images/projects/iloveyou/work-luv-1.png"
 image_3: "/images/projects/iloveyou/work-luv-2.svg"
 new_work: false
-featured: true
+featured: false
 color: "#2C2C2C"
 type: "Creative development"
 style: "dark"
-industry: "Non-profit"
+services: ["Web development", "Creative concept execution"]
 ---
 _[I Love You Infinity](https://iloveyouinfinity.com)_ is an autism awareness
 campaign by copywriter [Lisa Berenson](http://thankyouforlookingatmybook.com/)
