@@ -10,15 +10,17 @@
   font-size: 35px;
   font-weight: 500;
   margin: 0;
-  padding: 0;
+  padding: 14px 8px;
   position: absolute;
-  right: 8px;
+  right: 0;
   text-transform: uppercase;
-  top: 14px;
+  top: 0;
   z-index: 99;
 
   @media (min-width: $breakpoint-m) {
+    padding: 0;
     right: 16px;
+    top: 14px;
   }
 
   &:active,

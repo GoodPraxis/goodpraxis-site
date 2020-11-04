@@ -7,7 +7,7 @@ import './main.scss';
 import ProjectPromoList from '../components/project-promo-list';
 
 const IndexPage = () => (
-  <Layout activeItem="Work">
+  <Layout activeItem="Work" description="Work" descriptionTo="/work">
     <SEO title="Good Praxis • Our Work" metaTitle="Good Praxis • Our Work" />
     <ProjectPromoList />
   </Layout>

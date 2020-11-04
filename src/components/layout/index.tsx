@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { Link } from 'gatsby';
 import MenuContext from '../menu-provider/context';
 import MenuToggle from '../menu-toggle';
 import MainMenu from '../menu';
@@ -9,11 +10,15 @@ import MenuInner from '../menu-inner';
 interface LayoutProps {
   children: React.ReactNode;
   activeItem: string;
+  description?: string;
+  descriptionTo?: string;
 }
 
 const SCROLL = 'scroll';
 
-const Layout = ({ activeItem, children } : LayoutProps) => {
+const Layout = ({
+  activeItem, children, description, descriptionTo,
+} : LayoutProps) => {
   const { isMenuOpen, setMenuOpen } = useContext(MenuContext);
 
   const hideMenu = () => setMenuOpen(false);
@@ -26,10 +31,12 @@ const Layout = ({ activeItem, children } : LayoutProps) => {
       <MainMenu activeItem={activeItem} />
       <header className="menu-inner-top header grid">
         <div className="header-title">
-          <h1><a href="/">Good Praxis</a></h1>
+          <h1><Link to="/">Good Praxis</Link></h1>
         </div>
         <div className="header-description">
-          A digital creative agency
+          <Link to={descriptionTo}>
+            { description || 'A digital creative agency' }
+          </Link>
         </div>
         <MenuToggle />
       </header>
@@ -41,6 +48,11 @@ const Layout = ({ activeItem, children } : LayoutProps) => {
       </footer>
     </div>
   );
+};
+
+Layout.defaultProps = {
+  description: null,
+  descriptionTo: '/',
 };
 
 export default Layout;

@@ -37,8 +37,19 @@ export default function Template({
       live_url: liveUrl, services,
     }, html,
   } = markdownRemark;
+  const articleHtml = parse(html) as JSX.Element[];
+  let firstParagraph: JSX.Element;
+  let restOfParagraphs: JSX.Element[] | string;
+
+  try {
+    [firstParagraph] = articleHtml;
+    restOfParagraphs = articleHtml.slice(1);
+  } catch (e) {
+    firstParagraph = parse(html) as JSX.Element;
+    restOfParagraphs = '';
+  }
   return (
-    <Layout activeItem="Work">
+    <Layout activeItem="Work" description="Work" descriptionTo="/work">
       <SEO
         title={`${title} – Good Praxis`}
         metaTitle={`${title} – Good Praxis`}
@@ -73,12 +84,17 @@ export default function Template({
         <div
           className="project-page-description"
         >
-          { parse(html) }
+          { firstParagraph }
         </div>
         <div className="project-page-images">
-          <div className="project-page-image">
+          <div className="project-page-image --main">
             <img src={image1} alt="" />
           </div>
+        </div>
+        <div className="project-page-description">
+          { restOfParagraphs }
+        </div>
+        <div className="project-page-images">
           <div className="project-page-image">
             <img src={image2} alt="" />
           </div>

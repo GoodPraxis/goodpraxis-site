@@ -12,7 +12,6 @@ import ProjectPromoList from '../components/project-promo-list';
 const images = [
   { src: '/images/carousel-2.jpg', alt: '' },
   { src: '/images/carousel-3.jpg', alt: '' },
-  { src: '/images/carousel-1.jpg', alt: '' },
 ];
 
 const clients = [
@@ -24,6 +23,8 @@ const clients = [
   { name: 'Netil Radio', image: 'logo-netil.svg' },
   { name: 'Magic the Gathering', image: 'logo-magic.svg' },
   { name: 'Islington Council', image: 'logo-islington.svg' },
+  { name: 'Dungeons & Dragons', image: 'logo-dandd.svg' },
+  { name: 'Lincolnshire Refugee Doctor Project', image: 'logo-lrdp.svg' },
 ];
 
 const IndexPage = () => (
@@ -47,7 +48,7 @@ const IndexPage = () => (
       <ProjectPromoList featured />
     </section>
     <section className="bar-links">
-      <BarLink to="/work">View all work</BarLink>
+      <BarLink to="/work">See more work</BarLink>
       <BarLink to="/studio#contact-us">Work with us on your next project</BarLink>
     </section>
     <hr />

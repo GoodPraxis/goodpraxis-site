@@ -17,12 +17,9 @@ style: "light"
 services: ["Branding", "Program delivery"]
 ---
 Tech–ish is a bespoke digital skills training scheme we’re delivering in
-partnership with Outlandish Cooperative for Islington residents.
+partnership with Outlandish co-operative for Islington residents.
 
-The pandemic brought about lots of job insecurity to many around the world and a
-change in work available for the foreseeable future. This scheme was devised for
-Islington residents that needed a helping hand in entering a new job market, or
-for those that just wanted to gain confidence in using digital tools.
-
-This scheme is largely signposting to existing content and we came up with an
-identity that aims to communicate that whilst visually unify partners.
+The global pandemic brought about lots of job insecurity to many around the
+world and a change in work available for the foreseeable future. This scheme was
+devised for Islington residents that needed a helping hand in entering a new job
+market, or for those that just wanted to gain confidence in using digital tools.

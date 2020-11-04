@@ -15,29 +15,29 @@ const IMAGE_PATH = '/images/member-';
 
 const teamMembers = [
   {
-    name: 'Maciek',
+    name: 'Maciej Baron',
     role: 'Developer',
     photo: `${IMAGE_PATH}maciek.jpg`,
   },
   {
-    name: 'Caitlin',
+    name: 'Caitlin Brady',
     role: 'Strategist',
     photo: `${IMAGE_PATH}caitlin.jpg`,
   },
   {
-    name: 'Igor',
+    name: 'Igor Strapko',
     role: 'Developer',
     photo: `${IMAGE_PATH}igor.jpg`,
   },
   {
-    name: 'Chris',
+    name: 'Chris Droom',
     role: 'Designer',
     photo: `${IMAGE_PATH}chris.jpg`,
   },
 ];
 
 const IndexPage = () => (
-  <Layout activeItem="Studio">
+  <Layout activeItem="Studio" description="Studio" descriptionTo="/studio">
     <SEO title="Good Praxis • Studio" metaTitle="Good Praxis • Studio" />
     <Slideshow images={images} />
     <section className="hero-area grid">

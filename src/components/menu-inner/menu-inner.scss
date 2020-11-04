@@ -17,12 +17,14 @@
   .menu-list-item {
     box-sizing: border-box;
     grid-column: 1 / span 2;
-    padding-left: 67px;
+    padding-left: 27.344%;
     width: 100%;
-  }
 
-  @media (min-width: $breakpoint-m) {
-    .menu-list-item {
+    @media (min-width: $breakpoint-s) {
+      padding-left: 67px;
+    }
+
+    @media (min-width: $breakpoint-m) {
       grid-column: 2;
       padding-left: 0;
     }
@@ -30,9 +32,9 @@
 }
 
 .menu-inner-top {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 24px;
   text-transform: uppercase;
 
   &.grid {
