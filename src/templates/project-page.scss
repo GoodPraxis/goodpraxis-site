@@ -70,7 +70,19 @@
 }
 
 .project-page-image {
-  width: calc(50% - 16px);
+  width: 100%;
+
+  @media (min-width: $breakpoint-m) {
+    width: calc(50% - 16px);
+  }
+
+  &~& {
+    margin-top: 16px;
+
+    @media (min-width: $breakpoint-m) {
+      margin-top: 0;
+    }
+  }
 
   img {
     display: block;
