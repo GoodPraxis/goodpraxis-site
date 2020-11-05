@@ -52,8 +52,12 @@ test:
     reports:
       junit: merged-junit.xml
   only:
-  - merge_requests
-  - tags
+    refs:
+    - merge_requests
+    - tags
+    changes:
+      - src/**/*
+      - cypress/**/*
 
 review:
   stage: review

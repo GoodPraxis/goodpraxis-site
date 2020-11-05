@@ -50,5 +50,11 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-typescript',
     'gatsby-plugin-remove-serviceworker',
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: 'https://120b47edc1d54bc48cb41fa89573f403@o472257.ingest.sentry.io/5505617',
+      },
+    },
   ],
 };
