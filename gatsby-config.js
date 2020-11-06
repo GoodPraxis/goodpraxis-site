@@ -61,7 +61,7 @@ module.exports = {
       options: {
         async: false,
         defer: false,
-        args: '?onload=onloadCallback&render=explicit',
+        args: '?render=explicit',
       },
     },
   ],
