@@ -46,4 +46,18 @@
   .gp-textarea {
     margin-top: 8px;
   }
+
+  .gp-button:disabled {
+    cursor: auto;
+    opacity: .5;
+  }
+}
+
+.contact-form-message {
+  font-size: 26px;
+  grid-column: 1 / span 2;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column: 2 / span 2;
+  }
 }

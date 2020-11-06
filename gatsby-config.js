@@ -56,5 +56,13 @@ module.exports = {
         dsn: 'https://120b47edc1d54bc48cb41fa89573f403@o472257.ingest.sentry.io/5505617',
       },
     },
+    {
+      resolve: 'gatsby-plugin-recaptcha',
+      options: {
+        async: false,
+        defer: false,
+        args: '?onload=onloadCallback&render=explicit',
+      },
+    },
   ],
 };

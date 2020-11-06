@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
+import Recaptcha from 'react-recaptcha';
+import fetch from 'cross-fetch';
+
 import {
   TextArea, Input, Checkbox,
 } from '@goodpraxis/components';
 import './contact-form.scss';
+
+const URL = 'https://goodpraxis.coop/contact/';
 
 const ContactForm = () => {
   // Abstract fields to remove code smell
@@ -18,12 +23,27 @@ const ContactForm = () => {
     details: true,
   });
 
-  const onSubmit = (event: React.FormEvent) => {
+  const [verified, setVerified] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const onSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const validEmail = /\S+@\S+\.\S+/.test(email);
     setValidField({ name: !!name, email: validEmail, details: !!details });
     if (name && validEmail && details) {
-      // @TODO: Submit form
+      setSubmitting(true);
+
+      const body = new FormData();
+      body.append('name', name);
+      body.append('email', email);
+      body.append('digitalProblem', digitalProblem ? 'true' : '');
+      body.append('requestProposal', requestProposal ? 'true' : '');
+      body.append('doNotKnow', doNotKnow ? 'true' : '');
+      body.append('details', details);
+      body.append('g-recaptcha-response', verified);
+      await fetch(URL, { method: 'POST', body }).catch(() => console.error('ISSUE!'));
+      setMessage('Thank you! We will reply to you shortly.');
     }
   };
 
@@ -123,8 +143,21 @@ const ContactForm = () => {
         </label>
       </div>
       <div className="contact-form-field">
-        <input type="submit" className="gp-button" value="Enquire" />
+        <Recaptcha
+          sitekey="6Lf_2N8ZAAAAAL00OxRfdnt8hB6KweR8ffGf2crq"
+          verifyCallback={setVerified}
+        />
       </div>
+      <div className="contact-form-field">
+        <input
+          type="submit"
+          className="gp-button"
+          value="Enquire"
+          disabled={!verified || submitting}
+        />
+      </div>
+      { message
+        ? (<div className="contact-form-message">{message}</div>) : '' }
     </form>
   );
 };
