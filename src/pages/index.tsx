@@ -10,8 +10,18 @@ import BarLink from '../components/bar-link';
 import ProjectPromoList from '../components/project-promo-list';
 
 const images = [
-  { src: '/images/carousel-2.jpg', alt: '' },
-  { src: '/images/carousel-3.jpg', alt: '' },
+  {
+    src: '/images/carousel-1.jpg',
+    alt: 'Woman sitting at her desk, pointing at her laptop',
+  },
+  {
+    src: '/images/carousel-2.jpg',
+    alt: 'A smiling man holding a dog, sitting at a table. Another man looks at him.',
+  },
+  {
+    src: '/images/carousel-3.jpg',
+    alt: 'A man facing the camera doing the peace sign.',
+  },
 ];
 
 const clients = [
