@@ -75,7 +75,7 @@ export default function Template({
             ? (
               <DetailsBox title="Website">
                 <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                  {liveUrl}
+                  {liveUrl.split('://')[1]}
                 </a>
               </DetailsBox>
             )

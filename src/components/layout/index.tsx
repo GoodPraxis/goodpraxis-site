@@ -7,6 +7,8 @@ import MainMenu from '../menu';
 import './layout.scss';
 import MenuInner from '../menu-inner';
 
+const DEFAULT_DESCRIPTION = 'A digital creative agency';
+
 interface LayoutProps {
   children: React.ReactNode;
   activeItem: string;
@@ -26,6 +28,8 @@ const Layout = ({
   useEffect(() => document.addEventListener(SCROLL, hideMenu), [setMenuOpen]);
   useEffect(() => () => document.removeEventListener(SCROLL, hideMenu), []);
 
+  const pageDescription = description || DEFAULT_DESCRIPTION;
+
   return (
     <div className={`main-layout-wrapper${isMenuOpen ? ' menu-is-open' : ''}`}>
       <MainMenu activeItem={activeItem} />
@@ -34,9 +38,11 @@ const Layout = ({
           <h1><Link to="/">Good Praxis</Link></h1>
         </div>
         <div className="header-description">
-          <Link to={descriptionTo}>
-            { description || 'A digital creative agency' }
-          </Link>
+          {descriptionTo ? (
+            <Link to={descriptionTo}>
+              { pageDescription }
+            </Link>
+          ) : pageDescription }
         </div>
         <MenuToggle />
       </header>
@@ -52,7 +58,7 @@ const Layout = ({
 
 Layout.defaultProps = {
   description: null,
-  descriptionTo: '/',
+  descriptionTo: null,
 };
 
 export default Layout;
