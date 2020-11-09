@@ -35,20 +35,24 @@ const clients = [
   { name: 'Islington Council', image: 'logo-islington.svg' },
   { name: 'Dungeons & Dragons', image: 'logo-dandd.svg' },
   { name: 'Lincolnshire Refugee Doctor Project', image: 'logo-lrdp.svg' },
+  { name: 'Eat Work Art', image: 'logo-ewa.svg' },
+  { name: 'SharpEnd', image: 'logo-sharpend.svg' },
+  { name: 'The Drum', image: 'logo-thedrum.svg' },
+  { name: 'Outlandish', image: 'logo-outlandish.svg' },
 ];
 
 const IndexPage = () => (
   <Layout activeItem="Home">
     <SEO
-      title="Good Praxis • A digital creative agency"
-      metaTitle="Good Praxis • A digital creative agency"
+      title="GOOD PRAXIS • A digital creative agency"
+      metaTitle="GOOD PRAXIS • A digital creative agency"
     />
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">
-        We’re an award-winning digital innovation co-operative. We
-        collaboratively develop tech products for organisations whose aim is to
-        rebalance the inequalities of society.
+        We’re an award-winning digital innovation co-operative. We collaboratively
+        develop tech products and brands for organisations whose aim is to rebalance
+        the inequalities of society, or sometimes just for fun.
       </div>
     </section>
     <section className="project-promos">

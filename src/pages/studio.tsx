@@ -22,7 +22,7 @@ const teamMembers = [
   },
   {
     name: 'Caitlin Brady',
-    role: 'Strategist',
+    role: 'Creative Strategist',
     photo: `${IMAGE_PATH}caitlin.jpg`,
   },
   {
@@ -39,17 +39,27 @@ const teamMembers = [
 
 const IndexPage = () => (
   <Layout activeItem="Studio" description="Studio">
-    <SEO title="Good Praxis • Studio" metaTitle="Good Praxis • Studio" />
+    <SEO title="GOOD PRAXIS • Studio" metaTitle="GOOD PRAXIS • Studio" />
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">
-        Good Praxis is made up of two designers and two developers, all practitioners.
-        We share a fondness for our craft and an interest in the world around us.
+        Good Praxis is made up of four practitioners: two developers, a designer
+        and a creative strategist. As a co-operative, we believe in collaborating to create
+        a fairer, more inclusive world, and we put our theory into practice too.
+        We build trusted, engaging, and considered brands and tech products for a
+        more egalitarian society, until Good Praxis is common praxis.
       </div>
     </section>
     <section className="team-area grid">
       <h2 className="heading">Our team</h2>
       <TeamList members={teamMembers} />
+    </section>
+    <section className="grid">
+      <div className="hero-area main-description">
+        Our core team is able to expand to a broader circle of&nbsp;specialists within
+        Co-Tech, a network of digital companies in the co-operative space,
+        allowing us to scale to meet ambitions.
+      </div>
     </section>
     <section className="form-area">
       <ContactForm />

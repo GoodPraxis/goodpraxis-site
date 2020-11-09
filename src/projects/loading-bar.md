@@ -10,7 +10,7 @@ image_1: "/images/projects/loadingbar/hero.png"
 image_2: "/images/projects/loadingbar/work-1.png"
 image_3: "/images/projects/loadingbar/work-2.png"
 new_work: false
-featured: false
+featured: true
 color: "#B5BBDA"
 type: "Web design and development"
 style: "light"

@@ -51,8 +51,8 @@ export default function Template({
   return (
     <Layout activeItem="Work" description="Work" descriptionTo="/work">
       <SEO
-        title={`${title} – Good Praxis`}
-        metaTitle={`${title} – Good Praxis`}
+        title={`GOOD PRAXIS • ${title}`}
+        metaTitle={`GOOD PRAXIS • ${title}`}
         image={getOGImage([image1, image2, image3])}
         description={`A project for ${client} created by Good Praxis`}
       />

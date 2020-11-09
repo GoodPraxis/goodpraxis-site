@@ -1,5 +1,5 @@
 ---
-title: "Tech–ish"
+title: "TECH–ISH"
 slug: "techish"
 client: "Islington Council"
 date: "2020-10-06"
