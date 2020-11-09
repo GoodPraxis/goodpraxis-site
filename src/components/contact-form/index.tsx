@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Recaptcha from 'react-recaptcha';
 import fetch from 'cross-fetch';
 
 import {
@@ -23,7 +22,6 @@ const ContactForm = () => {
     details: true,
   });
 
-  const [verified, setVerified] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [message, setMessage] = useState('');
 
@@ -41,7 +39,6 @@ const ContactForm = () => {
       body.append('requestProposal', requestProposal ? 'true' : '');
       body.append('doNotKnow', doNotKnow ? 'true' : '');
       body.append('details', details);
-      body.append('g-recaptcha-response', verified);
       await fetch(URL, { method: 'POST', body }).catch(() => console.error('ISSUE!'));
       setMessage('Thank you! We will reply to you shortly.');
     }
@@ -143,17 +140,11 @@ const ContactForm = () => {
         </label>
       </div>
       <div className="contact-form-field">
-        <Recaptcha
-          sitekey="6Lf_2N8ZAAAAAL00OxRfdnt8hB6KweR8ffGf2crq"
-          verifyCallback={setVerified}
-        />
-      </div>
-      <div className="contact-form-field">
         <input
           type="submit"
           className="gp-button"
           value="Enquire"
-          disabled={!verified || submitting}
+          disabled={submitting}
         />
       </div>
       { message
