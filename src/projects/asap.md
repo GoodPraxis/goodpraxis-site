@@ -2,7 +2,7 @@
 title: "ASAP PLZ"
 slug: "asap-plz"
 client: "YRS TRULY x Good Praxis"
-date: "2020-06-01"
+date: "2020-05-01"
 thumbnail: "/images/projects/asap/thumbnail.png"
 live_url: "https://asapthegame.com"
 main_image: "/images/projects/asap/asap-cartridge.png"
@@ -14,7 +14,7 @@ featured: true
 color: "#484848"
 type: "Design and execution"
 style: "dark"
-services: ["Design", "Programming", "Music composition"]
+services: ["Game design", "Game development", "Cartridge design", "Art direction", "Campaign direction", "Music composition"]
 ---
 ASAP PLZ is an authentic retro game about working in marketing. Made in
 partnership with marketing gurus [YRS TRULY](https://yrstruly.uk/), it’s a

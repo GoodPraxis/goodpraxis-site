@@ -1,8 +1,8 @@
 ---
-title: "Netil Radio Website Relaunch"
+title: "Platform relaunch"
 slug: "netil-radio"
 client: "Netil Radio"
-date: "2019-11-04"
+date: "2020-01-01"
 thumbnail: "/images/projects/netilradio/promo-netil-small.svg"
 live_url: "http://netilradio.com"
 main_image: "/images/projects/netilradio/netilradio.svg"
@@ -14,7 +14,7 @@ featured: true
 color: "#007EFF"
 type: "Web design and development"
 style: "dark"
-services: ["Web Design", "Web Development"]
+services: ["Brand development", "Front-end development", "User experience design", "User interface design"]
 ---
 Netil Radio have approached us to redesign and build a new version of their website for their online radio.
 

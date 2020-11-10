@@ -25,20 +25,20 @@ const images = [
 ];
 
 const clients = [
-  { name: 'Pentagram', image: 'logo-pentagram.svg' },
-  { name: 'Hasbro', image: 'logo-hasbro.svg' },
-  { name: 'YRS TRULY', image: 'logo-yrstruly.svg' },
-  { name: 'Prince\'s Trust', image: 'logo-pt.svg' },
-  { name: 'Loading Bar', image: 'logo-loading.svg' },
-  { name: 'Netil Radio', image: 'logo-netil.svg' },
-  { name: 'Magic the Gathering', image: 'logo-magic.svg' },
-  { name: 'Islington Council', image: 'logo-islington.svg' },
-  { name: 'Dungeons & Dragons', image: 'logo-dandd.svg' },
-  { name: 'Lincolnshire Refugee Doctor Project', image: 'logo-lrdp.svg' },
-  { name: 'Eat Work Art', image: 'logo-ewa.svg' },
-  { name: 'SharpEnd', image: 'logo-sharpend.svg' },
-  { name: 'The Drum', image: 'logo-thedrum.svg' },
-  { name: 'Outlandish', image: 'logo-outlandish.svg' },
+  { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },
+  { name: 'Hasbro', image: 'logo-hasbro-cell.svg' },
+  { name: 'YRS TRULY', image: 'logo-yrstruly-cell.svg' },
+  { name: 'Prince\'s Trust', image: 'logo-pt-cell.svg' },
+  { name: 'Loading Bar', image: 'logo-loading-cell.svg' },
+  { name: 'Netil Radio', image: 'logo-netil-cell.svg' },
+  { name: 'Magic the Gathering', image: 'logo-magic-cell.svg' },
+  { name: 'Islington Council', image: 'logo-islington-cell.svg' },
+  { name: 'Dungeons & Dragons', image: 'logo-d_d-cell.svg' },
+  { name: 'Lincolnshire Refugee Doctor Project', image: 'logo-lrdp-cell.svg' },
+  { name: 'Eat Work Art', image: 'logo-ewa-cell.svg' },
+  { name: 'SharpEnd', image: 'logo-sharpend-cell.svg' },
+  { name: 'The Drum', image: 'logo-thedrum-cell.svg' },
+  { name: 'Outlandish', image: 'logo-outlandish-cell.svg' },
 ];
 
 const IndexPage = () => (

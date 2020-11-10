@@ -2,7 +2,7 @@
 title: "TECH–ISH"
 slug: "techish"
 client: "Islington Council"
-date: "2020-10-06"
+date: "2020-03-01"
 thumbnail: "/images/projects/techish/thumbnail.svg"
 live_url: "http://bit.ly/techishskills"
 main_image: "/images/projects/techish/promo.svg"
@@ -14,7 +14,7 @@ featured: true
 color: "#4CFF8B"
 type: "Campaign"
 style: "light"
-services: ["Branding", "Program delivery"]
+services: ["Brand creation", "Programme design", "Programme delivery", "Communications", "Print design"]
 ---
 Tech–ish is a bespoke digital skills training scheme we’re delivering in
 partnership with Outlandish co-operative for Islington residents.

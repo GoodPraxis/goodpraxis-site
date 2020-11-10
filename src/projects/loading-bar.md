@@ -1,8 +1,8 @@
 ---
-title: "Loading Bar Website Relaunch"
+title: "Platform relaunch"
 slug: "loading-bar"
 client: "Loading Bar"
-date: "2020-10-01"
+date: "2020-02-01"
 thumbnail: "/images/projects/loadingbar/thumbnail.png"
 live_url: "https://loading.bar"
 main_image: "/images/projects/loadingbar/promo.png"
@@ -14,7 +14,7 @@ featured: true
 color: "#B5BBDA"
 type: "Web design and development"
 style: "light"
-services: ["Front-End Development", "User Experience Design", "User Interface Design"]
+services: ["Brand development", "Front-end development", "User experience design", "User interface design", "E-commerce"]
 ---
 We created a lightning-fast online publishing platform and online shop outlet
 for Loading Bar, ‘the most popular & least intimidating gaming bars in Greater
