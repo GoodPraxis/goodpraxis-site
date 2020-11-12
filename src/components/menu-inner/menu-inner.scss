@@ -2,22 +2,27 @@
 @import '../../node_modules/@goodpraxis/components/src/scss/grid';
 
 .menu-inner {
-  .menu-list {
+  .menu-list>li {
     @extend %grid;
     grid-row-gap: 0;
-    margin: 40px 8px 0;
+    // margin: 40px 8px 0;
+    margin: 0;
     overflow: hidden;
     padding: 0;
 
     @media (min-width: $breakpoint-m) {
-      margin: 40px 16px 0;
+      // margin: 40px 16px 0;
+      margin: 0;
     }
   }
 
   .menu-list-item {
+    @extend %grid;
     box-sizing: border-box;
-    grid-column: 1 / span 2;
-    padding-left: 27.344%;
+    grid-row-gap: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0 0 27.344%;
     width: 100%;
 
     @media (min-width: $breakpoint-s) {
@@ -25,8 +30,18 @@
     }
 
     @media (min-width: $breakpoint-m) {
-      grid-column: 2;
+      margin: 0;
       padding-left: 0;
+    }
+  }
+
+  .menu-list-item > a {
+    align-items: center;
+    display: flex;
+    grid-column: 1 / span 2;
+
+    @media (min-width: $breakpoint-m) {
+      grid-column: 2 / span 3;
     }
   }
 }

@@ -27,3 +27,7 @@ broadcast venue updates — especially pressing in the current climate.
 We based the UI and UX of the site around elements of the existing brand, being
 careful to reinforce the playful and welcoming nature present in the bars
 themselves.
+
+On the technical side, we used Gatsby.js and a headless instance of Wordpress,
+allowing us to create an incredibly fast and smooth experience, while allowing
+our client to edit and update content on their own.
