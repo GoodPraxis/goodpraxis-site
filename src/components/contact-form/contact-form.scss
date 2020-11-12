@@ -47,6 +47,12 @@
     margin-top: 8px;
   }
 
+  .gp-button {
+    @media (min-width: $breakpoint-m) {
+      width: calc(50% - 15px);
+    }
+  }
+
   .gp-button:disabled {
     cursor: auto;
     opacity: .5;
