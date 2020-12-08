@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import { DetailsBox, MenuList } from '@goodpraxis/components';
 import MenuContext from '../menu-provider/context';
@@ -10,6 +10,8 @@ export const MENU_ITEMS = [
   { href: '/studio', title: 'Studio' },
 ];
 
+const CONTACT_EMAIL = 'hello@goodpraxis.coop';
+
 interface MenuInnerProps {
   activeItem: string;
 }
@@ -20,6 +22,9 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
   const renderLink = ({ href, title } : {href: string, title: string}) => (
     <Link to={href} onClick={() => setMenuOpen(false)}>{title}</Link>
   );
+  const [email, setEmail] = useState('');
+
+  useEffect(() => setEmail(CONTACT_EMAIL));
 
   return (
     <section className="menu-inner">
@@ -58,7 +63,7 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
             <a href="tel:+447803171093">+44(0)7803&nbsp;171&nbsp;093</a>
           </DetailsBox>
           <DetailsBox title="Email">
-            <a href="mailto:hello@goodpraxis.coop">hello@goodpraxis.coop</a>
+            <a href={`mailto:${email}`}>{email}</a>
           </DetailsBox>
           <DetailsBox title="Follow">
             <>
