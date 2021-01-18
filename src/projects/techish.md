@@ -10,7 +10,7 @@ hero_image: "/images/projects/techish/work-techish-hero.svg"
 hero_video: ""
 image_1: "/images/projects/techish/work-techish-1.svg"
 image_2: "/images/projects/techish/work-techish-2.svg"
-new_work: true
+new_work: false
 featured: true
 color: "#4CFF8B"
 type: "Campaign"

@@ -11,7 +11,7 @@ hero_video: ""
 image_1: "/images/projects/loadingbar/work-1.png"
 image_2: "/images/projects/loadingbar/work-2.png"
 new_work: false
-featured: true
+featured: false
 color: "#c395e0,#9ae9d7"
 type: "Web design and development"
 style: "light"

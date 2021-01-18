@@ -1,5 +1,5 @@
 ---
-title: "Platform relaunch"
+title: "Website relaunch"
 slug: "netil-radio"
 client: "Netil Radio"
 date: "2020-01-01"
