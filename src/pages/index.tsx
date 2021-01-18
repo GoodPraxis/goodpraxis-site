@@ -12,15 +12,19 @@ import ProjectPromoList from '../components/project-promo-list';
 const images = [
   {
     src: '/images/carousel-1.jpg',
-    alt: 'Woman sitting at her desk, pointing at her laptop',
+    alt: 'Man looking at a book. A woman can be seen in the background, smiling.',
   },
   {
     src: '/images/carousel-2.jpg',
-    alt: 'A smiling man holding a dog, sitting at a table. Another man looks at him.',
+    alt: 'Four people sitting around a white, round table.',
   },
   {
     src: '/images/carousel-3.jpg',
-    alt: 'A man facing the camera doing the peace sign.',
+    alt: 'A woman, sitting by a desk, facing backwards, viewed through a window.',
+  },
+  {
+    src: '/images/carousel-4.jpg',
+    alt: 'Man working at a computer. Above him are books places on shelves.',
   },
 ];
 
