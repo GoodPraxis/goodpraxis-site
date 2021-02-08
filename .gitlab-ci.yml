@@ -36,6 +36,7 @@ build:static:
 
 test:
   stage: test
+  needs: []
   image: cypress/base:10
   script:
   - npm ci --cache .npm --prefer-offline
@@ -61,6 +62,7 @@ test:
 
 review:
   stage: review
+  needs: ["build:static"]
   script:
     - rsync -av --delete public /srv/nginx/pages/$CI_PROJECT_PATH_SLUG-$CI_BUILD_REF_SLUG
   dependencies:
