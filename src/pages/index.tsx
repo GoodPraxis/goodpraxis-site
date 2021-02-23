@@ -19,10 +19,6 @@ const images = [
     alt: 'Four people sitting around a white, round table.',
   },
   {
-    src: '/images/carousel-3.jpg',
-    alt: 'A woman, sitting by a desk, facing backwards, viewed through a window.',
-  },
-  {
     src: '/images/carousel-4.jpg',
     alt: 'Man working at a computer. Above him are books places on shelves.',
   },
