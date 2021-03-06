@@ -52,6 +52,8 @@ test:
     - cypress/videos
     reports:
       junit: merged-junit.xml
+  cache:
+    policy: pull
   only:
     refs:
     - merge_requests
@@ -62,6 +64,7 @@ test:
 
 review:
   stage: review
+  cache: {}
   needs: ["build:static"]
   script:
     - rsync -av --delete public /srv/nginx/pages/$CI_PROJECT_PATH_SLUG-$CI_BUILD_REF_SLUG
@@ -80,6 +83,7 @@ review:
 
 stop_review:
   stage: review
+  cache: {}
   script:
     - rm -rf public /srv/nginx/pages/$CI_PROJECT_PATH_SLUG-$CI_BUILD_REF_SLUG
   variables:
@@ -97,6 +101,7 @@ stop_review:
 
 deploy:staging:
   stage: deploy
+  cache: {}
   script:
     - rsync -av --delete public /srv/nginx/pages/$CI_PROJECT_PATH_SLUG-staging
   dependencies:
@@ -114,6 +119,7 @@ deploy:staging:
 
 deploy:live:
   stage: deploy
+  cache: {}
   script:
     - rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress public/ root@$LIVE_DOMAIN:/var/www/html
   dependencies:

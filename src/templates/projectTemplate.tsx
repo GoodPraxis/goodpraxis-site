@@ -33,8 +33,8 @@ export default function Template({
   const { markdownRemark } = data; // data.markdownRemark holds your post data
   const {
     frontmatter: {
-      client, title, slug, image_1: image1, image_2: image2, image_3: image3,
-      live_url: liveUrl, services,
+      client, title, slug, hero_image: heroImage, hero_video: heroVideo,
+      image_1: image1, image_2: image2, live_url: liveUrl, services,
     }, html,
   } = markdownRemark;
   const articleHtml = parse(html) as JSX.Element[];
@@ -53,7 +53,7 @@ export default function Template({
       <SEO
         title={`GOOD PRAXIS • ${title}`}
         metaTitle={`GOOD PRAXIS • ${title}`}
-        image={getOGImage([image1, image2, image3])}
+        image={getOGImage([heroImage || '', image1, image2])}
         description={`A project for ${client} created by Good Praxis`}
       />
       <div className="project-page grid">
@@ -88,7 +88,11 @@ export default function Template({
         </div>
         <div className="project-page-images">
           <div className="project-page-image --main">
-            <img src={image1} alt="" />
+            { heroVideo ? (
+              <video src={heroVideo} muted loop autoPlay />
+            ) : (
+              <img src={heroImage} alt="" />
+            )}
           </div>
         </div>
         <div className="project-page-description">
@@ -96,10 +100,10 @@ export default function Template({
         </div>
         <div className="project-page-images">
           <div className="project-page-image">
-            <img src={image2} alt="" />
+            <img src={image1} alt="" />
           </div>
           <div className="project-page-image">
-            <img src={image3} alt="" />
+            <img src={image2} alt="" />
           </div>
         </div>
       </div>
@@ -123,9 +127,10 @@ export const pageQuery = graphql`
         client
         services
         live_url
+        hero_image
+        hero_video
         image_1
         image_2
-        image_3
       }
     }
   }

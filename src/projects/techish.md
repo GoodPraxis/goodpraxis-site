@@ -6,9 +6,10 @@ date: "2020-03-01"
 thumbnail: "/images/projects/techish/thumbnail.svg"
 live_url: "http://bit.ly/techishskills"
 main_image: "/images/projects/techish/promo.svg"
-image_1: "/images/projects/techish/work-techish-hero.svg"
-image_2: "/images/projects/techish/work-techish-1.svg"
-image_3: "/images/projects/techish/work-techish-2.svg"
+hero_image: "/images/projects/techish/work-techish-hero.svg"
+hero_video: ""
+image_1: "/images/projects/techish/work-techish-1.svg"
+image_2: "/images/projects/techish/work-techish-2.svg"
 new_work: true
 featured: true
 color: "#4CFF8B"

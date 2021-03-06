@@ -8,9 +8,7 @@ import Slideshow from '../components/slideshow';
 import './main.scss';
 import ContactForm from '../components/contact-form';
 
-const images = [
-  { src: '/images/photo-studio.jpg', alt: '' },
-];
+const images = [{ src: '/images/photo-studio.jpg', alt: '' }];
 
 const IMAGE_PATH = '/images/member-';
 

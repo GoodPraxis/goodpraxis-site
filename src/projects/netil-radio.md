@@ -6,9 +6,10 @@ date: "2020-01-01"
 thumbnail: "/images/projects/netilradio/promo-netil-small.svg"
 live_url: "http://netilradio.com"
 main_image: "/images/projects/netilradio/netilradio.svg"
-image_1: "/images/projects/netilradio/hero.svg"
-image_2: "/images/projects/netilradio/work-1.png"
-image_3: "/images/projects/netilradio/work-2.jpg"
+hero_image: "/images/projects/netilradio/hero.svg"
+hero_video: ""
+image_1: "/images/projects/netilradio/work-1.png"
+image_2: "/images/projects/netilradio/work-2.jpg"
 new_work: false
 featured: true
 color: "#007EFF"

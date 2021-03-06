@@ -6,9 +6,10 @@ date: "2020-05-01"
 thumbnail: "/images/projects/asap/thumbnail.png"
 live_url: "https://asapthegame.com"
 main_image: "/images/projects/asap/asap-cartridge.png"
-image_1: "/images/projects/asap/promo-asap.jpg"
-image_2: "/images/projects/asap/screenshot-1.png"
-image_3: "/images/projects/asap/screenshot-2.png"
+hero_image: "/images/projects/asap/promo-asap.jpg"
+hero_video: ""
+image_1: "/images/projects/asap/screenshot-1.png"
+image_2: "/images/projects/asap/screenshot-2.png"
 new_work: false
 featured: false
 color: "#484848"

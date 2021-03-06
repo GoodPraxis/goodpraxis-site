@@ -6,9 +6,10 @@ date: "2020-06-01"
 thumbnail: "/images/projects/iloveyou/thumbnail.svg"
 live_url: "https://iloveyouinfinity.com"
 main_image: "/images/projects/iloveyou/logo.svg"
-image_1: "/images/projects/iloveyou/mainlogo.svg"
-image_2: "/images/projects/iloveyou/work-luv-1.png"
-image_3: "/images/projects/iloveyou/work-luv-2.svg"
+hero_image: "/images/projects/iloveyou/mainlogo.svg"
+hero_video: ""
+image_1: "/images/projects/iloveyou/work-luv-1.png"
+image_2: "/images/projects/iloveyou/work-luv-2.svg"
 new_work: false
 featured: false
 color: "#2C2C2C"
