@@ -68,6 +68,7 @@ test:
 
 uptime:
   stage: test
+  cache: {}
   needs: []
   only:
     - schedules
@@ -128,6 +129,8 @@ deploy:staging:
   only:
     refs:
       - master
+  except:
+   - schedules
   tags:
     - nginx
     - review-apps
