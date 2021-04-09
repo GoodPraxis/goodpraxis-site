@@ -20,7 +20,7 @@ cache:
     - cache/Cypress
 build:static:
   stage: build
-  image: cypress/base:10
+  image: cypress/base:12
   before_script:
   - npm ci --cache .npm --prefer-offline
   script:
@@ -39,7 +39,7 @@ build:static:
 test:
   stage: test
   needs: []
-  image: cypress/base:10
+  image: cypress/base:12
   script:
   - npm ci --cache .npm --prefer-offline
   - npx cypress cache path
