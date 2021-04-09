@@ -29,6 +29,8 @@ build:static:
   artifacts:
     paths:
       - public/
+  except:
+  - schedules
   only:
   - merge_requests
   - master
@@ -54,6 +56,8 @@ test:
       junit: merged-junit.xml
   cache:
     policy: pull
+  except:
+  - schedules
   only:
     refs:
     - merge_requests
@@ -61,6 +65,18 @@ test:
     changes:
       - src/**/*
       - cypress/**/*
+
+uptime:
+  stage: test
+  needs: []
+  only:
+    - schedules
+  script:
+    - curl -sL -w "%{http_code}" -I "goodpraxis.coop" -o /dev/null | grep 200
+  tags:
+    - nginx
+    - review-apps
+    - goodpraxis
 
 review:
   stage: review
