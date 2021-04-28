@@ -4,5 +4,8 @@
   "rules": {
     "sh-waqar/declaration-use-variable": ["/color/", "font-family"],
     "number-leading-zero": "never"
-  }
+  },
+  "ignoreFiles": [
+    "cache/**/*.scss"
+  ]
 }

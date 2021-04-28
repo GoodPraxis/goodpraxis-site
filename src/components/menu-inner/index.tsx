@@ -48,13 +48,13 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
         <div className="menu-inner-address">
           <DetailsBox title="Address">
             <address>
-              149 Fonthill Rd.
+              113-115 Fonthill Rd.
               <br />
               Finsbury Park
               <br />
               London
               <br />
-              N4&nbsp;3HF
+              N4&nbsp;3HH
             </address>
           </DetailsBox>
         </div>
