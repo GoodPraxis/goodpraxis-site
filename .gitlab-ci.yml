@@ -74,6 +74,7 @@ uptime:
     - schedules
   script:
     - curl -sL -w "%{http_code}" -I "goodpraxis.coop" -o /dev/null | grep 200
+    - curl -sL -w "%{http_code}" -I "goodpraxis.link" -o /dev/null | grep 200
   tags:
     - nginx
     - review-apps
