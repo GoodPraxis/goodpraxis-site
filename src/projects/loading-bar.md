@@ -5,14 +5,14 @@ client: "Loading Bar"
 date: "2020-02-01"
 thumbnail: "/images/projects/loadingbar/thumbnail.png"
 live_url: "https://loading.bar"
-main_image: "/images/projects/loadingbar/promo.png"
+main_image: "/images/projects/loadingbar/promo-new.png"
 hero_image: "/images/projects/loadingbar/hero.png"
 hero_video: ""
 image_1: "/images/projects/loadingbar/work-1.png"
 image_2: "/images/projects/loadingbar/work-2.png"
 new_work: false
 featured: true
-color: "#B5BBDA"
+color: "#c395e0,#9ae9d7"
 type: "Web design and development"
 style: "light"
 services: ["Brand development", "Front-end development", "User experience design", "User interface design", "E-commerce"]
