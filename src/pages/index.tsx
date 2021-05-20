@@ -20,7 +20,7 @@ const images = [
   },
   {
     src: '/images/carousel-4.jpg',
-    alt: 'Man working at a computer. Above him are books places on shelves.',
+    alt: 'Man working at a computer. Above him are books placed on shelves.',
   },
 ];
 
@@ -39,6 +39,7 @@ const clients = [
   { name: 'SharpEnd', image: 'logo-sharpend-cell.svg' },
   { name: 'The Drum', image: 'logo-thedrum-cell.svg' },
   { name: 'Outlandish', image: 'logo-outlandish-cell.svg' },
+  { name: 'Republic of Gamers', image: 'logo-rog-cell.svg' },
 ];
 
 const IndexPage = () => (
