@@ -25,12 +25,12 @@ TRULY](http://yrstruly.uk/) to prepare a series of curated themed live shows on
 Twitch. They featured creators from both the MTG sphere and outside of it,
 involving them in quizzes and talent shows.
 
-To maximise engagement, we created a custom code for Twitch allowing viewers to
-vote and actively participate in the quiz as part of the stream. We also
-developed the branding and design of the Twitch overlays.
-
 The activation took place on the Twitch channel of popular MTG creator Luis
 Scott-Vargas, who was joined by fellow MTG streamer GabySpartz, as well as
-gaming journalist and host Alysia Judge.. Every day, a different creator would
+gaming journalist and host Alysia Judge. Every day, a different creator would
 join them for a talent show. Guests included tattoo artist Rebecca Vincent, body
 painter Melissa Croft, DIY YouTuber Odin Makes and illustrator Dan Mumford.
+
+To maximise engagement, we created a custom app for Twitch in Python allowing
+viewers to vote and actively participate in the quiz as part of the stream. We
+also developed the branding and design of the Twitch overlays.
