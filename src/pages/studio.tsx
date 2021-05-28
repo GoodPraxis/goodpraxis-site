@@ -42,10 +42,10 @@ const IndexPage = () => (
     <section className="hero-area grid">
       <div className="main-description">
         Good Praxis is made up of four practitioners: two developers, a designer
-        and a creative strategist. As a co-operative, we believe in collaborating to create
-        a fairer, more inclusive world, and we put our theory into practice too.
-        We build trusted, engaging, and considered brands and tech products for a
-        more egalitarian society, until Good Praxis is common praxis.
+        and a creative strategist. As a co-operative, we believe in collaborating
+        to create a fairer, more inclusive world, and we put our theory into
+        practice too. We build trusted, engaging, and considered brands and tech
+        products for a more egalitarian society, until Good Praxis is common praxis.
       </div>
     </section>
     <section className="team-area grid">

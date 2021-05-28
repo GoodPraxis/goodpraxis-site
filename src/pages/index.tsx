@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -58,7 +59,7 @@ const IndexPage = () => (
     </section>
     <section className="project-promos">
       <div className="grid">
-        <h2 className="heading">Featured work</h2>
+        <h2 className="heading"><Link to="/work">Featured work</Link></h2>
       </div>
       <ProjectPromoList featured />
     </section>
