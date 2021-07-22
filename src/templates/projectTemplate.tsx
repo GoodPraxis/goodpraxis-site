@@ -4,17 +4,29 @@ import { graphql } from 'gatsby';
 import { DetailsBox } from '@goodpraxis/components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import RelatedProjects from '../components/related-projects';
 import parse from '../utils/parse';
 
 import './project-page.scss';
 import BarLink from '../components/bar-link';
+import RelatedItemList from '../components/related-items';
 
 interface TemplateData {
   markdownRemark: {
     frontmatter: any;
     html: string;
-  };
+  }
+  allMarkdownRemark: {
+    edges: {
+      node: {
+        frontmatter: {
+          slug: string;
+          title: string;
+          client: string;
+          thumbnail: string;
+        }
+      }
+    }[]
+  }
 }
 
 const getOGImage = (images: string[]) => {
@@ -28,18 +40,28 @@ const getOGImage = (images: string[]) => {
 };
 
 export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
+  data,
 }: { data: TemplateData }) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
+  const { markdownRemark, allMarkdownRemark: { edges: relatedNodes } } = data;
   const {
     frontmatter: {
-      client, title, slug, hero_image: heroImage, hero_video: heroVideo,
+      client, title, hero_image: heroImage, hero_video: heroVideo,
       image_1: image1, image_2: image2, live_url: liveUrl, services,
     }, html,
   } = markdownRemark;
   const articleHtml = parse(html) as JSX.Element[];
   let firstParagraph: JSX.Element;
   let restOfParagraphs: JSX.Element[] | string;
+
+  const relatedItems = relatedNodes.map(({
+    node: {
+      frontmatter: {
+        title: itemTitle, slug: itemSlug, thumbnail: itemThumbnail,
+      },
+    },
+  }) => (
+    { name: itemTitle, image: itemThumbnail, href: `/work/${itemSlug}` }
+  ));
 
   try {
     [firstParagraph] = articleHtml;
@@ -111,7 +133,7 @@ export default function Template({
         <BarLink to="/studio#contact-us">Work with us on your next project</BarLink>
       </section>
       <hr />
-      <RelatedProjects project={{ client, slug }} />
+      <RelatedItemList items={relatedItems} />
     </Layout>
   );
 }
@@ -131,6 +153,18 @@ export const pageQuery = graphql`
         hero_video
         image_1
         image_2
+      }
+    }
+    allMarkdownRemark(limit: 4, filter: {frontmatter: {slug: {ne: $slug}}}) {
+      edges {
+        node {
+          frontmatter {
+            slug
+            title
+            client
+            thumbnail
+          }
+        }
       }
     }
   }
