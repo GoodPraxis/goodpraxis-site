@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { ItemList } from '@goodpraxis/components';
+import ItemList from '../item-list';
 
 import './related-items.scss';
 
@@ -19,7 +18,6 @@ const RelatedItemList = ({ items }: {items: RelatedItem[]}) => (
         href,
         description: name,
       }))}
-      renderer={({ children, href } : any) => <Link to={href}>{children}</Link>}
     />
   </div>
 );

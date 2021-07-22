@@ -1,0 +1,40 @@
+@import 'variables';
+
+.item-list {
+  background-image: linear-gradient(to right, $black, $black 1px, transparent 1px);
+  background-size: calc(calc(100% - 1px) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+
+  @media (min-width: $breakpoint-s) {
+    font-size: 26px;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    background-size: calc(calc(100% - 1px) / 4);
+  }
+}
+
+.item-list-member {
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding: 0 9px;
+  position: relative;
+  width: 50%;
+
+  @media (min-width: $breakpoint-m) {
+    padding: 0 15px;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    margin-bottom: 0;
+    width: 25%;
+  }
+}
+
+.item-list-member-photo {
+  display: block;
+  margin-bottom: .4em;
+  width: 100%;
+}
