@@ -17,7 +17,7 @@ type: "Campaign"
 style: "light"
 services: ["Brand creation", "Programme design", "Programme delivery", "Communications", "Print design"]
 ---
-Tech–ish is a bespoke digital skills training scheme we delievered in
+Tech–ish is a bespoke digital skills training scheme we delivered in
 partnership with Outlandish co-operative for Islington residents.
 
 The global pandemic brought about lots of job insecurity to many around the

@@ -24,9 +24,9 @@ Instead of buying a pointless gift that may be thrown away, Ungifted encourages
 people to think a little differently and gift their time, creativity, comedic
 streak, or company instead.
 
-Good Praxis built a custom platform, which allows people to create groups, allocate
-"secret santas" and choose one of several quirky gifts to be given during to their
-friends and collegues.
+Good Praxis built a custom platform, which allows people to create groups,
+allocate "secret santas" and choose one of several quirky gifts to be given to
+their friends and colleagues.
 
 On the technical side, we used a Python + React stack to record and manage groups
 and their gift choices.

@@ -25,6 +25,7 @@ build:static:
   - npm ci --cache .npm --prefer-offline
   script:
   - npx danger ci
+  - npx gatsby clean
   - npx gatsby build --prefix-paths
   artifacts:
     paths:
