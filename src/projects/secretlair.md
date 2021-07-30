@@ -10,7 +10,7 @@ hero_image: "/images/projects/secretlair/main.jpg"
 image_1: "/images/projects/secretlair/work1.jpg"
 image_2: "/images/projects/secretlair/work2.jpg"
 new_work: false
-featured: true
+featured: false
 color: "#0D3A4E,#1F6A69"
 type: "Interface design; custom Twitch app"
 style: "dark"

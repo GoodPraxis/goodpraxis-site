@@ -80,6 +80,11 @@ export default function Template({
       />
       <div className="project-page grid">
         <div className="project-page-title">{title}</div>
+        <div
+          className="project-page-description"
+        >
+          { firstParagraph }
+        </div>
         <div className="project-page-details">
           <DetailsBox title="Client">{client}</DetailsBox>
           <DetailsBox title="Services">
@@ -103,11 +108,6 @@ export default function Template({
             )
             : ''}
         </div>
-        <div
-          className="project-page-description"
-        >
-          { firstParagraph }
-        </div>
         <div className="project-page-images">
           <div className="project-page-image --main">
             { heroVideo ? (
@@ -117,7 +117,7 @@ export default function Template({
             )}
           </div>
         </div>
-        <div className="project-page-description">
+        <div className="project-page-description --more">
           { restOfParagraphs }
         </div>
         <div className="project-page-images">

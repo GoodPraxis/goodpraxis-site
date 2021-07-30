@@ -10,8 +10,8 @@ hero_image: "/images/projects/rts/hero.jpg"
 hero_video: ""
 image_1: "/images/projects/rts/img1.jpg"
 image_2: "/images/projects/rts/img2.jpg"
-new_work: true
-featured: true
+new_work: false
+featured: false
 color: "#AC0642,#1142AC"
 type: "Web design and development"
 style: "dark"

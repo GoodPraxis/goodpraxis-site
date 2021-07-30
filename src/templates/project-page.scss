@@ -22,21 +22,31 @@
 
 .project-page-title,
 .project-page-description {
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
   grid-column: 1 / span 2;
-  line-height: 28px;
+  line-height: 31px;
 
   @media (min-width: $breakpoint-m) {
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 3;
   }
 
   @media (min-width: $breakpoint-l) {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
   }
 
   a {
     text-decoration: underline;
+  }
+}
+
+.project-page-description.--more {
+  @media (min-width: $breakpoint-m) {
+    grid-column: 1 / span 4;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-column: 2 / span 3;
   }
 }
 
@@ -55,12 +65,12 @@
   justify-content: space-between;
 
   @media (min-width: $breakpoint-m) {
-    grid-column-end: span 3;
-  }
-
-  @media (min-width: $breakpoint-l) {
     grid-column-end: span 4;
   }
+}
+
+.project-promo-image[src$='skindeep/promo-large.svg'] {
+  width: 35%;
 }
 
 .project-page-details {
@@ -69,7 +79,8 @@
   padding: 34px 0 0;
 
   @media (min-width: $breakpoint-m) {
-    grid-column-end: span 1;
+    grid-column: 4;
+    margin-bottom: 64px;
   }
 }
 
