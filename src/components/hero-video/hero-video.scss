@@ -1,0 +1,19 @@
+@import 'variables';
+
+.hero-video {
+  background-color: $pure-black;
+  display: block;
+  position: relative;
+}
+
+.hero-video-player {
+  display: block;
+  height: 200px;
+  max-height: 860px;
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: $breakpoint-m) {
+    height: calc(100vh - 110px - 124px - 60px);
+  }
+}

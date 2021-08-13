@@ -163,3 +163,26 @@ hr {
     }
   }
 }
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 26px 15px 35px;
+  position: relative;
+
+  @media (min-width: $breakpoint-m) {
+    font-size: 62px;
+  }
+
+  &::after {
+    background-color: $yellow;
+    border-radius: 50%;
+    bottom: -23px;
+    content: '';
+    height: 46px;
+    left: calc(50% - 23px);
+    position: absolute;
+    width: 46px;
+  }
+}

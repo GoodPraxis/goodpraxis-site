@@ -3,27 +3,12 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Slideshow from '../components/slideshow';
 
 import './main.scss';
 import ClientList from '../components/client-list';
 import BarLink from '../components/bar-link';
 import ProjectPromoList from '../components/project-promo-list';
-
-const images = [
-  {
-    src: '/images/carousel-1.jpg',
-    alt: 'Man looking at a book. A woman can be seen in the background, smiling.',
-  },
-  {
-    src: '/images/carousel-2.jpg',
-    alt: 'Four people sitting around a white, round table.',
-  },
-  {
-    src: '/images/carousel-4.jpg',
-    alt: 'Man working at a computer. Above him are books placed on shelves.',
-  },
-];
+import HeroVideo from '../components/hero-video';
 
 const clients = [
   { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },
@@ -51,7 +36,10 @@ const IndexPage = () => (
       title="GOOD PRAXIS • A digital creative agency"
       metaTitle="GOOD PRAXIS • A digital creative agency"
     />
-    <Slideshow images={images} />
+    <HeroVideo />
+    <h2 className="hero-title">
+      Good Praxis is a worker-owned digital creative studio based in&nbsp;London.
+    </h2>
     <section className="hero-area grid">
       <div className="main-description">
         We’re an award-winning digital innovation co-operative. We collaboratively
