@@ -41,6 +41,8 @@ const clients = [
   { name: 'The Drum', image: 'logo-thedrum-cell.svg' },
   { name: 'Outlandish', image: 'logo-outlandish-cell.svg' },
   { name: 'Republic of Gamers', image: 'logo-rog-cell.svg' },
+  { name: 'IPPR', image: 'logo-ippr-cell.svg' },
+  { name: 'Skin Deep', image: 'logo-skin-deep-cell.svg' },
 ];
 
 const IndexPage = () => (
