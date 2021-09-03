@@ -1,10 +1,11 @@
 @import 'variables';
 
 .project-page {
+  padding-bottom: 70px;
   position: relative;
 
   &::before {
-    background: $black;
+    background: $current-color;
     box-sizing: border-box;
     content: '';
     display: block;
@@ -18,17 +19,27 @@
   video {
     max-width: 100%;
   }
+
+  .gatsby-image-wrapper>div:first-child {
+    padding-bottom: 43.761%;
+
+    @media (min-width: $breakpoint-m) {
+      padding-bottom: initial;
+    }
+  }
 }
 
 .project-page-title,
 .project-page-description {
-  font-size: 24px;
+  font-size: 17px;
   font-weight: 400;
   grid-column: 1 / span 2;
-  line-height: 31px;
+  line-height: 21px;
 
   @media (min-width: $breakpoint-m) {
+    font-size: 24px;
     grid-column: 1 / span 3;
+    line-height: 31px;
   }
 
   @media (min-width: $breakpoint-l) {
@@ -46,7 +57,7 @@
   }
 
   @media (min-width: $breakpoint-l) {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
   }
 }
 
@@ -59,18 +70,19 @@
 }
 
 .project-page-images {
-  display: flex;
-  flex-wrap: wrap;
   grid-column: 1 / span 2;
-  justify-content: space-between;
 
   @media (min-width: $breakpoint-m) {
-    grid-column-end: span 4;
+    grid-column: 1 / span 3;
   }
-}
 
-.project-promo-image[src$='skindeep/promo-large.svg'] {
-  width: 35%;
+  @media (min-width: $breakpoint-l) {
+    grid-column: 1 / span 4;
+  }
+
+  .project-page-image~.project-page-image {
+    margin-top: 31px;
+  }
 }
 
 .project-page-details {
@@ -87,25 +99,152 @@
 .project-page-image {
   width: 100%;
 
-  @media (min-width: $breakpoint-m) {
-    width: calc(50% - 16px);
-  }
-
-  &~& {
-    margin-top: 16px;
-
-    @media (min-width: $breakpoint-m) {
-      margin-top: 0;
-    }
+  &.--with-border {
+    border: 1px solid $current-color;
   }
 
   img {
     display: block;
     width: 100%;
   }
+}
 
-  &.--main {
-    width: 100%;
+.project-page-testimonial {
+  grid-column: 1 / span 2;
+  margin: 0;
+
+  @media (min-width: $breakpoint-m) {
+    column-gap: 31px;
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-template-columns: 2.09fr 1fr;
+
+    >figcaption {
+      align-self: self-end;
+      font-size: 18px;
+      margin-bottom: 2em;
+    }
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-column: 2 / span 3;
   }
 }
 
+.project-page-testimonial-blockquote {
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 13px;
+  position: relative;
+
+  &::before {
+    content: '“';
+    display: inline;
+  }
+
+  &::after {
+    content: '”';
+    display: inline;
+  }
+
+  @media (min-width: $breakpoint-m) {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    &::before {
+      display: block;
+      position: absolute;
+      right: calc(100% + 9px);
+      top: 0;
+    }
+  }
+}
+
+.project-fairness-and-opportunity,
+.project-i-love-you-infinity,
+.project-netil-radio,
+.project-react-to-survive,
+.project-skin-deep,
+.project-ungifted {
+  color: $white;
+
+  .menu-toggle {
+    color: $white;
+  }
+
+  .menu-toggle:not(.is-open) rect {
+    fill: $white;
+    transition: fill .33s;
+  }
+
+  footer .details-box::before,
+  .project-page-details .details-box::before {
+    background-color: $white;
+  }
+
+  footer .menu-list,
+  .bar-link:first-child {
+    border-top: 1px solid $white;
+  }
+
+  footer .menu-list {
+    background-image: repeating-linear-gradient(transparent, transparent 40px, rgba($white, .05) 40px, rgba($white, .05) 41px);
+
+    @media (min-width: $breakpoint-l) {
+      background-image: repeating-linear-gradient(transparent, transparent 59px, rgba($white, .05) 59px, rgba($white, .05) 60px);
+    }
+  }
+
+  .menu-list-item:hover {
+    background: rgba($white, .05);
+  }
+
+  .grid-lines {
+    @media (min-width: $breakpoint-m) {
+      background-image: linear-gradient(to right, rgba($white, .05), rgba($white, .05) 1px, transparent 1px);
+    }
+  }
+
+  .project-item-title {
+    border-bottom: 1px solid rgba($white, .2);
+    border-top: 1px solid $white;
+  }
+
+  hr {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTExNyIgaGVpZ2h0PSIyNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wOCkiPjxwYXRoIGQ9Ik04MjkuOTM2IDIwMS4wN0w1NzQuNDk3IDUwbC0uNDMyLjkzTDgyOS41MDQgMjAybC40MzItLjkzek0yODcuMDY0IDIwMS4wN0w1NDIuNTAzIDUwbC40MzIuOTNMMjg3LjQ5NiAyMDJsLS40MzItLjkzek04NjEuMDY0IDIwMS4wN0wxMTE2LjUgNTBsLjQ0LjkzTDg2MS40OTYgMjAybC0uNDMyLS45M3pNMjU1LjkzNiAyMDEuMDdMLjQ5NzIzNyA1MGwtLjQzMjM4NTUuOTNMMjU1LjUwNCAyMDJsLjQzMi0uOTN6Ii8+PC9nPjwvc3ZnPg==');
+  }
+}
+
+$color-asap: #fdfef6;
+$color-iloveyou: #000;
+$color-ippr: #41594f;
+$color-netil: #007eff;
+$color-pa: #d5dde6;
+$color-rog: #090033;
+$color-skin-deep: #000;
+$color-techish: #e5e5e5;
+$color-ungifted: #000;
+
+.project-netil-radio {
+  background-color: $color-netil;
+}
+
+.project-skin-deep,
+.project-i-love-you-infinity,
+.project-ungifted {
+  background-color: $color-skin-deep;
+}
+
+.project-fairness-and-opportunity {
+  background-color: $color-ippr;
+}
+
+.project-asap-plz {
+  background-color: $color-asap;
+}
+
+.project-react-to-survive {
+  background-color: $color-rog;
+}

@@ -3,15 +3,16 @@ title: "Ungifted Secret Santa"
 slug: "ungifted"
 client: "Do The Green Thing"
 date: "2020-01-01"
-thumbnail: "/images/projects/ungifted/promocat-thumb.jpg"
+description: "A custom platform reimagning gift-giving for Do The Green Thing, an environmental collective."
 live_url: "https://ungiftedsecretsanta.com"
-main_image: "/images/projects/ungifted/promocat.png"
-hero_image: ""
-hero_video: "/images/projects/ungifted/santa.mp4"
-image_1: "/images/projects/ungifted/work-1.jpg"
-image_2: "/images/projects/ungifted/work-2.jpg"
-new_work: false
+main_image: ../images/projects/ungifted/main.png
+hero_video: "/videos/projects/ungifted-01-1920x1080.mp4"
+image_1: ../images/projects/ungifted/ungifted-02-1920x1080.jpg
+image_1_mobile: ../images/projects/ungifted/ungifted-02-1080x1080.jpg
+image_2: ../images/projects/ungifted/ungifted-03-1920x1080.png
+image_2_mobile: ../images/projects/ungifted/ungifted-02-1920x1080.jpg
 featured: true
+main_featured: false
 color: "#f793b7"
 type: "Web development"
 style: "light"

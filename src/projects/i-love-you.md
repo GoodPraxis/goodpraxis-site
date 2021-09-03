@@ -3,19 +3,23 @@ title: "I Love You Infinity"
 slug: "i-love-you-infinity"
 client: "Lisa Berenson"
 date: "2020-06-01"
-thumbnail: "/images/projects/iloveyou/thumbnail.svg"
+description: "An autism awareness campaign made based on the unique, mathematical way our client's son expresses his love."
 live_url: "https://iloveyouinfinity.com"
-main_image: "/images/projects/iloveyou/logo.svg"
-hero_image: "/images/projects/iloveyou/mainlogo.svg"
-hero_video: ""
-image_1: "/images/projects/iloveyou/work-luv-1.png"
-image_2: "/images/projects/iloveyou/work-luv-2.svg"
-new_work: false
+main_image: ../images/projects/iloveyou/iloveyou-01-1920x1080.jpg
+hero_image: ../images/projects/iloveyou/iloveyou-01-1920x1080.jpg
+hero_image_mobile: ../images/projects/iloveyou/iloveyou-01-1080x1080.jpg
+image_1: ../images/projects/iloveyou/iloveyou-02-1920x1080.jpg
+image_2: ../images/projects/iloveyou/iloveyou-03-1920x1080.jpg
+image_1_mobile: ../images/projects/iloveyou/iloveyou-02-1080x1080.jpg
+image_2_mobile: ../images/projects/iloveyou/iloveyou-03-1080x1080.jpg
 featured: false
+main_featured: false
 color: "#2C2C2C"
 type: "Creative development"
 style: "dark"
 services: ["Concept execution", "Front-end development", "UX consultancy"]
+testimonial: "It was so much fun to work with you all on this, and to witness all your mad talent in action. Even with the lockdown and uncertainty in the world, you all pulled through and collaborated and I am eternally grateful. I'm so, so proud of this work. Thank you infinity."
+testimonial_author: "Lisa Berenson, the campaign's author"
 ---
 _[I Love You Infinity](https://iloveyouinfinity.com)_ is an autism awareness
 campaign by copywriter [Lisa Berenson](http://thankyouforlookingatmybook.com/)

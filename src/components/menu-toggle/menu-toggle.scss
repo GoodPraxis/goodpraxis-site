@@ -1,19 +1,18 @@
 @import 'variables';
 
 .menu-toggle {
-  align-items: center;
+  align-items: baseline;
   background: transparent;
   border: 0;
   cursor: pointer;
   display: flex;
   font-family: inherit;
-  font-size: 35px;
-  font-weight: 500;
+  font-size: 30px;
+  font-weight: 400;
   margin: 0;
   padding: 14px 8px;
   position: absolute;
   right: 0;
-  text-transform: uppercase;
   top: 0;
   z-index: 99;
 
@@ -46,16 +45,16 @@
   }
 
   svg {
-    height: 17px;
+    height: 15px;
 
-    @media (min-width: $breakpoint-m) {
-      margin-top: 7px;
-    }
+    // @media (min-width: $breakpoint-m) {
+    //   margin-top: 7px;
+    // }
 
-    @media (min-width: $breakpoint-l) {
-      height: auto;
-      margin-top: 0;
-    }
+    // @media (min-width: $breakpoint-l) {
+    //   height: auto;
+    //   margin-top: 0;
+    // }
   }
 }
 
@@ -88,6 +87,6 @@
 
 .menu-toggle-label {
   -webkit-font-smoothing: antialiased;
-  margin-right: 18px;
+  margin-right: 10px;
   transition: opacity .2s;
 }

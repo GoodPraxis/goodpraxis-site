@@ -81,6 +81,13 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
               >
                 Instagram
               </a>
+              <a
+                href="https://www.linkedin.com/company/good-praxis/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
             </>
           </DetailsBox>
         </div>

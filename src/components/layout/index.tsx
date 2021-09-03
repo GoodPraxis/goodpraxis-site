@@ -42,7 +42,7 @@ const Layout = ({
             <Link to={descriptionTo}>
               { pageDescription }
             </Link>
-          ) : pageDescription }
+          ) : '' }
         </div>
         <MenuToggle />
       </header>

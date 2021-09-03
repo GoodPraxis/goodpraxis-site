@@ -3,15 +3,17 @@ title: "ASAP PLZ"
 slug: "asap-plz"
 client: "YRS TRULY x Good Praxis"
 date: "2020-05-01"
-thumbnail: "/images/projects/asap/thumbnail.png"
+description: "A Megadrive/Genesis game recounting the retro trials and tribulations of working in an office, made for YRS TRULY."
 live_url: "https://asapthegame.com"
-main_image: "/images/projects/asap/asap-cartridge.png"
-hero_image: "/images/projects/asap/promo-asap.jpg"
-hero_video: ""
-image_1: "/images/projects/asap/screenshot-1.png"
-image_2: "/images/projects/asap/screenshot-2.png"
-new_work: false
+main_image: ../images/projects/asap/promo-asap.jpg
+hero_image: ../images/projects/asap/asap-01-1920x1080.jpg
+hero_image_mobile: ../images/projects/asap/asap-01-1080x1080.jpg
+image_1: ../images/projects/asap/asap-02-1920x1080.jpg
+image_1_mobile: ../images/projects/asap/asap-02-1080x1080.jpg
+image_2: ../images/projects/asap/asap-03-1920x1080.jpg
+image_2_mobile: ../images/projects/asap/asap-03-1080x1080.jpg
 featured: false
+main_featured: false
 color: "#484848"
 type: "Design and execution"
 style: "dark"

@@ -1,7 +1,12 @@
-@import 'variables';
 @import '../../node_modules/@goodpraxis/components/src/scss/grid';
 
+$current: currentColor;
+
 .menu-inner {
+  .menu-list a {
+    color: $current;
+  }
+
   .menu-list>li {
     @extend %grid;
     grid-row-gap: 0;
@@ -48,7 +53,7 @@
 
 .menu-inner-top {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
 
@@ -57,8 +62,8 @@
   }
 
   @media (min-width: $breakpoint-l) {
-    font-size: 35px;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 33px;
   }
 }
 
@@ -71,8 +76,12 @@
   }
 }
 
+.menu-inner-company-description {
+  text-transform: none;
+}
+
 .menu-inner-company-name > a {
-  color: $black;
+  color: $current;
   text-decoration: none;
 }
 
@@ -120,4 +129,11 @@
     mix-blend-mode: multiply;
     width: 100%;
   }
+}
+
+.menu-list-item>a {
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-transform: none;
 }

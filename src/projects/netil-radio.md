@@ -3,15 +3,20 @@ title: "Website relaunch"
 slug: "netil-radio"
 client: "Netil Radio"
 date: "2020-01-01"
+description: "A custom streaming platform for London community broadcasters Netil Radio"
 thumbnail: "/images/projects/netilradio/good-praxis_thumbnail_netil-radio.svg"
 live_url: "http://netilradio.com"
-main_image: "/images/projects/netilradio/netilradio.svg"
-hero_image: "/images/projects/netilradio/hero.svg"
-hero_video: ""
-image_1: "/images/projects/netilradio/work-1.png"
-image_2: "/images/projects/netilradio/work-2.jpg"
-new_work: false
+main_image: ../images/projects/netilradio/netil-01-1920x1080.jpg
+hero_image: ../images/projects/netilradio/netil-01-1920x1080.jpg
+hero_image_mobile: ../images/projects/netilradio/netil-01-1080x1080.jpg
+image_1: ../images/projects/netilradio/netil-02-1920x1080.png
+image_1_border: true
+image_2: ../images/projects/netilradio/netil-03-1920x1080.png
+image_2_border: true
+image_1_mobile: ../images/projects/netilradio/netil-02-1080x1080.png
+image_2_mobile: ../images/projects/netilradio/netil-03-1080x1080.png
 featured: true
+main_featured: false
 color: "#007EFF"
 type: "Web design and development"
 style: "dark"

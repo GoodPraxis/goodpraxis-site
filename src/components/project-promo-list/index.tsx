@@ -1,7 +1,7 @@
 import React from 'react';
 import './project-promo-list.scss';
-import { StaticQuery, graphql, Link } from 'gatsby';
-import { ProjectPromo } from '@goodpraxis/components';
+import { StaticQuery, graphql } from 'gatsby';
+import ProjectItem from '../project-item';
 
 interface ProjectPromoListProps {
   data: {
@@ -9,74 +9,68 @@ interface ProjectPromoListProps {
       edges: {
         node: {
           frontmatter: {
-            client: string;
-            color: string;
-            services: string[];
-            // eslint-disable-next-line
-            main_image: string;
-            // eslint-disable-next-line
-            new_work: boolean;
+            mainImage: any;
             slug: string;
-            style: 'light' | 'dark';
             title: string;
-            type: string;
-            featured: boolean;
+            description: string;
           }
         }
       }[]
     }
   };
-  featured: boolean;
 }
 
 const ProjectPromoListPure = (
-  { data: { allMarkdownRemark: { edges } }, featured }: ProjectPromoListProps,
+  { data: { allMarkdownRemark: { edges } } }: ProjectPromoListProps,
 ) => (
   <ul className="featured-promos">
     { edges
-      .filter(({ node: { frontmatter: project } }) => !featured || project.featured)
-      .map(({ node: { frontmatter: project } }) => (
-        <li key={project.slug}>
-          <Link to={`/work/${project.slug}`}>
-            <ProjectPromo
-              image={project.main_image}
-              projectName={project.title}
-              industry={project.client}
-              capabilities={project.type}
-              className="grid-lines"
-              backgroundColor={project.color}
-              promoStyle={project.style}
-              isNewWork={project.new_work}
-            />
-          </Link>
+      .map(({
+        node: {
+          frontmatter: {
+            slug, title, mainImage, description,
+          },
+        },
+      }) => (
+        <li key={slug}>
+          <ProjectItem
+            title={title}
+            image={mainImage}
+            slug={slug}
+            description={description}
+          />
         </li>
       )) }
   </ul>
 );
 
-const ProjectPromoList = ({ featured }: {featured?: boolean}) => (
+const ProjectPromoList = () => (
   <StaticQuery
     query={graphql`
   query {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 100
+      limit: 10
+      filter: {frontmatter: {featured: {eq: true}, main_featured: {eq: false}}}
     ) {
       edges {
         node {
           frontmatter {
-            client
-            color
-            date(formatString: "MMMM DD, YYYY")
-            featured
-            services
-            main_image
-            new_work
+            mainImage: main_image {
+              publicURL
+              extension
+              childImageSharp {
+                gatsbyImageData(
+                  width: 755
+                  quality: 90
+                  placeholder: BLURRED
+                  aspectRatio: 1.7777
+                )
+              }
+            }
             slug
-            style
-            thumbnail
             title
-            type
+            description
           }
         }
       }
@@ -84,13 +78,9 @@ const ProjectPromoList = ({ featured }: {featured?: boolean}) => (
   }
 `}
     render={(data) => (
-      <ProjectPromoListPure data={data} featured={featured} />
+      <ProjectPromoListPure data={data} />
     )}
   />
 );
-
-ProjectPromoList.defaultProps = {
-  featured: false,
-};
 
 export default ProjectPromoList;

@@ -1,9 +1,16 @@
-.featured-promos {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+@import 'variables';
 
-  > li {
-    margin: 15px 0;
+.featured-promos {
+  column-gap: 33px;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  margin: 50px 0 0;
+  padding: 0;
+  padding: 14px;
+  row-gap: 50px;
+
+  @media (min-width: $breakpoint-m) {
+    grid-template-columns: 1fr 1fr;
   }
 }

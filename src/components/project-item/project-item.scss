@@ -1,0 +1,53 @@
+@import 'variables';
+
+.project-item-image {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.project-item-title {
+  border-bottom: 1px solid rgba($black, .2);
+  border-top: 1px solid $black;
+  font-size: 18px;
+  line-height: 29px;
+  margin-top: 5px;
+}
+
+.project-item-description {
+  font-size: 23px;
+  line-height: 28px;
+  margin-top: 13px;
+}
+
+.project-item-link-wrapper {
+  white-space: nowrap;
+}
+
+.project-item-link {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.project-item.--large {
+  margin: 0 16px;
+
+  @media (min-width: $breakpoint-m) {
+    margin: 0;
+  }
+}
+
+@media (min-width: $breakpoint-m) {
+  .project-item.--large .project-details-wrapper {
+    column-gap: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 16px;
+
+    .project-item-title {
+      margin-top: 10px;
+    }
+  }
+}

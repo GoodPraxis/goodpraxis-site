@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 
 import { DetailsBox } from '@goodpraxis/components';
+import { GatsbyImage, getImage, withArtDirection } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import parse from '../utils/parse';
@@ -18,19 +19,15 @@ interface TemplateData {
   allMarkdownRemark: {
     edges: {
       node: {
-        frontmatter: {
-          slug: string;
-          title: string;
-          client: string;
-          thumbnail: string;
-        }
+        frontmatter: any
       }
     }[]
   }
 }
 
-const getOGImage = (images: string[]) => {
-  const filtered = images.filter((img) => img.endsWith('png') || img.endsWith('jpg'));
+const getOGImage = (images: {publicURL: string}[]) => {
+  const filtered = images.filter((i) => i).map(({ publicURL }) => publicURL || '')
+    .filter((img) => img.endsWith('png') || img.endsWith('jpg'));
 
   if (filtered.length > 0) {
     return `https://goodpraxis.coop${filtered[0]}`;
@@ -39,28 +36,77 @@ const getOGImage = (images: string[]) => {
   return null;
 };
 
+const createImageElement = (image : any) => {
+  if (Array.isArray(image)) {
+    const images = withArtDirection(getImage(image[1]), [
+      {
+        media: '(max-width: 768px)',
+        image: getImage(image[0]),
+      },
+    ]);
+
+    return <GatsbyImage image={images} alt="" />;
+  }
+  if (!image) {
+    return '';
+  }
+  if (image.extension === 'svg') {
+    return <img src={image.publicURL} alt="" />;
+  }
+  return <GatsbyImage image={getImage(image)} alt="" />;
+};
+
 export default function Template({
   data,
 }: { data: TemplateData }) {
   const { markdownRemark, allMarkdownRemark: { edges: relatedNodes } } = data;
   const {
     frontmatter: {
-      client, title, hero_image: heroImage, hero_video: heroVideo,
-      image_1: image1, image_2: image2, live_url: liveUrl, services,
+      client, title, heroImage, heroVideo, image1, image1Mobile, image2,
+      image2Mobile, liveUrl, services, image1Border, image2Border,
+      mainImage, slug, testimonial, testimonialAuthor,
     }, html,
   } = markdownRemark;
   const articleHtml = parse(html) as JSX.Element[];
   let firstParagraph: JSX.Element;
   let restOfParagraphs: JSX.Element[] | string;
 
+  const gatsbyHeroImage = createImageElement(heroImage);
+  const gatsbyImage1 = createImageElement(image1Mobile ? [image1Mobile, image1] : image1);
+  const gatsbyImage2 = createImageElement(image2Mobile ? [image2Mobile, image2] : image2);
+
+  let processedTestimonialAuthor = <></>;
+
+  if (testimonialAuthor) {
+    const authorParts = testimonialAuthor.split(', ').concat([client]);
+    processedTestimonialAuthor = (
+      <>
+        {authorParts[0]}
+        ,
+        <br />
+        {authorParts[1]}
+      </>
+    );
+  }
+
+  useEffect(() => {
+    const className = `project-${slug}`;
+    document.body.classList.add(className);
+    return () => {
+      document.body.classList.remove(className);
+    };
+  });
+
   const relatedItems = relatedNodes.map(({
     node: {
       frontmatter: {
-        title: itemTitle, slug: itemSlug, thumbnail: itemThumbnail,
+        title: itemTitle, slug: itemSlug, mainImage: itemImage,
       },
     },
   }) => (
-    { name: itemTitle, image: itemThumbnail, href: `/work/${itemSlug}` }
+    {
+      title: itemTitle, image: itemImage, slug: itemSlug,
+    }
   ));
 
   try {
@@ -75,7 +121,7 @@ export default function Template({
       <SEO
         title={`GOOD PRAXIS • ${client}: ${title}`}
         metaTitle={`GOOD PRAXIS • ${client}: ${title}`}
-        image={getOGImage([heroImage || '', image1, image2])}
+        image={getOGImage([mainImage, heroImage || {}, image1, image2])}
         description={`A project for ${client} created by Good Praxis`}
       />
       <div className="project-page grid">
@@ -113,21 +159,29 @@ export default function Template({
             { heroVideo ? (
               <video src={heroVideo} muted loop autoPlay />
             ) : (
-              <img src={heroImage} alt="" />
+              gatsbyHeroImage
             )}
+          </div>
+        </div>
+        <div className="project-page-images">
+          <div className={`project-page-image${image1Border ? ' --with-border' : ''}`}>
+            { gatsbyImage1 }
+          </div>
+          <div className={`project-page-image${image2Border ? ' --with-border' : ''}`}>
+            { gatsbyImage2 }
           </div>
         </div>
         <div className="project-page-description --more">
           { restOfParagraphs }
         </div>
-        <div className="project-page-images">
-          <div className="project-page-image">
-            <img src={image1} alt="" />
-          </div>
-          <div className="project-page-image">
-            <img src={image2} alt="" />
-          </div>
-        </div>
+        { testimonial ? (
+          <figure className="project-page-testimonial">
+            <blockquote className="project-page-testimonial-blockquote">
+              {testimonial}
+            </blockquote>
+            <figcaption>{ processedTestimonialAuthor }</figcaption>
+          </figure>
+        ) : ''}
       </div>
       <section className="bar-links">
         <BarLink to="/studio#contact-us">Work with us on your next project</BarLink>
@@ -148,11 +202,89 @@ export const pageQuery = graphql`
         type
         client
         services
-        live_url
-        hero_image
-        hero_video
-        image_1
-        image_2
+        testimonial
+        testimonialAuthor: testimonial_author
+        liveUrl: live_url
+        mainImage: main_image {
+          publicURL
+        }
+        heroImage: hero_image {
+          publicURL
+          extension
+          childImageSharp {
+            gatsbyImageData(
+              width: 1538
+              quality: 95
+              placeholder: BLURRED
+              aspectRatio: 1.7777
+            )
+          }
+        }
+
+        heroImageMobile: hero_image_mobile {
+          publicURL
+          extension
+          childImageSharp {
+            gatsbyImageData(
+              width: 1538
+              quality: 95
+              placeholder: BLURRED
+              aspectRatio: 1.7777
+            )
+          }
+        }
+
+        heroVideo: hero_video
+        image1: image_1 {
+          publicURL
+          extension
+          childImageSharp {
+            gatsbyImageData(
+              width: 1538
+              quality: 95
+              placeholder: BLURRED
+              aspectRatio: 1.7777
+            )
+          }
+        }
+        image1Border: image_1_border
+        image1Mobile: image_1_mobile {
+          publicURL
+          extension
+          childImageSharp {
+            gatsbyImageData(
+              width: 716
+              quality: 95
+              placeholder: BLURRED
+              aspectRatio: 1
+            )
+          }
+        }
+        image2: image_2 {
+          publicURL
+          extension
+          childImageSharp {
+            gatsbyImageData(
+              width: 1538
+              quality: 95
+              placeholder: BLURRED
+              aspectRatio: 1.7777
+            )
+          }
+        }
+        image2Border: image_2_border
+        image2Mobile: image_2_mobile {
+          publicURL
+          extension
+          childImageSharp {
+            gatsbyImageData(
+              width: 716
+              quality: 95
+              placeholder: BLURRED
+              aspectRatio: 1
+            )
+          }
+        }
       }
     }
     allMarkdownRemark(limit: 4, filter: {frontmatter: {slug: {ne: $slug}}}) {
@@ -162,7 +294,18 @@ export const pageQuery = graphql`
             slug
             title
             client
-            thumbnail
+            mainImage: main_image {
+              publicURL
+              extension
+              childImageSharp {
+                gatsbyImageData(
+                  width: 716
+                  quality: 95
+                  placeholder: BLURRED
+                  aspectRatio: 1.7777
+                )
+              }
+            }
           }
         }
       }

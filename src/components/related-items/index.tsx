@@ -1,26 +1,21 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { ItemList } from '@goodpraxis/components';
 
 import './related-items.scss';
+import ProjectItem from '../project-item';
 
 export interface RelatedItem {
-  name: string;
-  image: string;
-  href: string;
+  image: any;
+  slug: string;
+  title: string;
 }
 
 const RelatedItemList = ({ items }: {items: RelatedItem[]}) => (
   <div className="related-items">
-    <ItemList
-      members={items.map(({ name, image, href }) => ({
-        name,
-        photo: image,
-        href,
-        description: name,
-      }))}
-      renderer={({ children, href } : any) => <Link to={href}>{children}</Link>}
-    />
+    { items.map(({
+      slug, title, image,
+    }) => (
+      <ProjectItem key={slug} title={title} image={image} slug={slug} />
+    ))}
   </div>
 );
 

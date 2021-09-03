@@ -3,14 +3,17 @@ title: "Skin Deep: race and culture"
 slug: "skin-deep"
 client: "Skin Deep"
 date: "2021-07-01"
-thumbnail: "/images/projects/skindeep/promo-small.svg"
+description: "A publishing platform for Black creatives and creatives of colour to work towards justice through cultural production."
 live_url: "https://skindeepmag.com"
-main_image: "/images/projects/skindeep/promo-large.svg"
-hero_image: "/images/projects/skindeep/work-large.jpg"
-image_1: "/images/projects/skindeep/work-small-1.jpg"
-image_2: "/images/projects/skindeep/work-small-2.jpg"
-new_work: true
+main_image: ../images/projects/skindeep/skin_deep-02-1920x1080.jpg
+hero_image: ../images/projects/skindeep/skin_deep-02-1920x1080.jpg
+hero_image_mobile: ../images/projects/skindeep/skin_deep-02-1080x1080.jpg
+image_1: ../images/projects/skindeep/skin_deep-02-1920x1080.jpg
+image_2: ../images/projects/skindeep/skin_deep-03-1920x1080.jpg
+image_1_mobile: ../images/projects/skindeep/skin_deep-02-1080x1080.jpg
+image_2_mobile: ../images/projects/skindeep/skin_deep-03-1080x1080.jpg
 featured: true
+main_featured: false
 color: "#000000"
 type: "UX / UI Design + Development"
 style: "dark"

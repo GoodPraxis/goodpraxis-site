@@ -1,8 +1,9 @@
 @import 'variables';
 
 .hero-video {
-  background-color: $pure-black;
+  background-color: $pure-white;
   display: block;
+  overflow: hidden;
   position: relative;
 }
 
@@ -14,6 +15,21 @@
   width: 100%;
 
   @media (min-width: $breakpoint-m) {
-    height: calc(100vh - 110px - 124px - 60px);
+    height: calc(100vh - 265px);
+  }
+}
+
+.hero-video-logo {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  svg {
+    height: 120px;
+
+    @media (min-width: $breakpoint-m) {
+      height: 254px;
+    }
   }
 }

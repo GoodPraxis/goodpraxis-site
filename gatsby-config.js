@@ -65,5 +65,8 @@ module.exports = {
         args: '?render=explicit',
       },
     },
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
   ],
 };

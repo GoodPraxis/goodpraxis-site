@@ -1,17 +1,10 @@
 @import 'variables';
 
 .header {
-  font-weight: 500;
+  font-weight: 400;
+  height: 67px;
   position: relative;
   text-transform: uppercase;
-
-  @media (min-width: $breakpoint-m) {
-    height: 100px;
-  }
-
-  @media (min-width: $breakpoint-l) {
-    height: 110px;
-  }
 }
 
 .header-description {

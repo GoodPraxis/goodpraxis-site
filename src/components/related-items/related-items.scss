@@ -1,3 +1,18 @@
+@import 'variables';
+
 .related-items {
+  column-gap: 31px;
+  display: grid;
+  grid-template-columns: 1fr;
   margin-top: 1em;
+  padding: 0 16px;
+  row-gap: 31px;
+
+  @media (min-width: $breakpoint-m) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

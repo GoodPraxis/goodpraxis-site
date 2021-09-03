@@ -9,6 +9,7 @@ import ClientList from '../components/client-list';
 import BarLink from '../components/bar-link';
 import ProjectPromoList from '../components/project-promo-list';
 import HeroVideo from '../components/hero-video';
+import MainProjectItem from '../components/main-project-item';
 
 const clients = [
   { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },
@@ -46,12 +47,17 @@ const IndexPage = () => (
         develop tech products and brands for organisations whose aim is to rebalance
         the inequalities of society, or sometimes just for fun.
       </div>
+      <div className="main-description main-cta">
+        <span className="project-item-link-wrapper">
+          <Link to="/studio" className="project-item-link">Learn more about our studio</Link>
+          {' →'}
+
+        </span>
+      </div>
     </section>
     <section className="project-promos">
-      <div className="grid">
-        <h2 className="heading"><Link to="/work">Featured work</Link></h2>
-      </div>
-      <ProjectPromoList featured />
+      <MainProjectItem />
+      <ProjectPromoList />
     </section>
     <section className="bar-links">
       <BarLink to="/work">See more work</BarLink>

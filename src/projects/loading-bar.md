@@ -3,15 +3,17 @@ title: "Platform relaunch"
 slug: "loading-bar"
 client: "Loading Bar"
 date: "2020-02-01"
-thumbnail: "/images/projects/loadingbar/good-praxis_thumbnail_loading-bar.jpg"
+description: "A publishing and commerce platform for the most popular, and least intimidating gaming bars in London and Brighton."
 live_url: "https://loading.bar"
-main_image: "/images/projects/loadingbar/promo-new.png"
-hero_image: "/images/projects/loadingbar/hero.png"
-hero_video: ""
-image_1: "/images/projects/loadingbar/work-1.png"
-image_2: "/images/projects/loadingbar/work-2.png"
-new_work: false
+main_image: ../images/projects/loadingbar/hero.png
+hero_image: ../images/projects/loadingbar/loading-01-1920x1080.jpg
+hero_image_mobile: ../images/projects/loadingbar/loading-01-1080x1080.jpg
+image_1: ../images/projects/loadingbar/loading-02-1920x1080.jpg
+image_2: ../images/projects/loadingbar/loading-02-1080x1080.jpg
+image_1_mobile: ../images/projects/loadingbar/loading-03-1920x1080.jpg
+image_2_mobile: ../images/projects/loadingbar/loading-03-1080x1080.jpg
 featured: false
+main_featured: false
 color: "#c395e0,#9ae9d7"
 type: "Web design and development"
 style: "light"
