@@ -34,18 +34,27 @@ const clients = [
 const IndexPage = () => (
   <Layout activeItem="Home">
     <SEO
-      title="GOOD PRAXIS • A digital creative agency"
-      metaTitle="GOOD PRAXIS • A digital creative agency"
+      title="GOOD PRAXIS • A digital studio"
+      metaTitle="GOOD PRAXIS • A digital studio"
     />
     <HeroVideo />
     <h2 className="hero-title">
-      Good Praxis is a worker-owned digital creative studio based in&nbsp;London.
+      Good Praxis is a digital studio based in&nbsp;London.
     </h2>
     <section className="hero-area grid">
       <div className="main-description">
-        We’re an award-winning digital innovation co-operative. We collaboratively
-        develop tech products and brands for organisations whose aim is to rebalance
-        the inequalities of society, or sometimes just for fun.
+        <p>
+          We create digital products and brands. Connecting deep strategic
+          thinking with digital-first design and technical expertise we deliver
+          distinctive work sensitive to people&apos;s needs. With research at
+          the core, we partner closely with our clients to deliver trusted and
+          award-winning work.
+        </p>
+        <p>
+          As a worker-owned co-operative, our structure and approach reflects
+          the very principles we founded Good Praxis upon – collective
+          ownership, fairness and inclusivity.
+        </p>
       </div>
       <div className="main-description main-cta">
         <span className="project-item-link-wrapper">

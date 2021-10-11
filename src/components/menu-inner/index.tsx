@@ -33,7 +33,7 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
           <Link to="/">Good Praxis</Link>
         </div>
         <div className="menu-inner-company-description">
-          A digital creative agency
+          A digital studio
         </div>
       </header>
       <MenuList data={MENU_ITEMS} renderer={renderLink} active={active} />

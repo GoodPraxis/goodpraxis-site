@@ -7,7 +7,7 @@ import MainMenu from '../menu';
 import './layout.scss';
 import MenuInner from '../menu-inner';
 
-const DEFAULT_DESCRIPTION = 'A digital creative agency';
+const DEFAULT_DESCRIPTION = 'A digital studio';
 
 interface LayoutProps {
   children: React.ReactNode;
