@@ -6,7 +6,7 @@ import {
 } from '@goodpraxis/components';
 import './contact-form.scss';
 
-const URL = 'https://goodpraxis.coop/contact/';
+const URL = '/contact/';
 
 const ContactForm = () => {
   // Abstract fields to remove code smell
