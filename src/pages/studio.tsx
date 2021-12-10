@@ -7,7 +7,6 @@ import SEO from '../components/seo';
 import Slideshow from '../components/slideshow';
 
 import './main.scss';
-import ContactForm from '../components/contact-form';
 
 const images = [{ src: '/images/photo-studio.jpg', alt: '' }];
 
@@ -81,9 +80,6 @@ const IndexPage = () => (
           breakpoints={[420, 768, 1024, 1280, 1570]}
         />
       </div>
-    </section>
-    <section className="form-area">
-      <ContactForm />
     </section>
   </Layout>
 );
