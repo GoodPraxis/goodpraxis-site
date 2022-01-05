@@ -29,6 +29,7 @@ const clients = [
   { name: 'Republic of Gamers', image: 'logo-rog-cell.svg' },
   { name: 'IPPR', image: 'logo-ippr-cell.svg' },
   { name: 'Skin Deep', image: 'logo-skin-deep-cell.svg' },
+  { name: 'Big Change', image: 'logo-big-change-cell.svg' },
 ];
 
 const IndexPage = () => (

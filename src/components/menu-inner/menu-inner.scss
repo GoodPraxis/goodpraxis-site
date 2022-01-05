@@ -108,7 +108,7 @@ $current: currentColor;
 }
 
 .menu-inner-contact {
-  > .details-box:nth-child(3) {
+  > .details-box:nth-child(n+3) {
     margin-top: 23px;
   }
 }

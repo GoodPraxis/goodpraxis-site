@@ -214,3 +214,11 @@ hr {
 .bar-link {
   text-decoration-thickness: 1px;
 }
+
+.plain-list {
+  list-style-type: none;
+}
+
+.contact-us {
+  grid-column: 1/span 2;
+}

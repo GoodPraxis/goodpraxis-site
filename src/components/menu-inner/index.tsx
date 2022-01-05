@@ -90,6 +90,11 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
               </a>
             </>
           </DetailsBox>
+          <DetailsBox title="About">
+            © 2022 Good Praxis Ltd.
+            <br />
+            Company number: 11963069
+          </DetailsBox>
         </div>
       </div>
     </section>
