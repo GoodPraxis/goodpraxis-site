@@ -222,3 +222,51 @@ hr {
 .contact-us {
   grid-column: 1/span 2;
 }
+
+.policy {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 20px;
+
+  @media (min-width: $breakpoint-l) {
+    column-count: 2;
+    column-fill: balance;
+    column-gap: 40px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
+
+
+.policy-footnote {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 0;
+  padding: 20px;
+}
+
+.policy-title {
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.plain-link {
+  text-decoration: none;
+}
+
+.policy-list {
+  margin-top: 0;
+
+  >li {
+    margin: .5em 0;
+  }
+
+  >li:first-child {
+    margin-top: 0;
+  }
+}

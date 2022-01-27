@@ -95,6 +95,8 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
               Company no. 11963069
               <br />
               © 2022 Good Praxis Ltd.
+              <br />
+              <Link to="/anti-slavery-policy">Anti-slavery policy</Link>
             </>
           </DetailsBox>
         </div>
