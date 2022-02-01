@@ -141,6 +141,7 @@ deploy:staging:
 deploy:live:
   stage: deploy
   cache: {}
+  needs: ["build:static"]
   script:
     - rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress public/ root@$LIVE_DOMAIN:/var/www/html
   dependencies:
