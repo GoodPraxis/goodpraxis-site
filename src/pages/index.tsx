@@ -45,16 +45,14 @@ const IndexPage = () => (
     <section className="hero-area grid">
       <div className="main-description">
         <p>
-          We create digital products and brands. Connecting deep strategic
-          thinking with digital-first design and technical expertise we deliver
-          distinctive work sensitive to people&apos;s needs. With research at
-          the core, we partner closely with our clients to deliver trusted and
-          award-winning work.
+          We create websites, apps and digital experiences. Connecting strategic
+          thinking with technical expertise, the way we work is sensitive to
+          people&apos;s needs. With research at the core, we partner closely with our
+          clients to deliver trusted and award-winning work.
         </p>
         <p>
-          As a worker-owned co-operative, our structure and approach reflects
-          the very principles we founded Good Praxis upon – collective
-          ownership, fairness and inclusivity.
+          As a worker co-operative, our structure and approach reflects the very
+          principles we founded Good Praxis upon – responsibility, fairness and inclusivity.
         </p>
       </div>
       <div className="main-description main-cta">
