@@ -1,9 +1,8 @@
 import React from 'react';
 import './project-work-list.scss';
-import { StaticQuery, graphql } from 'gatsby';
 import ProjectItem from '../project-item';
 
-interface ProjectWorkListProps {
+export interface ProjectWorkListProps {
   data: {
     allMarkdownRemark: {
       edges: {
@@ -20,7 +19,7 @@ interface ProjectWorkListProps {
   };
 }
 
-const ProjectWorkListPure = (
+export const ProjectWorkList = (
   { data: { allMarkdownRemark: { edges } } }: ProjectWorkListProps,
 ) => (
   <ul className="project-work-list">
@@ -42,44 +41,6 @@ const ProjectWorkListPure = (
         </li>
       )) }
   </ul>
-);
-
-const ProjectWorkList = () => (
-  <StaticQuery
-    query={graphql`
-  query {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 100
-    ) {
-      edges {
-        node {
-          frontmatter {
-            mainImage: main_image {
-              publicURL
-              extension
-              childImageSharp {
-                gatsbyImageData(
-                  width: 755
-                  quality: 90
-                  placeholder: BLURRED
-                  aspectRatio: 1.7777
-                )
-              }
-            }
-            slug
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`}
-    render={(data) => (
-      <ProjectWorkListPure data={data} />
-    )}
-  />
 );
 
 export default ProjectWorkList;
