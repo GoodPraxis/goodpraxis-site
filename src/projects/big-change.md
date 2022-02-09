@@ -8,7 +8,7 @@ live_url: "https://big-change.org/new-education-story/"
 main_image: ../images/projects/big-change/main.png
 hero_image: ../images/projects/big-change/main.png
 hero_image_mobile: ../images/projects/big-change/main.png
-featured: true
+featured: false
 main_featured: false
 color: "#1f3247"
 type: "Digital report"

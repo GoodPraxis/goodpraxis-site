@@ -64,14 +64,16 @@ export default function Template({
     frontmatter: {
       client, title, heroImage, heroVideo, image1, image1Mobile, image2,
       image2Mobile, liveUrl, services, image1Border, image2Border,
-      mainImage, slug, testimonial, testimonialAuthor,
+      mainImage, slug, testimonial, testimonialAuthor, heroImageMobile,
     }, html,
   } = markdownRemark;
   const articleHtml = parse(html) as JSX.Element[];
   let firstParagraph: JSX.Element;
   let restOfParagraphs: JSX.Element[] | string;
 
-  const gatsbyHeroImage = createImageElement(heroImage);
+  const gatsbyHeroImage = createImageElement(
+    heroImageMobile ? [heroImageMobile, heroImage] : heroImage,
+  );
   const gatsbyImage1 = createImageElement(image1Mobile ? [image1Mobile, image1] : image1);
   const gatsbyImage2 = createImageElement(image2Mobile ? [image2Mobile, image2] : image2);
 
@@ -229,7 +231,7 @@ export const pageQuery = graphql`
               width: 1538
               quality: 95
               placeholder: BLURRED
-              aspectRatio: 1.7777
+              aspectRatio: 1
             )
           }
         }

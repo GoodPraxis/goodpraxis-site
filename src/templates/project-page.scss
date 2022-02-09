@@ -167,7 +167,8 @@
 .project-netil-radio,
 .project-react-to-survive,
 .project-skin-deep,
-.project-ungifted {
+.project-ungifted,
+.project-cotcc {
   color: $white;
 
   .menu-toggle {
@@ -226,6 +227,7 @@ $color-rog: #090033;
 $color-skin-deep: #000;
 $color-techish: #e5e5e5;
 $color-ungifted: #000;
+$color-cotcc: #0d0d0d;
 
 .project-netil-radio {
   background-color: $color-netil;
@@ -247,4 +249,8 @@ $color-ungifted: #000;
 
 .project-react-to-survive {
   background-color: $color-rog;
+}
+
+.project-cotcc {
+  background-color: $color-cotcc;
 }
