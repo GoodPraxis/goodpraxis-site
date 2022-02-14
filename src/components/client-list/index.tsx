@@ -14,7 +14,12 @@ const ClientList = ({ clients }: ClientListProps) => (
   <div className="client-list grid">
     { clients.map(({ name, image }) => (
       <div className="client-list-item" key={name}>
-        <img src={`/images/clients/${image}`} alt={name} title={name} />
+        <img
+          src={`/images/clients/${image}`}
+          alt={name}
+          title={name}
+          loading="lazy"
+        />
       </div>
     ))}
   </div>

@@ -16,6 +16,7 @@ const clients = [
   { name: 'Hasbro', image: 'logo-hasbro-cell.svg' },
   { name: 'YRS TRULY', image: 'logo-yrstruly-cell.svg' },
   { name: 'Prince\'s Trust', image: 'logo-pt-cell.svg' },
+  { name: 'Gather', image: 'logo-gather-cell.svg' },
   { name: 'Loading Bar', image: 'logo-loading-cell.svg' },
   { name: 'Netil Radio', image: 'logo-netil-cell.svg' },
   { name: 'Magic the Gathering', image: 'logo-magic-cell.svg' },
