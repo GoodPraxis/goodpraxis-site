@@ -40,12 +40,12 @@ const IndexPage = () => (
     />
     <HeroVideo />
     <h2 className="hero-title">
-      Good Praxis is a digital studio based in&nbsp;London.
+      We create websites, apps and digital experiences.
     </h2>
     <section className="hero-area grid">
       <div className="main-description">
         <p>
-          We create websites, apps and digital experiences. Connecting strategic
+          Good Praxis is a digital studio based in London. Connecting strategic
           thinking with technical expertise, the way we work is sensitive to
           people&apos;s needs. With research at the core, we partner closely with our
           clients to deliver trusted and award-winning work.
