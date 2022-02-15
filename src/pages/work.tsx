@@ -2,10 +2,8 @@ import React from 'react';
 
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
-
-import './main.scss';
 import ProjectWorkList, { ProjectWorkListProps } from '../components/project-work-list';
+import SEO from '../components/seo';
 
 const IndexPage = ({ data }: ProjectWorkListProps) => (
   <Layout activeItem="Work" description="Work">

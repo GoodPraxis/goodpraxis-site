@@ -11,9 +11,10 @@ interface SlideshowImage {
 interface SlideshowProps {
   images: SlideshowImage[];
   delay?: number;
+  backgroundColor?: string;
 }
 
-const Slideshow = ({ images, delay }: SlideshowProps) => {
+const Slideshow = ({ images, delay, backgroundColor }: SlideshowProps) => {
   const [index, setIndex] = useState(0);
 
   useInterval(() => {
@@ -31,7 +32,11 @@ const Slideshow = ({ images, delay }: SlideshowProps) => {
         </div>
       ))}
       <div className="slideshow-logo">
-        <Logo text="Good Praxis • Good Praxis •" textScale={0.95} />
+        <Logo
+          text="Good Praxis • Good Praxis •"
+          textScale={0.95}
+          backgroundColor={backgroundColor}
+        />
       </div>
     </div>
   );
@@ -39,6 +44,7 @@ const Slideshow = ({ images, delay }: SlideshowProps) => {
 
 Slideshow.defaultProps = {
   delay: 5000,
+  backgroundColor: 'white',
 };
 
 export default Slideshow;

@@ -203,6 +203,23 @@ hr {
   @media (min-width: $breakpoint-l) {
     grid-column: 3 / span 2;
   }
+
+  .gatsby-image-wrapper~.gatsby-image-wrapper {
+    margin-top: 2em;
+  }
+}
+
+
+.gather-side-image {
+  grid-column: 1 / span 2;
+
+  @media (min-width: $breakpoint-m) {
+    grid-column: 2 / span 2;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-column: 1 / span 2;
+  }
 }
 
 .header-title a {

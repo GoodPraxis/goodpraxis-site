@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import BarLink from '../components/bar-link';
+import ClientList from '../components/client-list';
+import HeroVideo from '../components/hero-video';
 import Layout from '../components/layout';
+import MainProjectItem from '../components/main-project-item';
+import ProjectPromoList from '../components/project-promo-list';
 import SEO from '../components/seo';
 
 import './main.scss';
-import ClientList from '../components/client-list';
-import BarLink from '../components/bar-link';
-import ProjectPromoList from '../components/project-promo-list';
-import HeroVideo from '../components/hero-video';
-import MainProjectItem from '../components/main-project-item';
 
 const clients = [
   { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },
@@ -58,9 +58,17 @@ const IndexPage = () => (
       </div>
       <div className="main-description main-cta">
         <span className="project-item-link-wrapper">
-          <Link to="/studio" className="project-item-link">Learn more about our studio</Link>
+          <Link to="/services" className="project-item-link">
+            See what services we offer
+          </Link>
           {' →'}
-
+        </span>
+        <br />
+        <span className="project-item-link-wrapper">
+          <Link to="/studio" className="project-item-link">
+            Learn more about our studio
+          </Link>
+          {' →'}
         </span>
       </div>
     </section>
