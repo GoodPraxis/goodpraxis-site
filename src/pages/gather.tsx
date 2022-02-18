@@ -23,7 +23,16 @@ const IndexPage = () => (
           2D spaces: offices, parks, music venues and many more.
         </p>
         <p>
-          As an official Gather Town partner, we have experience in designing
+          As an
+          {' '}
+          <a
+            href="https://www.gather.town/partner/good-praxis"
+            target="_blank"
+            rel="noreferrer"
+          >
+            official Gather Town partner
+          </a>
+          , we have experience in designing
           and building custom Gather maps for offices, events and campaigns. We
           work with talented pixel artists to bring your ideas to life, apply
           your branding and make your space stand out. We are also comfortable
@@ -36,17 +45,24 @@ const IndexPage = () => (
           treasure hunts, conferences, galleries, presentations - we got you
           covered.
         </p>
+        <ContactUs />
       </div>
       <div className="studio-side-image">
         <StaticImage
           width={754}
-          quality={95}
+          quality={98}
           src="../images/gather/strix1.png"
           alt="People sitting by a table"
           breakpoints={[420, 768, 1024, 1280, 1570]}
         />
+        <StaticImage
+          width={754}
+          quality={98}
+          src="../images/gather/strix2.png"
+          alt="People sitting by a table"
+          breakpoints={[420, 768, 1024, 1280, 1570]}
+        />
       </div>
-      <ContactUs />
     </section>
   </Layout>
 );

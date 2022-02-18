@@ -86,14 +86,14 @@ const IndexPage = () => (
       <div className="studio-side-image">
         <StaticImage
           width={754}
-          quality={80}
-          src="../images/services/screen.jpg"
-          alt="A computer screen"
+          quality={95}
+          src="../images/services/cworking.jpg"
+          alt="A woman sitting in front of a laptop"
           breakpoints={[420, 768, 1024, 1280, 1570]}
         />
         <StaticImage
           width={754}
-          quality={80}
+          quality={95}
           src="../images/services/igor-working.jpg"
           alt="A man working in front of a computer"
           breakpoints={[420, 768, 1024, 1280, 1570]}
