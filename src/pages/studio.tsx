@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
@@ -36,6 +37,14 @@ const IndexPage = () => (
           environmental, industry or user needs. We believe this results in
           the best work and is reflective of our instincts to build connected
           and productive relationships.
+        </p>
+        <p>
+          <span className="project-item-link-wrapper">
+            <Link to="/services" className="project-item-link">
+              See what services we offer
+            </Link>
+            {' →'}
+          </span>
         </p>
       </div>
       <div className="studio-side-image">
