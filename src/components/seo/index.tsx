@@ -49,7 +49,11 @@ export function getMeta({
     },
     {
       name: 'twitter:card',
-      content: 'summary',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:site',
+      content: '@goodpraxiscoop',
     },
     {
       name: 'twitter:title',
