@@ -2,6 +2,13 @@ import React from 'react';
 
 import './hero-image-text.scss';
 
+const showWhatWeOffer = () => {
+  const whatweoffer = document.getElementById('whatweoffer');
+  if (whatweoffer) {
+    whatweoffer.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const HeroImageText = () => (
   <div className="hero-image-with-text">
     <div className="hero-image-with-text-image">
@@ -11,7 +18,16 @@ const HeroImageText = () => (
       <p>
         We offer a
         {' '}
-        <span>range of digital services</span>
+        <a
+          onClick={(ev) => {
+            ev.preventDefault();
+            showWhatWeOffer();
+          }}
+          href="#whatweoffer"
+        >
+          range of digital services
+
+        </a>
         , taking advantage of the latest
         frameworks and technologies.
 

@@ -52,7 +52,7 @@ const IndexPage = () => (
           create bespoke elements, automated events and services, and run
           games and activities.
         </p>
-        <h2 className="heading">What we offer:</h2>
+        <h2 className="heading" id="whatweoffer">What we offer:</h2>
         <ul>
           <li>Website design and development</li>
           <li>Web app development, including mobile</li>
