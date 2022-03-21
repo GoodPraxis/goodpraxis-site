@@ -4,30 +4,28 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Slideshow from '../components/slideshow';
 import ContactUs from '../components/contact-us';
-
-const images = [{ src: '/images/photo-services.jpg', alt: '' }];
+import HeroImageText from '../components/hero-image-text';
 
 const IndexPage = () => (
   <Layout activeItem="Services" description="Services">
     <SEO title="GOOD PRAXIS • Services" metaTitle="GOOD PRAXIS • Services" />
-    <Slideshow images={images} backgroundColor="rgb(251, 224, 114)" />
-    <section className="hero-area grid">
-      <div className="main-description">
-        We offer a range of digital services, taking advantage of the
-        latest frameworks and technologies. We advocate open-source
-        solutions wherever possible – our core expertise lies in Django,
-        React, Wordpress and Gatsby.js. However we always carefully choose
-        the right technology for each project, whether it’s a website,
-        application, game, Twitch bot, experimental interactive experience
-        or anything else our clients require.
-      </div>
-    </section>
+    <HeroImageText />
     <section className="grid studio-description">
       <div className="main-description">
         <p>
-          The projects we work on range from small microsites to large web
+          We always carefully choose the right technology for each project,
+          whether it’s a website, application, game, Twitch bot, experimental
+          interactive experience or anything else our clients require. We
+          advocate open-source solutions wherever possible – our core expertise
+          lies in Django, React, Wordpress and Gatsby.js.
+        </p>
+        <p>
+          The
+          {' '}
+          <Link to="/work">projects we work on</Link>
+          {' '}
+          range from small microsites to large web
           apps. We are highly experienced at building bespoke applications
           to suit large or complex requirements. These projects often require
           us to integrate or build different APIs and services, deliver
@@ -100,7 +98,14 @@ const IndexPage = () => (
         />
       </div>
     </section>
-    <section className="grid">
+    <section className="grid services-text">
+      <span className="project-item-link-wrapper">
+        <Link className="project-item-link" to="/work">
+          See the projects we’ve worked on
+        </Link>
+        {' '}
+        →
+      </span>
       <ContactUs />
     </section>
   </Layout>

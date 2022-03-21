@@ -1,0 +1,36 @@
+@import 'variables';
+
+.hero-image-with-text {
+  position: relative;
+}
+
+.hero-image-with-text {
+  @media (min-width: $breakpoint-m) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 31px;
+  }
+}
+
+.hero-image-with-text-image {
+  position: relative;
+  padding-bottom: 56.25%;
+  img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.hero-image-with-text-copy {
+  font-size: 35px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+
+  span {
+    background-color: $yellow;
+    padding: 0 0.1em;
+  }
+}
