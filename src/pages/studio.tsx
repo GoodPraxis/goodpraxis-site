@@ -10,8 +10,8 @@ import ContactUs from '../components/contact-us';
 const images = [{ src: '/images/photo-studio.jpg', alt: '' }];
 
 const IndexPage = () => (
-  <Layout activeItem="Studio" description="Studio">
-    <SEO title="GOOD PRAXIS • Studio" metaTitle="GOOD PRAXIS • Studio" />
+  <Layout activeItem="About Us" description="About Us">
+    <SEO title="GOOD PRAXIS • About Us" metaTitle="GOOD PRAXIS • About Us" />
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">

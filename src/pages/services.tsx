@@ -8,8 +8,8 @@ import ContactUs from '../components/contact-us';
 import HeroImageText from '../components/hero-image-text';
 
 const IndexPage = () => (
-  <Layout activeItem="Services" description="Services">
-    <SEO title="GOOD PRAXIS • Services" metaTitle="GOOD PRAXIS • Services" />
+  <Layout activeItem="Our Services" description="Our Services">
+    <SEO title="GOOD PRAXIS • Our Services" metaTitle="GOOD PRAXIS • Our Services" />
     <HeroImageText />
     <section className="grid studio-description">
       <div className="main-description">

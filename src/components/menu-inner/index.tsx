@@ -7,9 +7,9 @@ import './menu-inner.scss';
 
 export const MENU_ITEMS = [
   { href: '/', title: 'Home' },
-  { href: '/work', title: 'Work' },
-  { href: '/services', title: 'Services' },
-  { href: '/studio', title: 'Studio' },
+  { href: '/work', title: 'Our Work' },
+  { href: '/services', title: 'Our Services' },
+  { href: '/studio', title: 'About Us' },
 ];
 
 interface MenuInnerProps {

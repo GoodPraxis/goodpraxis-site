@@ -6,7 +6,7 @@ import ProjectWorkList, { ProjectWorkListProps } from '../components/project-wor
 import SEO from '../components/seo';
 
 const IndexPage = ({ data }: ProjectWorkListProps) => (
-  <Layout activeItem="Work" description="Work">
+  <Layout activeItem="Our Work" description="Our Work">
     <SEO title="GOOD PRAXIS • Our Work" metaTitle="GOOD PRAXIS • Our Work" />
     <ProjectWorkList data={data} />
   </Layout>

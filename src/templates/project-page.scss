@@ -175,6 +175,10 @@
     color: $white;
   }
 
+  .header-title a {
+    color: $white;
+  }
+
   .menu-toggle:not(.is-open) rect {
     fill: $white;
     transition: fill .33s;
