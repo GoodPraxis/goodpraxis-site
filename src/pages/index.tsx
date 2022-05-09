@@ -31,6 +31,7 @@ const clients = [
   { name: 'IPPR', image: 'logo-ippr-cell.svg' },
   { name: 'Skin Deep', image: 'logo-skin-deep-cell.svg' },
   { name: 'Big Change', image: 'logo-big-change-cell.svg' },
+  { name: 'Guardians of the Forest', image: 'logo-gatc-cell.svg' },
 ];
 
 const IndexPage = () => (
