@@ -32,6 +32,7 @@ const clients = [
   { name: 'Guardians of the Forest', image: 'logo-gatc-cell.svg' },
   { name: 'Noble Studio', image: 'logo-ns-cell.svg' },
   { name: 'Fifty Eight', image: 'logo-58-cell.svg' },
+  { name: 'Peace and Justice', image: 'logo-pj-cell.svg' },
 ];
 
 const IndexPage = () => (

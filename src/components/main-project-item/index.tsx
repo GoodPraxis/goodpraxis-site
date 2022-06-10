@@ -18,6 +18,8 @@ const MainProjectItemPure = ({
     slug={slug}
     description={description}
     large
+    showLogo
+    logoPosition="right"
   />
 );
 
