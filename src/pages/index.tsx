@@ -32,6 +32,8 @@ const clients = [
   { name: 'Skin Deep', image: 'logo-skin-deep-cell.svg' },
   { name: 'Big Change', image: 'logo-big-change-cell.svg' },
   { name: 'Guardians of the Forest', image: 'logo-gatc-cell.svg' },
+  { name: 'Noble Studio', image: 'logo-ns-cell.svg' },
+  { name: 'Fifty Eight', image: 'logo-58-cell.svg' },
 ];
 
 const IndexPage = () => (
