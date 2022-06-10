@@ -41,13 +41,17 @@ const IndexPage = () => (
       metaTitle="GOOD PRAXIS • A digital studio"
     />
     <MainProjectItem />
-    <h2 className="hero-title">
-      We create websites, apps and digital experiences.
-    </h2>
     <section className="hero-area grid">
+      <h2 className="hero-title">
+        We
+        {' '}
+        <Link to="services">create</Link>
+        {' '}
+        websites, apps and digital experiences.
+      </h2>
       <div className="main-description">
         <p>
-          Good Praxis is a digital studio based in London. Connecting strategic
+          GOOD PRAXIS is a digital studio based in London. Connecting strategic
           thinking with technical expertise, the way we work is sensitive to
           people&apos;s needs. With research at the core, we partner closely with our
           clients to deliver trusted and award-winning work.
@@ -74,6 +78,9 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="project-promos">
+      <div className="grid">
+        <h2 className="heading recent-work-heading">Recent work ↓</h2>
+      </div>
       <ProjectPromoList />
     </section>
     <section className="bar-links">

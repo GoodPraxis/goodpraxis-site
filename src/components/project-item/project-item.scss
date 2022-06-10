@@ -13,6 +13,23 @@
   font-size: 18px;
   line-height: 29px;
   margin-top: 5px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .project-item.--large & {
+    line-height: 24px;
+    padding: .1em 0;
+  }
+
+  .project-item.--large & a {
+    font-weight: 500;
+  }
+
+  .project-item-link-wrapper {
+    padding-left: .3333em;
+  }
 }
 
 .project-item-description {

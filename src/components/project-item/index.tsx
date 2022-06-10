@@ -20,6 +20,14 @@ const ProjectItem = ({
   if (image.extension !== 'svg') {
     imageComponent = <GatsbyImage image={getImage(image)} alt="" />;
   }
+
+  const viewProjectLink = (
+    <span className="project-item-link-wrapper">
+      <Link to={`/work/${slug}`} className="project-item-link">View project</Link>
+      {' →'}
+
+    </span>
+  );
   return (
     <div className={`project-item${large ? ' --large' : ''}`}>
       <div className="project-item-image">
@@ -29,16 +37,24 @@ const ProjectItem = ({
       </div>
       <div className="project-details-wrapper">
         <div className="project-details">
-          <div className="project-item-title">{title}</div>
-          { description ? (
+          <div className="project-item-title">
+            <Link to={`/work/${slug}`}>{title}</Link>
+            {' '}
+            {large ? (
+              <>
+                –
+                {' '}
+                {description}
+                {' '}
+                {viewProjectLink}
+              </>
+            ) : ''}
+          </div>
+          { !large && description ? (
             <div className="project-item-description">
               {description}
               {' '}
-              <span className="project-item-link-wrapper">
-                <Link to={`/work/${slug}`} className="project-item-link">View project</Link>
-                {' →'}
-
-              </span>
+              {viewProjectLink}
             </div>
           ) : '' }
         </div>
