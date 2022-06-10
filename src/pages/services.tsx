@@ -77,7 +77,7 @@ const IndexPage = () => (
           <li>SQL, MySQL, PostgreSQL, MongoDB</li>
           <li>Adobe Suite</li>
           <li>Gather Town</li>
-          <li>WordPress</li>
+          <li>Wagtail CMS, WordPress</li>
           <li>REST API, GraphQL</li>
         </ul>
       </div>
