@@ -35,7 +35,7 @@ const MainProjectItem = () => (
               width: 1570
               quality: 95
               placeholder: BLURRED
-              aspectRatio: 1.7777
+              aspectRatio: 2
             )
           }
         }

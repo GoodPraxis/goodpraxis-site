@@ -156,16 +156,28 @@ hr {
 }
 
 .hero-title {
+  border-top: 1px solid rgba($black, .25);
   font-size: 30px;
   font-weight: 400;
   line-height: 1em;
+  margin-top: 1em;
   padding: 26px 15px 35px;
   position: relative;
 
   @media (min-width: $breakpoint-m) {
+    border-top: 0;
     font-size: 35px;
     line-height: 41px;
-    padding: 43px 15px 72px calc(50% + 15px);
+    margin-top: -110px;
+    padding: 0 15px 72px calc(50% + 15px);
+  }
+
+  @media (min-width: $breakpoint-l) {
+    margin-top: -94px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin-top: -66px;
   }
 
   &::after {

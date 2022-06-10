@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 
 import BarLink from '../components/bar-link';
 import ClientList from '../components/client-list';
-import HeroVideo from '../components/hero-video';
 import Layout from '../components/layout';
 import MainProjectItem from '../components/main-project-item';
 import ProjectPromoList from '../components/project-promo-list';
@@ -41,7 +40,7 @@ const IndexPage = () => (
       title="GOOD PRAXIS • A digital studio"
       metaTitle="GOOD PRAXIS • A digital studio"
     />
-    <HeroVideo />
+    <MainProjectItem />
     <h2 className="hero-title">
       We create websites, apps and digital experiences.
     </h2>
@@ -75,7 +74,6 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="project-promos">
-      <MainProjectItem />
       <ProjectPromoList />
     </section>
     <section className="bar-links">

@@ -6,33 +6,34 @@
 
 .hero-image-with-text {
   @media (min-width: $breakpoint-m) {
+    column-gap: 31px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 31px;
   }
 }
 
 .hero-image-with-text-image {
-  position: relative;
   padding-bottom: 56.25%;
+  position: relative;
+
   img {
-    top: 0;
     left: 0;
-    width: 100%;
     position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 
 .hero-image-with-text-copy {
+  align-items: center;
+  display: flex;
   font-size: 35px;
   font-weight: 400;
-  display: flex;
-  align-items: center;
 
   a {
     background-color: $yellow;
-    padding: 0 0.1em;
+    color: $inherit;
+    padding: 0 .1em;
     text-decoration: none;
-    color: inherit;
   }
 }
