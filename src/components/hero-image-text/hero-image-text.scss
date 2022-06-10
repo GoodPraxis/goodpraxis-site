@@ -34,6 +34,22 @@
     background-color: $yellow;
     color: $inherit;
     padding: 0 .1em;
+    position: relative;
     text-decoration: none;
+  }
+
+  a::after {
+    background-color: $current-color;
+    bottom: .1em;
+    content: '';
+    height: 3px;
+    left: .1em;
+    position: absolute;
+    transition: width .2s;
+    width: 0;
+  }
+
+  a:hover::after {
+    width: calc(100% - .2em);
   }
 }

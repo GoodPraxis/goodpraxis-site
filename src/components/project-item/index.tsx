@@ -48,7 +48,10 @@ const ProjectItem = ({
       <div className="project-details-wrapper">
         <div className="project-details">
           <div className="project-item-title">
-            <Link to={`/work/${slug}`}>{title}</Link>
+            <Link to={`/work/${slug}`}>
+              {large ? '↑ ' : ''}
+              {title}
+            </Link>
             {' '}
             {large ? (
               <>
