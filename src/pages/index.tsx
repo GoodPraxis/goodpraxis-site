@@ -23,7 +23,6 @@ const clients = [
   { name: 'Islington Council', image: 'logo-islington-cell.svg' },
   { name: 'Dungeons & Dragons', image: 'logo-d_d-cell.svg' },
   { name: 'Lincolnshire Refugee Doctor Project', image: 'logo-lrdp-cell.svg' },
-  { name: 'Eat Work Art', image: 'logo-ewa-cell.svg' },
   { name: 'SharpEnd', image: 'logo-sharpend-cell.svg' },
   { name: 'The Drum', image: 'logo-thedrum-cell.svg' },
   { name: 'Outlandish', image: 'logo-outlandish-cell.svg' },
