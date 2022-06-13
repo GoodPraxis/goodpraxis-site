@@ -3,7 +3,7 @@ title: "The Prince's Trust Enterprise Game"
 slug: "pteg"
 client: "The Prince's Trust"
 date: "2020-04-01"
-description: "Custom API and administration panel for managing an educational programme for school children"
+description: "Custom API and administration panel for managing an educational programme for school children."
 main_image: ../images/projects/pteg/hero.jpg
 hero_image: ../images/projects/pteg/hero.jpg
 hero_image_mobile: ../images/projects/pteg/hero-mobile.jpg

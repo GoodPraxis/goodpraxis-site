@@ -11,7 +11,7 @@ image_1: ../images/projects/ungifted/ungifted-02-1920x1080.jpg
 image_1_mobile: ../images/projects/ungifted/ungifted-02-1080x1080.jpg
 image_2: ../images/projects/ungifted/ungifted-03-1920x1080.png
 image_2_mobile: ../images/projects/ungifted/ungifted-02-1920x1080.jpg
-featured: true
+featured: false
 main_featured: false
 color: "#f793b7"
 type: "Web development"

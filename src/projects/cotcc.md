@@ -6,8 +6,9 @@ date: "2021-11-01"
 description: "Online gallery showcasing work by black artists and artists of colour
 exploring the relationship between racial justice and climate justice"
 live_url: "https://thecolouroftheclimatecrisis.art"
-main_image: ../images/projects/cotcc/main.jpg
-hero_image: ../images/projects/cotcc/main.jpg
+main_featured_image: ../images/projects/cotcc/main.jpg
+main_image: ../images/projects/cotcc/main-2.jpg
+hero_image: ../images/projects/cotcc/main-2.jpg
 hero_image_mobile: ../images/projects/cotcc/main-mobile.jpg
 image_1: ../images/projects/cotcc/mobile-design.jpg
 image_1_mobile: ../images/projects/cotcc/mobile-design-mobile.jpg

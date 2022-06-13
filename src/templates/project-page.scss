@@ -168,7 +168,8 @@
 .project-react-to-survive,
 .project-skin-deep,
 .project-ungifted,
-.project-cotcc {
+.project-cotcc,
+.project-value-chains {
   color: $white;
 
   .menu-toggle {
@@ -232,9 +233,14 @@ $color-skin-deep: #000;
 $color-techish: #e5e5e5;
 $color-ungifted: #000;
 $color-cotcc: #0d0d0d;
+$color-vc: #5c7d74;
 
 .project-netil-radio {
   background-color: $color-netil;
+}
+
+.project-value-chains {
+  background-color: $color-vc;
 }
 
 .project-skin-deep,

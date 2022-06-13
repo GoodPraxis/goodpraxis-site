@@ -3,7 +3,7 @@ title: "React to Survive"
 slug: "react-to-survive"
 client: "Republic of Gamers"
 date: "2021-03-01"
-description: "A Twitch-based campaign for the Republic of Gamers, promoting their latest gaming laptop, the ROG Strix SCAR 17"
+description: "A Twitch-based campaign for the Republic of Gamers, promoting their latest gaming laptop, the ROG Strix SCAR 17."
 live_url: "https://rog.asus.com/uk/react-to-survive/"
 main_image: ../images/projects/rts/ROG-01-1920x1080.jpg
 hero_image: ../images/projects/rts/ROG-01-1920x1080.jpg

@@ -3,7 +3,7 @@ title: "Website relaunch"
 slug: "netil-radio"
 client: "Netil Radio"
 date: "2020-01-01"
-description: "A custom streaming platform for London community broadcasters Netil Radio"
+description: "A custom streaming platform for London community broadcasters Netil Radio."
 thumbnail: "/images/projects/netilradio/good-praxis_thumbnail_netil-radio.svg"
 live_url: "http://netilradio.com"
 main_image: ../images/projects/netilradio/netil-01-1920x1080.jpg

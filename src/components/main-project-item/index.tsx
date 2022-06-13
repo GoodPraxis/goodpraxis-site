@@ -29,7 +29,7 @@ const MainProjectItem = () => (
   query {
     markdownRemark(frontmatter: {main_featured: {eq: true}}) {
       frontmatter {
-        mainImage: main_image {
+        mainImage: main_featured_image {
           publicURL
           extension
           childImageSharp {

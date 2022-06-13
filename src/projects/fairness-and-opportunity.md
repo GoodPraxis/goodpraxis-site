@@ -3,7 +3,7 @@ title: "Environmental Justice Commission Report"
 slug: "fairness-and-opportunity"
 client: "IPPR"
 date: "2021-07-06"
-description: "Design and build for IPPR’s landmark digital report: a people powered plan for the UK’s green transition"
+description: "Design and build for IPPR’s landmark digital report: a people powered plan for the UK’s green transition."
 live_url: "https://www.ippr.org/fairness-and-opportunity/"
 main_image: ../images/projects/fairness-and-opportunity/work-large.jpg
 hero_video: "/videos/projects/ippr-01-1920x1080.mp4"

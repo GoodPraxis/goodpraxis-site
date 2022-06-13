@@ -3,7 +3,7 @@ title: "Big Change - New Education Story"
 slug: "new-education-story"
 client: "Big Change"
 date: "2021-10-01"
-description: "We helped Big Change present their New Education Story"
+description: "We helped Big Change present their New Education Story."
 live_url: "https://big-change.org/new-education-story/"
 main_image: ../images/projects/big-change/main.png
 hero_image: ../images/projects/big-change/main.png

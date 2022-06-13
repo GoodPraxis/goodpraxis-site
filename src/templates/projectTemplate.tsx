@@ -222,7 +222,7 @@ export const pageQuery = graphql`
               width: 1538
               quality: 95
               placeholder: BLURRED
-              aspectRatio: 2
+              aspectRatio: 1.7777
             )
           }
         }
