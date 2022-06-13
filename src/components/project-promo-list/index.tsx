@@ -2,6 +2,7 @@ import React from 'react';
 import './project-promo-list.scss';
 import { StaticQuery, graphql } from 'gatsby';
 import ProjectItem from '../project-item';
+import useIsRevealed from '../../utils/is-revealed';
 
 interface ProjectPromoListProps {
   data: {
@@ -22,27 +23,33 @@ interface ProjectPromoListProps {
 
 const ProjectPromoListPure = (
   { data: { allMarkdownRemark: { edges } } }: ProjectPromoListProps,
-) => (
-  <ul className="featured-promos">
-    { edges
-      .map(({
-        node: {
-          frontmatter: {
-            slug, title, mainImage, description,
+) => {
+  const [ref, isRevealed] = useIsRevealed({ threshold: 0.1 });
+  return (
+    <ul
+      className={`featured-promos${isRevealed ? ' is-visible' : ''}`}
+      ref={ref}
+    >
+      { edges
+        .map(({
+          node: {
+            frontmatter: {
+              slug, title, mainImage, description,
+            },
           },
-        },
-      }) => (
-        <li key={slug}>
-          <ProjectItem
-            title={title}
-            image={mainImage}
-            slug={slug}
-            description={description}
-          />
-        </li>
-      )) }
-  </ul>
-);
+        }) => (
+          <li key={slug}>
+            <ProjectItem
+              title={title}
+              image={mainImage}
+              slug={slug}
+              description={description}
+            />
+          </li>
+        )) }
+    </ul>
+  );
+};
 
 const ProjectPromoList = () => (
   <StaticQuery

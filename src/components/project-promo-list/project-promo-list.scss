@@ -6,9 +6,17 @@
   grid-template-columns: 1fr;
   list-style-type: none;
   margin: 18px 0 0;
+  opacity: 0;
   padding: 0;
   padding: 14px;
   row-gap: 50px;
+  transform: translateY(5em);
+  transition: transform .75s, opacity .75s;
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 
   @media (min-width: $breakpoint-m) {
     grid-template-columns: 1fr 1fr;

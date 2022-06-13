@@ -67,8 +67,11 @@ export default function Template({
       mainImage, slug, testimonial, testimonialAuthor, heroImageMobile,
     }, html,
   } = markdownRemark;
+  // eslint-disable-next-line
   const articleHtml = parse(html) as JSX.Element[];
+  // eslint-disable-next-line
   let firstParagraph: JSX.Element;
+  // eslint-disable-next-line
   let restOfParagraphs: JSX.Element[] | string;
 
   const gatsbyHeroImage = createImageElement(
@@ -115,6 +118,7 @@ export default function Template({
     [firstParagraph] = articleHtml;
     restOfParagraphs = articleHtml.slice(1);
   } catch (e) {
+    // eslint-disable-next-line
     firstParagraph = parse(html) as JSX.Element;
     restOfParagraphs = '';
   }
