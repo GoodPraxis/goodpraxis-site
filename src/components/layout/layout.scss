@@ -18,5 +18,9 @@
 footer {
   margin: 0 auto;
   max-width: $main-max-width;
-  padding: 180px 0 0;
+  padding: 80px 0 0;
+
+  @media (min-width: $breakpoint-m) {
+    padding-top: 180px;
+  }
 }
