@@ -1,3 +1,5 @@
+import { Logo } from '@goodpraxis/components';
+import { Link } from 'gatsby';
 import React from 'react';
 import './client-list.scss';
 
@@ -22,6 +24,11 @@ const ClientList = ({ clients }: ClientListProps) => (
         />
       </div>
     ))}
+    <div className="client-list-item client-list-item--logo">
+      <Link to="/studio#contact-us">
+        <Logo text="Work with us • Work with us •" fontSize={31.3} animated animationDuration={10} />
+      </Link>
+    </div>
   </div>
 );
 
