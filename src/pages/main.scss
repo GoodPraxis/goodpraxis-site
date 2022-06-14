@@ -263,6 +263,7 @@ hr {
 }
 
 .contact-us {
+  animation: contactus 1s;
   grid-column: 1/span 2;
 }
 
@@ -340,5 +341,17 @@ hr {
     left: initial;
     right: 0;
     transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+
+@keyframes contactus {
+  0%,
+  100% {
+    background: rgba($yellow, 0);
+  }
+
+  50% {
+    background: $yellow;
   }
 }
