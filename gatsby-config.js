@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'GOOD PRAXIS',
-    description: 'We’re an award-winning digital innovation co-operative. We collaboratively develop tech products for organisations whose aim is to rebalance the inequalities of society.',
+    description: 'We’re an award-winning ethical digital agency based in London. We collaboratively develop tech products for organisations whose aim is to rebalance the inequalities of society.',
     author: '@goodpraxiscoop',
     siteUrl: 'https://goodpraxis.coop',
     image: 'https://goodpraxis.coop/images/og.png',
@@ -35,8 +35,8 @@ module.exports = {
         name: 'Good Praxis',
         short_name: 'goodpraxis',
         start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
+        background_color: '#FBE072',
+        theme_color: '#FBE072',
         display: 'minimal-ui',
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },

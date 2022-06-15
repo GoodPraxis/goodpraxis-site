@@ -32,6 +32,10 @@
   &:hover .circle-logo {
     animation-play-state: paused;
   }
+
+  .circle-logo {
+    animation-direction: reverse;
+  }
 }
 
 .client-list {
