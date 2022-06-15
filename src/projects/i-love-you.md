@@ -12,7 +12,7 @@ image_1: ../images/projects/iloveyou/iloveyou-02-1920x1080.jpg
 image_2: ../images/projects/iloveyou/iloveyou-03-1920x1080.jpg
 image_1_mobile: ../images/projects/iloveyou/iloveyou-02-1080x1080.jpg
 image_2_mobile: ../images/projects/iloveyou/iloveyou-03-1080x1080.jpg
-featured: false
+featured: true
 main_featured: false
 color: "#2C2C2C"
 type: "Creative development"
