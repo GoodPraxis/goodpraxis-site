@@ -1,14 +1,14 @@
 @import 'variables';
 
 .hero-image-with-text {
+  margin: 0 8px;
   position: relative;
-}
 
-.hero-image-with-text {
   @media (min-width: $breakpoint-m) {
     column-gap: 31px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 0;
   }
 }
 
