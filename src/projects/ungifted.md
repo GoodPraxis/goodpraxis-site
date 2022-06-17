@@ -17,6 +17,8 @@ color: "#f793b7"
 type: "Web development"
 style: "light"
 services: ["Front-end development", "Back-end development", "User experience design"]
+testimonial: "We've worked with Good Praxis many times now, and each time we've found them to be extremely collaborative, imaginative and responsible. They go out of their way to create the best possible digital experience to advance for the cause we're all working for."
+testimonial_author: "Naresh Ramchandani, Founder, Do The Green Thing"
 ---
 For two years now Good Praxis has helped [Do The Green Thing](https://dothegreenthing.com/)
 build their [Ungifted Secret Santa](https://ungiftedsecretsanta.com) campaign.

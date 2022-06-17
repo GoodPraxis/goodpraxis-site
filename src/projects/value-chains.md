@@ -17,6 +17,8 @@ color: "#0d0d0d"
 type: "Web development"
 style: "light"
 services: ["Front-end development", "Back-end development"]
+testimonial: "Thanks for your incredible work on this – we're getting really positive feedback from people on how helpful this tool is and we loved working with you and the team on it. Thank you!"
+testimonial_author: "Quintin Lake, director at Fifty Eight"
 ---
 How can we better address hidden child labour? A free, interactive tool to
 identify challenges and potential interventions at the origin of commodity
