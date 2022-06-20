@@ -39,8 +39,8 @@ const clients = [
 const IndexPage = () => (
   <Layout activeItem="Home">
     <SEO
-      title="GOOD PRAXIS • A digital studio"
-      metaTitle="GOOD PRAXIS • A digital studio"
+      title="GOOD PRAXIS • A socially aware digital studio"
+      metaTitle="GOOD PRAXIS • A socially aware digital studio"
     />
     <MainProjectItem />
     <section className="hero-area grid">
@@ -53,14 +53,16 @@ const IndexPage = () => (
       </h2>
       <div className="main-description">
         <p>
-          GOOD PRAXIS is a digital studio based in London. Connecting strategic
-          thinking with technical expertise, the way we work is sensitive to
-          people&apos;s needs. With research at the core, we partner closely with our
-          clients to deliver trusted and award-winning work.
+          GOOD PRAXIS is a socially aware digital studio based in London.
+          Connecting strategic thinking with technical expertise, the way we
+          work is sensitive to people&apos;s needs. With research at the core,
+          we partner closely with our clients to deliver trusted and
+          award-winning work.
         </p>
         <p>
           As a worker co-operative, our structure and approach reflects the very
-          principles we founded Good Praxis upon – responsibility, fairness and inclusivity.
+          principles we founded Good Praxis upon – responsibility, fairness and
+          inclusivity.
         </p>
       </div>
       <div className="main-description main-cta">

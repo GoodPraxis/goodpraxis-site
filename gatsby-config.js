@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'GOOD PRAXIS',
-    description: 'We’re an award-winning ethical digital agency based in London. We collaboratively develop tech products for organisations whose aim is to rebalance the inequalities of society.',
+    description: 'We’re an award-winning socially aware digital agency based in London. We collaboratively develop tech products for organisations whose aim is to rebalance the inequalities of society.',
     author: '@goodpraxiscoop',
     siteUrl: 'https://goodpraxis.coop',
     image: 'https://goodpraxis.coop/images/og.png',
