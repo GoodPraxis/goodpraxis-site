@@ -52,7 +52,7 @@ const IndexPage = () => (
           width={754}
           quality={98}
           src="../images/gather/strix1.png"
-          alt="People sitting by a table"
+          alt="An example of a Gather layour using pixel art showing a room"
           breakpoints={[420, 768, 1024, 1280, 1570]}
         />
         <StaticImage

@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 import Slideshow from '../components/slideshow';
 import ContactUs from '../components/contact-us';
 
-const images = [{ src: '/images/photo-studio.jpg', alt: '' }];
+const images = [{ src: '/images/photo-studio.jpg', alt: 'The interior of the agency' }];
 
 const IndexPage = () => (
   <Layout activeItem="About Us" description="About Us">
@@ -15,7 +15,7 @@ const IndexPage = () => (
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">
-        GOOD PRAXIS is a socially aware digital studio based in London providing
+        GOOD PRAXIS is a socially aware digital agency based in London providing
         a variety of
         {' '}
         <Link to="/services">digital services</Link>
@@ -30,7 +30,7 @@ const IndexPage = () => (
     <section className="grid studio-description">
       <div className="main-description">
         <p>
-          As a socially aware digital studio we will be able to help you create
+          As a socially aware digital agency we will be able to help you create
           projects that are sensitive to the issues and topics that you are
           addressing and to create a message that is respectful, inclusive,
           and that can allow to build trust with your audience.
@@ -64,7 +64,7 @@ const IndexPage = () => (
           width={754}
           quality={80}
           src="../images/studio-side.jpg"
-          alt="People sitting by a table"
+          alt="People from the agency sitting by a table"
           breakpoints={[420, 768, 1024, 1280, 1570]}
         />
       </div>

@@ -86,14 +86,14 @@ const IndexPage = () => (
           width={754}
           quality={95}
           src="../images/services/cworking.jpg"
-          alt="A woman sitting in front of a laptop"
+          alt="A female designer sitting in front of a laptop"
           breakpoints={[420, 768, 1024, 1280, 1570]}
         />
         <StaticImage
           width={754}
           quality={95}
           src="../images/services/igor-working.jpg"
-          alt="A man working in front of a computer"
+          alt="One of the developers from the agency working in front of a computer"
           breakpoints={[420, 768, 1024, 1280, 1570]}
         />
       </div>
