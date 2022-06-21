@@ -15,6 +15,12 @@ const IndexPage = () => (
     <Slideshow images={images} />
     <section className="hero-area grid">
       <div className="main-description">
+        GOOD PRAXIS is a socially aware digital studio based in London providing
+        a variety of
+        {' '}
+        <Link to="/services">digital services</Link>
+        , including the creation of websites, web applications and digital
+        experiences.
         We’re a personable team and we work together in partnership and
         friendship &ndash; we extend that to clients too. It is important to
         us to work in a collaborative, transparent manner, with a clear
@@ -23,6 +29,12 @@ const IndexPage = () => (
     </section>
     <section className="grid studio-description">
       <div className="main-description">
+        <p>
+          As a socially aware digital studio we will be able to help you create
+          projects that are sensitive to the issues and topics that you are
+          addressing and to create a message that is respectful, inclusive,
+          and that can allow to build trust with your audience.
+        </p>
         <p>
           We are one of 7000 registered cooperative business in the UK. This
           co-operative structure means equality and democracy in the workplace is

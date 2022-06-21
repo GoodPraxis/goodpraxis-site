@@ -41,7 +41,7 @@ Rahman](https://dothegreenthing.com/issue/the-colour-of-the-climate-crisis/).
 The main illustration seen on the landing page is by [Shyama
 Golden](https://shyamagolden.com/about), a Sri Lankan-American artist,
 illustrator and designer with a background in oil painting, now working from Los
-Angeles. We've used her beautiful illustrations as part of the interface and as
+Angeles. We’ve used her beautiful illustrations as part of the interface and as
 decorative elements throughout the site.
 
 The interactive gallery itself is an "endless horizontal scroll" experience,

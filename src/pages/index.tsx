@@ -55,9 +55,9 @@ const IndexPage = () => (
         <p>
           GOOD PRAXIS is a socially aware digital studio based in London.
           Connecting strategic thinking with technical expertise, the way we
-          work is sensitive to people&apos;s needs. With research at the core,
-          we partner closely with our clients to deliver trusted and
-          award-winning work.
+          work is sensitive to people’s needs. With research at the core, we
+          partner closely with our clients to deliver trusted and award-winning
+          work.
         </p>
         <p>
           As a worker co-operative, our structure and approach reflects the very
