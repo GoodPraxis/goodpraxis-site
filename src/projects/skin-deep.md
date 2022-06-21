@@ -28,3 +28,10 @@ photography and bold colour palettes derived from imagery. Storytelling remains
 at the heart, with a reworked site structure based on categories to aid content
 exploration. The new site is light, fast, and we were also really happy to bring
 trainee developer Nafisa onboard for her first commercial project.
+
+The end result is a Wordpress powered website built using Gatsby.js, combining
+the flexibility and content editing functionality of the CMS with the incredibly
+fast performance of Gatsby. The site functions incredibly fast with nearly
+unnoticable load times. We were able to used their existing Wordpress content
+and migrate it over the the updated version meaning that nothing was lost in the
+transition.

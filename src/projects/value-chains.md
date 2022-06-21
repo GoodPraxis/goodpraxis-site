@@ -54,7 +54,8 @@ Systemic and systematic approaches are required at the local level, while also
 identifying dynamics that impact children both positively and negatively across
 the whole fabric of the local community and economy.
 
-The site draws together research that focuses on identifying pathways to remove
+[The site](https://valuechains.pace-consortium.org/)
+draws together research that focuses on identifying pathways to remove
 children from the worst forms of child labour and to prevent it re-occurring -
 with recommendations for safe and decent alternatives.
 

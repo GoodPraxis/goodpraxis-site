@@ -28,7 +28,8 @@ and staff members to manage challenges and competitions across different
 regions, and record pupil performance.
 
 The admin panel was built on top of a Flask (Python) and React stack. We created
-a proprietary API to manage all the data, allowing flexible access.
+a proprietary API to manage all the data, allowing flexible access and data
+management.
 
 The system is used by both the British and International branches of the
 charity, and by staff members based in many different countries.
