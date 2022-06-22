@@ -28,12 +28,15 @@ module.exports = {
     'cypress',
   ],
   rules: {
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    'import/extensions': 'off',
     'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+    indent: 'off',
+    '@typescript-eslint/indent': ['error', 2],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     'react/jsx-filename-extension': [
       1,
       {
