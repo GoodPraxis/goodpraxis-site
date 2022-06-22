@@ -9,6 +9,7 @@ import ProjectPromoList from '../components/project-promo-list';
 import SEO from '../components/seo';
 
 import './main.scss';
+import ContactUs from '../components/contact-us';
 
 const clients = [
   { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },
@@ -94,6 +95,10 @@ const IndexPage = () => (
     <hr />
     <section className="client-area">
       <ClientList clients={clients} />
+    </section>
+    <section className="grid studio-description home-page-contact-us">
+      <hr />
+      <ContactUs />
     </section>
   </Layout>
 );

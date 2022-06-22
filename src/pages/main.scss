@@ -345,6 +345,23 @@ hr {
   }
 }
 
+.home-page-contact-us {
+  hr {
+    @media (min-width: $breakpoint-l) {
+      aspect-ratio: 6;
+      background-size: 206%;
+      grid-column: span 2;
+      margin: -7.75% 0 0 0;
+    }
+  }
+
+  .contact-us {
+    @media (min-width: $breakpoint-l) {
+      grid-column: 3 / span 2
+    }
+  }
+}
+
 
 @keyframes contactus {
   0%,
