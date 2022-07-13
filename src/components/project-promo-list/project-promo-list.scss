@@ -13,6 +13,11 @@
   transform: translateY(5em);
   transition: transform .75s, opacity .75s;
 
+  @media (prefers-reduced-motion) {
+    opacity: 1;
+    transform: none;
+  }
+
   &.is-visible {
     opacity: 1;
     transform: none;

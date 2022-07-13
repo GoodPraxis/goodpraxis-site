@@ -266,6 +266,8 @@ hr {
 .contact-us {
   animation: contactus 1s;
   grid-column: 1/span 2;
+  margin-top: -2em;
+  padding-top: 2em;
 }
 
 .policy {
@@ -373,5 +375,15 @@ hr {
 
   50% {
     background: $yellow;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .circle-logo.-animated {
+    animation: none !important;
+  }
+
+  .main-menu {
+    transition: none !important;
   }
 }

@@ -54,6 +54,30 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
               N4&nbsp;3HH
             </address>
           </DetailsBox>
+          <div className="menu-inner-logos">
+            <a
+              href="https://www.uk.coop/directory/good-praxis"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/coop.png"
+                alt="We are a co-operative"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.livingwage.org.uk/what-real-living-wage"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/living-wage.png"
+                alt="We are a living wage employer"
+                loading="lazy"
+              />
+            </a>
+          </div>
         </div>
         <div className="menu-inner-contact">
           <DetailsBox title="Telephone">
