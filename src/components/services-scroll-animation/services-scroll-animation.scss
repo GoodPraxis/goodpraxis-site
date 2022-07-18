@@ -31,6 +31,10 @@
     animation-duration: 100s;
     background-image: url('/images/scroll3.png');
   }
+
+  @media (prefers-reduced-motion) {
+    animation: none !important;
+  }
 }
 
 @keyframes scroll-down-animation {
