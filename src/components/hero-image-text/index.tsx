@@ -1,7 +1,7 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 
 import './hero-image-text.scss';
+import ServicesScrollAnimation from '../services-scroll-animation';
 
 const showWhatWeOffer = () => {
   const whatweoffer = document.getElementById('whatweoffer');
@@ -13,7 +13,7 @@ const showWhatWeOffer = () => {
 const HeroImageText = () => (
   <div className="hero-image-with-text">
     <div className="hero-image-with-text-image">
-      <StaticImage src="../../images/services/figmalayout.png" alt="" width={1024} quality={98} />
+      <ServicesScrollAnimation />
     </div>
     <div className="hero-image-with-text-copy">
       <p>

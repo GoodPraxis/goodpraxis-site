@@ -355,13 +355,13 @@ hr {
       background-size: 206%;
       display: block;
       grid-column: span 2;
-      margin: -7.75% 0 0 0;
+      margin: -7.75% 0 0;
     }
   }
 
   .contact-us {
     @media (min-width: $breakpoint-l) {
-      grid-column: 3 / span 2
+      grid-column: 3 / span 2;
     }
   }
 }

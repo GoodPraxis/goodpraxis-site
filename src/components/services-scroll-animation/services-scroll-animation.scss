@@ -1,0 +1,55 @@
+@import 'variables';
+
+.services-scroll-animation {
+  animation: ssashow 1.25s;
+  aspect-ratio: 2;
+  overflow: hidden;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.services-scroll-animation__grid { /* stylelint-disable-line */
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  transform: translate(0%, -30%) rotateX(25deg) rotateY(-15deg) rotateZ(45deg);
+}
+
+.services-scroll-animation__item { /* stylelint-disable-line */
+  animation: scroll-down-animation 120s linear infinite;
+  aspect-ratio: .25;
+  background-image: url('/images/scroll1.png');
+  background-size: 100%;
+  width: 100%;
+
+  &:nth-child(1) {
+    animation-direction: reverse;
+    background-image: url('/images/scroll2.png');
+  }
+
+  &:nth-child(3) {
+    animation-duration: 100s;
+    background-image: url('/images/scroll3.png');
+  }
+}
+
+@keyframes scroll-down-animation {
+  0% {
+    background-position-y: 0;
+  }
+
+  100% {
+    background-position-y: -5000%;
+  }
+}
+
+@keyframes ssashow {
+  0%,
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

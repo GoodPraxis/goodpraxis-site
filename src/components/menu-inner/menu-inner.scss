@@ -139,11 +139,11 @@ $current: currentColor;
 }
 
 .menu-inner-logos {
-  padding: 2em 1em;
   column-gap: 1em;
   display: grid;
   grid-template-columns: 2fr 2.6fr 1fr;
   opacity: .85;
+  padding: 2em 1em;
 
   img {
     width: 100%;
