@@ -96,7 +96,7 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
                 Twitter
               </a>
               <a
-                href="https://www.instagram.com/goodpraxiscraft/"
+                href="https://www.instagram.com/goodpraxis.coop/"
                 rel="noreferrer noopener"
                 target="_blank"
               >
