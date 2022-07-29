@@ -49,6 +49,7 @@ module.exports = {
         devDependencies: ['**/__tests__/**', 'cypress/**'],
       },
     ],
+    'import/extensions': ['error', 'never', { scss: 'always' }],
   },
   settings: {
     'import/resolver': {

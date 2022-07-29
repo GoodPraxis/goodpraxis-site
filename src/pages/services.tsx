@@ -60,7 +60,7 @@ const IndexPage = () => (
           <li>Databases and API infrastructure</li>
           <li>DevOps - CI/CD - Hosting - Support</li>
           <li>Data Integration and Connection</li>
-          <li>Office tasks automatisation</li>
+          <li>Office tasks automation</li>
           <li>Social Media Bots</li>
           <li>
             <Link to="/gather">
