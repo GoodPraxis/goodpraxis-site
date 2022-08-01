@@ -57,16 +57,14 @@ module.exports = {
         dsn: 'https://120b47edc1d54bc48cb41fa89573f403@o472257.ingest.sentry.io/5505617',
       },
     },
-    {
-      resolve: 'gatsby-plugin-recaptcha',
-      options: {
-        async: false,
-        defer: false,
-        args: '?render=explicit',
-      },
-    },
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-polyfill-io',
+      options: {
+        features: ['IntersectionObserver'],
+      },
+    },
   ],
 };
