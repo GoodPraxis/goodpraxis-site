@@ -78,7 +78,7 @@
     "clean": "gatsby clean",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "lint:js": "eslint --ext .js,.ts,.jsx,.tsx src/ cypress/",
+    "lint:js": "eslint --ext .js,.ts,.jsx,.tsx src/",
     "lint:css": "stylelint \"**/*.scss\"",
     "lint": "run-p lint:js lint:css",
     "test:clean": "rm -r results",

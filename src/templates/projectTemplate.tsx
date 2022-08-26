@@ -141,13 +141,13 @@ export default function Template({
           <DetailsBox title="Client">{client}</DetailsBox>
           <DetailsBox title="Services">
             {
-            services.map((service: string) => (
-              <span key={service}>
-                {service}
-                <br />
-              </span>
-            ))
-          }
+              services.map((service: string) => (
+                <span key={service}>
+                  {service}
+                  <br />
+                </span>
+              ))
+            }
 
           </DetailsBox>
           { liveUrl

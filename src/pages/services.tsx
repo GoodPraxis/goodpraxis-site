@@ -57,11 +57,14 @@ const IndexPage = () => (
           <li>Website design and development</li>
           <li>Web app development, including mobile</li>
           <li>Content Management Systems (CMS)</li>
+          <li>Headless CMS integration</li>
+          <li>Shopify integrations</li>
           <li>Databases and API infrastructure</li>
           <li>DevOps - CI/CD - Hosting - Support</li>
           <li>Data Integration and Connection</li>
           <li>Office tasks automation</li>
-          <li>Social Media Bots</li>
+          <li>Social Media Bots, including Twitch bots</li>
+          <li>Technical consultancy</li>
           <li>
             <Link to="/gather">
               Gather Town maps design and development
