@@ -14,7 +14,7 @@ import ContactUs from '../components/contact-us';
 const clients = [
   { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },
   { name: 'Hasbro', image: 'logo-hasbro-cell.svg' },
-  { name: 'YRS TRULY', image: 'logo-yrstruly-cell.svg' },
+  { name: 'Settle', image: 'logo-settle-cell.svg' },
   { name: 'Prince\'s Trust', image: 'logo-pt-cell.svg' },
   { name: 'Gather', image: 'logo-gather-cell.svg' },
   { name: 'Loading Bar', image: 'logo-loading-cell.svg' },
@@ -34,7 +34,7 @@ const clients = [
   { name: 'Sealed Envelope', image: 'logo-se-cell.svg' },
   { name: 'Noble Studio', image: 'logo-ns-cell.svg' },
   { name: 'Fifty Eight', image: 'logo-58-cell.svg' },
-  { name: 'Peace and Justice', image: 'logo-pj-cell.svg' },
+  { name: 'The Peace and Justice Project', image: 'logo-pj-cell.svg' },
 ];
 
 const IndexPage = () => (
