@@ -247,7 +247,7 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(
               width: 1538
-              quality: 95
+              quality: 98
               placeholder: BLURRED
             )
           }
@@ -271,7 +271,7 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(
               width: 1538
-              quality: 95
+              quality: 98
               placeholder: BLURRED
             )
           }

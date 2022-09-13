@@ -12,7 +12,7 @@ image_1: ../images/projects/peace-and-justice/homepage.png
 image_1_mobile: ../images/projects/peace-and-justice/homepage.png
 image_2: ../images/projects/peace-and-justice/eventpage.png
 image_2_mobile: ../images/projects/peace-and-justice/eventpage.png
-featured: true
+featured: false
 main_featured: false
 color: "#1f3247"
 type: "Website redesign"
