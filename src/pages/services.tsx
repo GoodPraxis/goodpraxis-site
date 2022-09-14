@@ -37,12 +37,7 @@ const IndexPage = () => (
           the design but also branding aspects of projects.
         </p>
         <p>
-          As an
-          {' '}
-          <a href="https://www.gather.town/partner/good-praxis">
-            official Gather Town partner
-          </a>
-          , we have experience in designing and building
+          We have experience in designing and building
           {' '}
           <Link to="/gather">
             custom Gather maps

@@ -23,21 +23,11 @@ const IndexPage = () => (
           2D spaces: offices, parks, music venues and many more.
         </p>
         <p>
-          As an
-          {' '}
-          <a
-            href="https://www.gather.town/partner/good-praxis"
-            target="_blank"
-            rel="noreferrer"
-          >
-            official Gather Town partner
-          </a>
-          , we have experience in designing
-          and building custom Gather maps for offices, events and campaigns. We
-          work with talented pixel artists to bring your ideas to life, apply
-          your branding and make your space stand out. We are also comfortable
-          using the rich base Gather tileset, which offers hundreds of different
-          tiles and sprites.
+          We have experience in designing and building custom Gather maps for
+          offices, events and campaigns. We work with talented pixel artists
+          to bring your ideas to life, apply your branding and make your space
+          stand out. We are also comfortable using the rich base Gather tileset,
+          which offers hundreds of different tiles and sprites.
         </p>
         <p>
           By using the Gather API, we can create bespoke elements, automated
