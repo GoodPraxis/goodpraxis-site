@@ -54,7 +54,7 @@ const IndexPage = () => (
       </h2>
       <div className="main-description">
         <p>
-          GOOD PRAXIS is a socially aware digital studio based in London.
+          GOOD PRAXIS is a socially aware and ethical digital studio based in London.
           Connecting strategic thinking with technical expertise, the way we
           work is sensitive to people’s needs. With research at the core, we
           partner closely with our clients to deliver trusted and award-winning
