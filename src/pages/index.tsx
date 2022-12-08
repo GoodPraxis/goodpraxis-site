@@ -16,7 +16,7 @@ const clients = [
   { name: 'Hasbro', image: 'logo-hasbro-cell.svg' },
   { name: 'Settle', image: 'logo-settle-cell.svg' },
   { name: 'Prince\'s Trust', image: 'logo-pt-cell.svg' },
-  { name: 'Gather', image: 'logo-gather-cell.svg' },
+  { name: 'European Climate Foundation', image: 'logo-ecf-cell.png' },
   { name: 'Loading Bar', image: 'logo-loading-cell.svg' },
   { name: 'Netil Radio', image: 'logo-netil-cell.svg' },
   { name: 'Magic the Gathering', image: 'logo-magic-cell.svg' },
@@ -94,6 +94,9 @@ const IndexPage = () => (
     </section>
     <hr />
     <section className="client-area">
+      <div className="grid">
+        <h2 className="heading recent-work-heading">Our clients and partners ↓</h2>
+      </div>
       <ClientList clients={clients} />
     </section>
     <section className="grid studio-description home-page-contact-us">

@@ -243,6 +243,7 @@ $color-ungifted: #000;
 $color-cotcc: #0d0d0d;
 $color-vc: #5c7d74;
 $color-settle: #e6d5c8;
+$color-bwb: #86acfe;
 
 .project-netil-radio {
   background-color: $color-netil;
@@ -276,4 +277,12 @@ $color-settle: #e6d5c8;
 
 .project-settle {
   background-color: $color-settle;
+}
+
+.project-better-without-boilers {
+  background-color: $color-bwb;
+
+  .project-page-image.--with-border {
+    border-width: 2px;
+  }
 }

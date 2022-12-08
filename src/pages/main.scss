@@ -366,6 +366,10 @@ hr {
   }
 }
 
+.client-list-item img[src$="png"] {
+  background-color: rgba(149, 188, 209, .1);
+}
+
 
 @keyframes contactus {
   0%,

@@ -12,7 +12,7 @@ image_1: ../images/projects/techish/islington-02-1920x1080.png
 image_2: ../images/projects/techish/islington-03-1920x1080.png
 image_1_mobile: ../images/projects/techish/islington-02-1080x1080.png
 image_2_mobile: ../images/projects/techish/islington-03-1080x1080.png
-featured: true
+featured: false
 main_featured: false
 color: "#4CFF8B"
 type: "Campaign"
