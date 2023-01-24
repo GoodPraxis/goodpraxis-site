@@ -68,13 +68,10 @@ const IndexPage = () => (
         </ul>
         <h2 className="heading">What we use:</h2>
         <ul>
-          <li>HTML / CSS</li>
-          <li>JavaScript &amp; TypeScript</li>
-          <li>React, Gatsby.js</li>
+          <li>React, Gatsby.js, Typescript</li>
           <li>Python, Flask, Django</li>
           <li>SQL, MySQL, PostgreSQL, MongoDB</li>
           <li>Adobe Suite</li>
-          <li>Gather Town</li>
           <li>Wagtail CMS, WordPress</li>
           <li>REST API, GraphQL</li>
         </ul>
