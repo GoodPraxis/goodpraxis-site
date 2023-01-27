@@ -13,8 +13,14 @@ const ContactUs = () => (
         <EmailLink />
       </li>
       <li>
+        <a href="tel:+442035761810">
+          0203&nbsp;5761&nbsp;810
+        </a>
+        {' '}
+        or
+        {' '}
         <a href="tel:+447803171093">
-          +44(0)7803&nbsp;171&nbsp;093
+          07&nbsp;803&nbsp;171&nbsp;093
         </a>
       </li>
     </ul>
