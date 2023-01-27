@@ -81,7 +81,7 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
         </div>
         <div className="menu-inner-contact">
           <DetailsBox title="Telephone">
-            <a href="tel:+442035761810">0203&nbsp;5761&nbsp;810</a>
+            <a href="tel:+442035761810">020&nbsp;3576&nbsp;1810</a>
           </DetailsBox>
           <DetailsBox title="Email">
             <EmailLink />

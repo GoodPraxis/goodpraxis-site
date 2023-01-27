@@ -14,7 +14,7 @@ const ContactUs = () => (
       </li>
       <li>
         <a href="tel:+442035761810">
-          0203&nbsp;5761&nbsp;810
+          020&nbsp;3576&nbsp;1810
         </a>
         {' '}
         or
