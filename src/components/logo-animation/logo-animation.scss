@@ -1,0 +1,126 @@
+@import 'variables';
+/* stylelint-disable selector-class-pattern */
+
+.logo-animation {
+  display: flex;
+  height: 390px;
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 0 20px;
+  position: relative;
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 530px;
+    padding: 0 0 0 180px;
+  }
+}
+
+.logo-animation-container {
+  align-self: center;
+  position: relative;
+
+  @media (min-width: $breakpoint-m) {
+    padding-bottom: 100%;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding-bottom: 60%;
+  }
+}
+
+.logo-animation-anchor {
+  @media (min-width: $breakpoint-m) {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.logo-animation__heightline {
+  animation: fadeout 1s 4s forwards;
+  margin-right: 10px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition: transform 1s cubic-bezier(.175, .885, .32, 1.275), opacity .5s;
+}
+
+.logo-animation__gppath {
+  animation: spin 14s 6s linear infinite;
+  fill: $transparent;
+  position: relative;
+  stroke-dasharray: 91;
+  stroke-dashoffset: 91;
+  transform: rotate(30deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 2s ease-in-out, transform 1s 1.7s ease-in-out, fill 1s 2.8s, stroke 1s 2.8s;
+}
+
+.logo-animation__crossline {
+  animation: fadeout 1s 5s forwards;
+  opacity: 0;
+  transition: opacity .75s 2.3s;
+}
+
+
+.logo-animation.fadein {
+  .code {
+    opacity: 1;
+  }
+
+  .logo-animation__gppath {
+    fill: $black;
+    stroke: $transparent;
+    stroke-dashoffset: 0;
+    transform: none;
+  }
+
+  .logo-animation__crossline {
+    opacity: 1;
+  }
+
+  .logo-animation__heightline {
+    opacity: 1;
+    transform: scaleY(1) rotate(.1deg);
+  }
+}
+
+.logo-animation__code {
+  display: none;
+
+  @media (min-width: $breakpoint-xl) {
+    animation: fadeout 1s 7.1s forwards;
+    box-sizing: border-box;
+    display: initial;
+    font-size: min(.7vw, .6em);
+    line-height: 1.4;
+    margin-left: 30px;
+    min-width: 155px;
+    opacity: 1;
+    padding-top: 5%;
+    transition: opacity .5s;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}

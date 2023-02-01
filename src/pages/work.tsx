@@ -4,10 +4,15 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import ProjectWorkList, { ProjectWorkListProps } from '../components/project-work-list';
 import SEO from '../components/seo';
+import { WorkHeroSection } from '../components/hero-image-text';
 
 const IndexPage = ({ data }: ProjectWorkListProps) => (
   <Layout activeItem="Our Work" description="Our Work">
     <SEO title="GOOD PRAXIS • Our Work" metaTitle="GOOD PRAXIS • Our Work" />
+    <WorkHeroSection />
+    <div className="grid">
+      <h2 className="heading recent-work-heading">Recent work ↓</h2>
+    </div>
     <ProjectWorkList data={data} />
   </Layout>
 );

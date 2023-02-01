@@ -12,11 +12,20 @@
   }
 }
 
+.hero-image-with-text-image {
+  display: grid;
+}
+
 .hero-image-with-text-copy {
   align-items: center;
   display: flex;
-  font-size: 35px;
-  font-weight: 400;
+  flex-direction: column;
+  font-size: 25px;
+
+  p:first-child {
+    font-size: 35px;
+    font-weight: 400;
+  }
 
   a {
     background-color: $yellow;
@@ -39,5 +48,11 @@
 
   a:hover::after {
     width: calc(100% - .2em);
+  }
+}
+
+.hero-image-with-text--work {
+  @media (min-width: $breakpoint-m) {
+    margin-top: 2em;
   }
 }
