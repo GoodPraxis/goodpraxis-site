@@ -1,6 +1,5 @@
 {
   "extends": "stylelint-config-sass-guidelines",
-  "plugins": ["stylelint-declaration-use-variable"],
   "rules": {
     "number-leading-zero": "never"
   },
