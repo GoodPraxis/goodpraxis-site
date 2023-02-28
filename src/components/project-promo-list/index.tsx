@@ -68,8 +68,8 @@ const ProjectPromoList = () => (
               extension
               childImageSharp {
                 gatsbyImageData(
-                  width: 755
-                  quality: 95
+                  width: 754
+                  quality: 98
                   placeholder: BLURRED
                   aspectRatio: 1.7777
                 )

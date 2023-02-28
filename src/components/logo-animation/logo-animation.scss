@@ -3,13 +3,19 @@
 
 .logo-animation {
   display: flex;
-  height: 390px;
+  height: 280px;
+  justify-content: center;
   margin: 0 auto;
   max-width: 375px;
   padding: 0 20px;
   position: relative;
 
+  @media (min-width: $breakpoint-m) {
+    height: 390px;
+  }
+
   @media (min-width: $breakpoint-xl) {
+    justify-content: initial;
     max-width: 530px;
     padding: 0 0 0 180px;
   }

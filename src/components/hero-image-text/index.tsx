@@ -50,16 +50,17 @@ export const WorkHeroSection = () => (
         {' '}
         <Link to="/studio">GOOD PRAXIS</Link>
         {' '}
-        our objective was to work on projects
-        which have a positive social or environmental impact
+        our objective has been to work on projects which have a positive social
+        or environmental impact.
 
       </p>
       <p>
-        We are back the goals and principles of our clients and partners. We
-        work for and with local authorities, the charity sector, cultural
-        organisations, local initiatives and political organisations. We are
-        truly proud to be able to add our technical skillset to their efforts to
-        create a better world. That is how we define the phrase #TechForGood.
+        We back the goals and principles of our clients and partners. We
+        work for and with charities, ethical companies, cultural
+        organisations, local initiatives and political organisations.
+        We are truly proud to be able to add our digital skillset to their
+        efforts to create a better world. That is how we define the phrase
+        &ldquo;tech for good&rdquo;.
       </p>
     </div>
   </div>

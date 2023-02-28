@@ -221,9 +221,8 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(
               width: 1538
-              quality: 95
+              quality: 99
               placeholder: BLURRED
-              aspectRatio: 1.7777
             )
           }
         }
@@ -234,9 +233,8 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(
               width: 1538
-              quality: 95
+              quality: 99
               placeholder: BLURRED
-              aspectRatio: 1
             )
           }
         }
@@ -262,7 +260,6 @@ export const pageQuery = graphql`
               width: 716
               quality: 95
               placeholder: BLURRED
-              aspectRatio: 1
             )
           }
         }
@@ -286,7 +283,6 @@ export const pageQuery = graphql`
               width: 716
               quality: 95
               placeholder: BLURRED
-              aspectRatio: 1
             )
           }
         }

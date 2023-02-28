@@ -15,7 +15,7 @@ image_2: ../images/projects/netilradio/netil-03-1920x1080.png
 image_2_border: true
 image_1_mobile: ../images/projects/netilradio/netil-02-1080x1080.png
 image_2_mobile: ../images/projects/netilradio/netil-03-1080x1080.png
-featured: false
+featured: true
 main_featured: false
 color: "#007EFF"
 type: "Web design and development"
