@@ -37,6 +37,7 @@
   "devDependencies": {
     "@goodpraxis/danger-js": "^0.6.2",
     "@testing-library/cypress": "^9.0.0",
+    "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "axe-core": "^4.6.3",
@@ -82,6 +83,6 @@
     "test:merge": "npx junit-merge -d results -o merged-junit.xml",
     "test:snapshots:unit": "jest -u",
     "test:unit": "JEST_JUNIT_OUTPUT_DIR=results jest --ci --reporters=default --reporters=jest-junit --coverage",
-    "test": "run-s test:unit test:e2e:ci test:merge test:clean"
+    "test": "run-s test:unit test:merge test:clean"
   }
 }

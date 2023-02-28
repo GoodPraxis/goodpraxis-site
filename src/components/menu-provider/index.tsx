@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Context from './context';
 
 const ContextProvider = ({ children }: {children: React.ReactNode}) => {
@@ -6,10 +6,10 @@ const ContextProvider = ({ children }: {children: React.ReactNode}) => {
 
   return (
     <Context.Provider
-      value={{
+      value={useMemo(() => ({
         isMenuOpen: open,
         setMenuOpen: setOpen,
-      }}
+      }), [open])}
     >
       {children}
     </Context.Provider>

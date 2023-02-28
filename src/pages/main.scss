@@ -366,7 +366,8 @@ hr {
   }
 }
 
-.client-list-item img[src$="png"] {
+// stylelint-disable-next-line selector-no-qualifying-type
+.client-list-item img[src$='png'] {
   background-color: rgba(149, 188, 209, .1);
 }
 

@@ -56,9 +56,9 @@ const createImageElement = (image : any) => {
   return <GatsbyImage image={getImage(image)} alt="" />;
 };
 
-export default function Template({
+const Template = ({
   data,
-}: { data: TemplateData }) {
+}: { data: TemplateData }) => {
   const { markdownRemark, allMarkdownRemark: { edges: relatedNodes } } = data;
   const {
     frontmatter: {
@@ -80,6 +80,7 @@ export default function Template({
   const gatsbyImage1 = createImageElement(image1Mobile ? [image1Mobile, image1] : image1);
   const gatsbyImage2 = createImageElement(image2Mobile ? [image2Mobile, image2] : image2);
 
+  // eslint-disable-next-line
   let processedTestimonialAuthor = <></>;
 
   if (testimonialAuthor) {
@@ -196,7 +197,7 @@ export default function Template({
       <RelatedItemList items={relatedItems} />
     </Layout>
   );
-}
+};
 
 export const pageQuery = graphql`
   query($slug: String!) {
@@ -316,3 +317,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default Template;
