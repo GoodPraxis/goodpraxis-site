@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 
-import { DetailsBox } from '@goodpraxis/components';
 import { GatsbyImage, getImage, withArtDirection } from 'gatsby-plugin-image';
+import BarLink from '../components/bar-link';
+import DetailsBox from '../components/details-box';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 import parse from '../utils/parse';
+import RelatedItemList from '../components/related-items';
+import SEO from '../components/seo';
 
 import './project-page.scss';
-import BarLink from '../components/bar-link';
-import RelatedItemList from '../components/related-items';
 
 interface TemplateData {
   markdownRemark: {

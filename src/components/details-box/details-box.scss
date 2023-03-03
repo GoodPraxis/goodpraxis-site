@@ -1,0 +1,48 @@
+@import 'variables';
+
+.details-box {
+  background-image: repeating-linear-gradient(to bottom, $transparent-black, $transparent-black 1px, transparent 1px, transparent 24px);
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 1px; // Compensate for line
+  position: relative;
+  width: 100%;
+
+  &~& {
+    margin-top: -1px;
+  }
+
+  &::before {
+    background-color: $black;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+  }
+
+  > dt {
+    font-size: 12px;
+    font-weight: 500;
+    width: 27.344%;
+  }
+
+  > dd {
+    margin: 0;
+    width: 72.656%;
+  }
+
+  address {
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $inherit;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}

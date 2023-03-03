@@ -1,4 +1,28 @@
-@import '../../node_modules/@goodpraxis/components/src/scss/variables';
+$black: #111;
+$blue: #00a5ff;
+$green: #cdffc9;
+$grey-light: #e7e7e7;
+$grey: #cfcfcf;
+$pure-white: #fff;
+$red: #f00;
+$transparent-black: rgba(#000, .05);
+$transparent-white: rgba(#fff, .1);
+$white: #f4f8fa;
+$yellow: #fbe072;
+$inherit: inherit;
+
+$svg-arrow-start: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iM';
+$svg-arrow-part: 'IGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZ';
+
+$svg-arrow: $svg-arrow-start + 'TMiIGhlaWdodD0iMTEi' + $svg-arrow-part + 'D0iTTYuNiA5LjdMNy44IDExIDEzIDUuNSA3LjggMCA2LjYgMS4zbDMuMSAzLjNIMHYxLjhoOS43bC0zIDMuM3oiIGZpbGw9IiMxMTEiLz48L3N2Zz4=';
+$svg-arrow-large: $svg-arrow-start + 'zMiIGhlaWdodD0iMjUi' + $svg-arrow-part + 'mlsbD0iIzExMSIgZD0iTTIxLjMgMGwxMS42IDEyLjEtMi44IDNMMTguNSAzeiIvPjxwYXRoIGZpbGw9IiMxMTEiIGQ9Ik0yMS4zIDBsMTEuNiAxMi4xLTIuOCAzTDE4LjUgM3oiLz48cGF0aCBmaWxsPSIjMTExIiBkPSJNMTguNCAyMi4ybDExLjYtMTIgMyAyLjdMMjEuNCAyNXoiLz48cGF0aCBmaWxsPSIjMTExIiBkPSJNMCAxNC42aDI5LjlsLjEtNEguMXoiLz48L3N2Zz4=';
+
+$breakpoint-s: 420px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1280px;
+
+$main-max-width: 1570px;
 
 $color-background: $white;
 $color-text: $black;

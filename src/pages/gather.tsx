@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
+import ContactUs from '../components/contact-us';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import ContactUs from '../components/contact-us';
 
 const IndexPage = () => (
   <Layout activeItem="Gather" description="Gather Town">

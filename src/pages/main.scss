@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'font-faces';
-@import '../../node_modules/@goodpraxis/components/src/scss/grid';
+@import 'grid';
+
+// @TODO: Figure out why this causes a conflicting order error when imported
+//        in the component itself.
+@import '../components/logo/logo';
 
 .grid {
   @extend %grid;

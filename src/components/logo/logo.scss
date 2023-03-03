@@ -1,0 +1,34 @@
+@import 'variables';
+
+.circle-logo {
+  backface-visibility: visible;
+  color: $black;
+  font-size: 0; // Chrome hack as display:block introduces glitch
+  text-transform: uppercase;
+
+  >svg {
+    display: inline-block;
+  }
+
+  path {
+    fill: transparent;
+  }
+
+  g {
+    transform-origin: center;
+  }
+
+  &.-animated {
+    animation: logo-rotate 6s linear infinite;
+  }
+}
+
+@keyframes logo-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}

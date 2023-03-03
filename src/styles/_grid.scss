@@ -1,0 +1,32 @@
+@import 'variables';
+
+%grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  max-width: $main-max-width;
+  padding: 8px;
+
+  @media (min-width: $breakpoint-m) {
+    grid-gap: 31px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px;
+  }
+
+  @media (min-width: $breakpoint-l) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+%grid-lines {
+  @media (min-width: $breakpoint-m) {
+    background-image: linear-gradient(to right, $transparent-black, $transparent-black 1px, transparent 1px);
+    background-size: calc(calc(100% - 1px) / 3);
+  }
+
+  @media (min-width: $breakpoint-l) {
+    background-size: calc(calc(100% - 1px) / 4);
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
-import { DetailsBox, MenuList } from '@goodpraxis/components';
+import DetailsBox from '../details-box';
+import MenuList from '../menu-list';
 import EmailLink from '../email-link';
 import MenuContext from '../menu-provider/context';
 import './menu-inner.scss';

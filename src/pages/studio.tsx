@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import { StaticImage } from 'gatsby-plugin-image';
+
+import ContactUs from '../components/contact-us';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Slideshow from '../components/slideshow';
-import ContactUs from '../components/contact-us';
 
 const images = [{ src: '/images/photo-studio.jpg', alt: 'The interior of the agency' }];
 

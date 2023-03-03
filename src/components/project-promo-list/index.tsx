@@ -56,7 +56,7 @@ const ProjectPromoList = () => (
     query={graphql`
   query {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: {frontmatter: {date: DESC}}
       limit: 10
       filter: {frontmatter: {featured: {eq: true}, main_featured: {eq: false}}}
     ) {

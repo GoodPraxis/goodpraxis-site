@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import './hero-image-text.scss';
-import ServicesScrollAnimation from '../services-scroll-animation';
 import LogoAnimation from '../logo-animation';
+import ServicesScrollAnimation from '../services-scroll-animation';
+
+import './hero-image-text.scss';
 
 const showWhatWeOffer = () => {
   const whatweoffer = document.getElementById('whatweoffer');

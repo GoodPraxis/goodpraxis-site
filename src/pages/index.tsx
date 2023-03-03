@@ -3,13 +3,13 @@ import { Link } from 'gatsby';
 
 import BarLink from '../components/bar-link';
 import ClientList from '../components/client-list';
+import ContactUs from '../components/contact-us';
 import Layout from '../components/layout';
 import MainProjectItem from '../components/main-project-item';
 import ProjectPromoList from '../components/project-promo-list';
 import SEO from '../components/seo';
 
 import './main.scss';
-import ContactUs from '../components/contact-us';
 
 const clients = [
   { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },

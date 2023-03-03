@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { graphql } from 'gatsby';
+import { WorkHeroSection } from '../components/hero-image-text';
 import Layout from '../components/layout';
 import ProjectWorkList, { ProjectWorkListProps } from '../components/project-work-list';
 import SEO from '../components/seo';
-import { WorkHeroSection } from '../components/hero-image-text';
 
 const IndexPage = ({ data }: ProjectWorkListProps) => (
   <Layout activeItem="Our Work" description="Our Work">
@@ -19,10 +19,7 @@ const IndexPage = ({ data }: ProjectWorkListProps) => (
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 100
-    ) {
+    allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 100) {
       edges {
         node {
           frontmatter {

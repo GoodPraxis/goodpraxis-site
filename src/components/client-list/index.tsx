@@ -1,6 +1,7 @@
-import { Logo } from '@goodpraxis/components';
-import { Link } from 'gatsby';
 import React from 'react';
+import { Link } from 'gatsby';
+import Logo from '../logo';
+
 import './client-list.scss';
 
 interface ClientItem {

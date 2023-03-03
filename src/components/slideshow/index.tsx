@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useInterval from '@use-it/interval';
-import { Logo } from '@goodpraxis/components';
+import Logo from '../logo';
+
 import './slideshow.scss';
 
 interface SlideshowImage {

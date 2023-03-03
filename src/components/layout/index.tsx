@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import { Link } from 'gatsby';
-import MenuContext from '../menu-provider/context';
-import MenuToggle from '../menu-toggle';
 import MainMenu from '../menu';
+import MenuContext from '../menu-provider/context';
+import MenuInner from '../menu-inner';
+import MenuToggle from '../menu-toggle';
 
 import './layout.scss';
-import MenuInner from '../menu-inner';
 
 const DEFAULT_DESCRIPTION = 'A digital studio';
 

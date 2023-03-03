@@ -1,7 +1,7 @@
 import React from 'react';
+import ProjectItem from '../project-item';
 
 import './related-items.scss';
-import ProjectItem from '../project-item';
 
 export interface RelatedItem {
   image: any;

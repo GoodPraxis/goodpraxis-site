@@ -1,6 +1,7 @@
 import React from 'react';
-import './project-work-list.scss';
 import ProjectItem from '../project-item';
+
+import './project-work-list.scss';
 
 export interface ProjectWorkListProps {
   data: {
