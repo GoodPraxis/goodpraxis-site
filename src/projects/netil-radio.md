@@ -6,9 +6,9 @@ date: "2020-01-01"
 description: "A custom streaming platform for London community broadcasters Netil Radio."
 thumbnail: "/images/projects/netilradio/good-praxis_thumbnail_netil-radio.svg"
 live_url: "http://netilradio.com"
-main_image: ../images/projects/netilradio/netil-01-1920x1080.jpg
-hero_image: ../images/projects/netilradio/netil-01-1920x1080.jpg
-hero_image_mobile: ../images/projects/netilradio/netil-01-1080x1080.jpg
+main_image: ../images/projects/netilradio/main.png
+hero_image: ../images/projects/netilradio/miro.jpg
+hero_image_mobile: ../images/projects/netilradio/miro.jpg
 image_1: ../images/projects/netilradio/netil-02-1920x1080.png
 image_1_border: true
 image_2: ../images/projects/netilradio/netil-03-1920x1080.png
