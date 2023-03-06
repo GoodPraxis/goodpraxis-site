@@ -17,8 +17,8 @@ color: "#90C45F"
 type: "Campaign website"
 style: "light"
 services: ["Website design","development"]
-testimonial: ""
-testimonial_author: ""
+testimonial: "Working with Good Praxis was a pleasant experience. The friendly and professional team that I worked with really listened to help translate my ideas into a website that I am proud of. They had extensive knowledge of website building but also took on my suggestions so it felt very collaborative"
+testimonial_author: "Iga Strapko, Co-founder"
 ---
 
 Lovage Project is an ethical, sustainable and vegan catering service and community café based in South London. They are an established not-for-profit food project and aim to provide freshly cooked plant based nutritious meals for the local community.
