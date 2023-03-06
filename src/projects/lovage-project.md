@@ -3,7 +3,7 @@ title: "Lovage Project's Website"
 slug: "lovage-project"
 client: "Lovage Project"
 date: "2023-03-01"
-description: "Supporting local communities is one of our principles, so we were delighted to design and deliver new website for the Lovahe Project - an ethical, sustainable and plant based community cafe based in South London."
+description: "Supporting local communities is one of our principles, so we were delighted to have designed and built Lovage Project's new website. They are an ethical, sustainable and plant based community cafe based in South London."
 live_url: "https://lovageproject.org.uk/"
 main_image: ../images/projects/lovage-project/lovage-hero.jpg
 hero_image: ../images/projects/lovage-project/main.jpg
