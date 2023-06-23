@@ -51,6 +51,7 @@ const IndexPage = () => (
         <ul>
           <li>Website design and development</li>
           <li>Web app development, including mobile</li>
+          <li>Digital reports and interactive articles</li>
           <li>Content Management Systems (CMS)</li>
           <li>Headless CMS integration</li>
           <li>Shopify integrations</li>
