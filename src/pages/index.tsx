@@ -32,7 +32,7 @@ const clients = [
   { name: 'Big Change', image: 'logo-big-change-cell.svg' },
   { name: 'Guardians of the Forest', image: 'logo-gatc-cell.svg' },
   { name: 'Sealed Envelope', image: 'logo-se-cell.svg' },
-  { name: 'Noble Studio', image: 'logo-ns-cell.svg' },
+  { name: 'Plymouth Energy Community', image: 'logo-pec-cell.svg' },
   { name: 'Fifty Eight', image: 'logo-58-cell.svg' },
   { name: 'The Peace and Justice Project', image: 'logo-pj-cell.svg' },
 ];
