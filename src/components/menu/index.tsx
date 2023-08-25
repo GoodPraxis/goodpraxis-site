@@ -8,9 +8,9 @@ interface MainMenuProps {
 }
 
 const MainMenu = ({ activeItem }: MainMenuProps) => {
-  const { isMenuOpen } = useContext(MenuContext);
+  const { isMenuOpen, setMenuOpen } = useContext(MenuContext);
   return (
-    <div className={`main-menu${isMenuOpen ? ' is-open' : ''}`}>
+    <div className={`main-menu${isMenuOpen ? ' is-open' : ''}`} onFocusCapture={() => setMenuOpen(true)} onBlur={() => setMenuOpen(false)}>
       <div className="main-menu-wrapper">
         <MenuInner activeItem={activeItem} />
       </div>

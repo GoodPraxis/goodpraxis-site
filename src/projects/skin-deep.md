@@ -17,6 +17,7 @@ color: "#000000"
 type: "UX / UI Design + Development"
 style: "dark"
 services: ["Brand refinement + application", "UX / UI Design", "Development"]
+main_alt: "A man with dark skin is playing on a drum kit. The room is dark, with a blue light shining on him."
 ---
 Skin Deep makes space for Black creatives and creatives of colour to work
 towards justice through cultural production.

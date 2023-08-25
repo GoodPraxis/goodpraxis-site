@@ -20,6 +20,7 @@ style: "dark"
 services: ["Web development", "Replatforming"]
 testimonial: "Settle needed a new website built after a rebrand. We also took this opportunity to review our technical needs behind the website, as we were unhappy with the maintenance of our previous Wordpress site. From the moment we started working with Good Praxis, we felt like they understood our needs, challenges, and priorities. Everyone involved in the project was knowledgeable and informed, and have been so helpful every step of the way. We wanted to invest in a high-quality website that would give us longevity and space to grow in the years ahead, and Good Praxis have delivered!"
 testimonial_author: "Shayane Lacey, Communications Manager"
+main_alt: "Two women sitting on a wooden bench, smiling at each other. The person on the left has blond hair and is wearing a white jacket. The person on the right has black hair and is wearing a yellow top. A tree can be seen in the background."
 ---
 
 Settle is an award-winning charity that supports care-experienced young people as they move into their first home so they can confidently transition into independent living and thrive. It was founded in 2015 by Rich Grahame and Katie Slee after working in homeless hostels and seeing firsthand the challenges young people face when moving into their first home.

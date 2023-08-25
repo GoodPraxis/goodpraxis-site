@@ -6,6 +6,7 @@ date: "2020-05-01"
 description: "A Megadrive/Genesis game recounting the retro trials and tribulations of working in an office, made for YRS TRULY."
 live_url: "https://asapthegame.com"
 main_image: ../images/projects/asap/promo-asap.jpg
+main_alt: ""
 hero_image: ../images/projects/asap/asap-01-1920x1080.jpg
 hero_image_mobile: ../images/projects/asap/asap-01-1080x1080.jpg
 image_1: ../images/projects/asap/asap-02-1920x1080.jpg

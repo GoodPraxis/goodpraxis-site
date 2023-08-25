@@ -20,6 +20,7 @@ style: "dark"
 services: ["Concept execution", "Front-end development", "UX consultancy"]
 testimonial: "It was so much fun to work with you all on this, and to witness all your mad talent in action. Even with the lockdown and uncertainty in the world, you all pulled through and collaborated and I am eternally grateful. I'm so, so proud of this work. Thank you infinity."
 testimonial_author: "Lisa Berenson, the campaign's author"
+main_alt: ""
 ---
 _[I Love You Infinity](https://iloveyouinfinity.com)_ is an autism awareness
 campaign by copywriter [Lisa Berenson](http://thankyouforlookingatmybook.com/)

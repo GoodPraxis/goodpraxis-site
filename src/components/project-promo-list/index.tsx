@@ -14,6 +14,7 @@ interface ProjectPromoListProps {
             slug: string;
             title: string;
             description: string;
+            mainAlt: string;
           }
         }
       }[]
@@ -34,7 +35,7 @@ const ProjectPromoListPure = (
         .map(({
           node: {
             frontmatter: {
-              slug, title, mainImage, description,
+              slug, title, mainImage, description, mainAlt,
             },
           },
         }) => (
@@ -44,6 +45,7 @@ const ProjectPromoListPure = (
               image={mainImage}
               slug={slug}
               description={description}
+              alt={mainAlt}
             />
           </li>
         )) }
@@ -78,6 +80,7 @@ const ProjectPromoList = () => (
             slug
             title
             description
+            mainAlt: main_alt
           }
         }
       }

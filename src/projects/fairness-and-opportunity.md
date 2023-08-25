@@ -18,6 +18,7 @@ style: "light"
 services: ["Design", "Art direction", "Brand refinement", "Front-end development"]
 testimonial: "Creating an accessible ‘digital first’ think tank report was a new undertaking for IPPR. Working with a team that backed our cause and understood our vision made it an enjoyable collaborative process and we learned a lot. We received great feedback from stakeholders and seeing people spontaneously sharing extracts on social media was a fantastic endorsement of the work."
 testimonial_author: "Luke Murphy, Head of Environmental Justice Commission"
+main_alt: "A fair skinned woman with dark red hair, wearing a yellow top, is holding a small boy with blond hair, next to a bunch of daffodils and green plants."
 ---
 Leading progressive think tank IPPR engaged us to design and build their
 landmark Environmental Justice Commission digital report.

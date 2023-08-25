@@ -19,6 +19,7 @@ color: "#AC0642,#1142AC"
 type: "Web design and development"
 style: "dark"
 services: ["Design", "Front-end development", "Back-end development", "Custom Twitch integration"]
+main_alt: ""
 ---
 In March 2021 Good Praxis helped [YRS TRULY](https://yrstruly.uk/) launch the
 "React to Survive" campaign for the Republic of Gamers, promoting their latest

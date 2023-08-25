@@ -17,6 +17,7 @@ color: "#4CFF8B"
 type: "Campaign"
 style: "light"
 services: ["Backend development", "Technical design", "Custom admin panel", "Custom API"]
+main_alt: ""
 ---
 The Prince's Trust, one of the biggest charities in the United Kingdom, has
 comissioned us to create a custom made administration panel to manage their

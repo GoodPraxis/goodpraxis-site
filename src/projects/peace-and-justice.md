@@ -18,6 +18,7 @@ color: "#1f3247"
 type: "Website redesign"
 style: "dark"
 services: ["UX/UI", "Web design", "Web development"]
+main_alt: ""
 ---
 The Peace and Justice Project brings people together for social and economic justice, peace and human rights in Britain and across the world. They believe that working with the labour and social movements we will empower activists and build progressive networks in Britain and across the world.
 

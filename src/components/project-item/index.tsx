@@ -12,15 +12,16 @@ interface ProjectItemProps {
   large?: boolean;
   showLogo?: boolean;
   logoPosition?: 'left' | 'right';
+  alt?: string;
 }
 
 const ProjectItem = ({
-  image, slug, title, description, large, showLogo, logoPosition,
+  image, slug, title, description, large, showLogo, logoPosition, alt,
 } : ProjectItemProps) => {
-  let imageComponent = <img src={image.publicURL} alt="" />;
+  let imageComponent = <img src={image.publicURL} alt={alt || ''} />;
 
   if (image.extension !== 'svg') {
-    imageComponent = <GatsbyImage image={getImage(image)} alt="" />;
+    imageComponent = <GatsbyImage image={getImage(image)} alt={alt || ''} />;
   }
 
   const viewProjectLink = (
@@ -81,6 +82,7 @@ ProjectItem.defaultProps = {
   showLogo: false,
   description: null,
   logoPosition: 'left',
+  alt: '',
 };
 
 export default ProjectItem;

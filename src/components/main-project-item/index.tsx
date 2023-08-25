@@ -7,7 +7,7 @@ const MainProjectItemPure = ({
     markdownRemark:
     {
       frontmatter: {
-        title, mainImage, slug, description,
+        title, mainImage, slug, description, mainAlt,
       },
     },
   },
@@ -20,6 +20,7 @@ const MainProjectItemPure = ({
     large
     showLogo
     logoPosition="right"
+    alt={mainAlt}
   />
 );
 
@@ -41,6 +42,7 @@ const MainProjectItem = () => (
             )
           }
         }
+        mainAlt: main_alt
         slug
         title
         description

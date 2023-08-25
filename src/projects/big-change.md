@@ -14,6 +14,7 @@ color: "#1f3247"
 type: "Digital report"
 style: "dark"
 services: ["UX/UI", "Web design", "Web development", "Video editing"]
+main_alt: ""
 ---
 Good Praxis is proud to have worked with Big Change to bring their latest
 publictation to the web.

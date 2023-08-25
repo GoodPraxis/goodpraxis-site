@@ -7,6 +7,7 @@ description: "Online gallery showcasing work by black artists and artists of col
 exploring the relationship between racial justice and climate justice"
 live_url: "https://thecolouroftheclimatecrisis.art"
 main_featured_image: ../images/projects/cotcc/main.jpg
+main_alt: "A painting of a woman with dark skin and dark hair, looking directly at the viewer. She has a green eyeliner. In the background there are organic elements such as leaves and flower buds, organised in a grid-like pattern."
 main_image: ../images/projects/cotcc/main-2.jpg
 hero_image: ../images/projects/cotcc/main-2.jpg
 hero_image_mobile: ../images/projects/cotcc/main-mobile.jpg

@@ -22,6 +22,7 @@ style: "dark"
 services: ["Web development", "Data visualisation"]
 testimonial: ""
 testimonial_author: ""
+main_alt: ""
 ---
 
 Better Without Boilers is a campaign website built for a group of civil society organizations in Europe, which calls upon the EU and European leaders to support the shift away from oil and gas boilers to cleaner, more affordable alternatives for Europeans to heat their homes.

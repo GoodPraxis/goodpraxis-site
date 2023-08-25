@@ -35,7 +35,17 @@ h3 {
 
 a {
   color: $current-color;
+  outline: 2px dashed transparent;
   text-decoration-thickness: 1px;
+  transition: outline .125s;
+
+  &:focus {
+    outline: 2px dashed $current-color;
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 main {

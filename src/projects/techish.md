@@ -20,6 +20,7 @@ style: "light"
 testimonial: "Thanks again Caitlin for all your time, energy and enthusiasm. You were so brilliant and it’s really appreciated. The course gave me the confidence and knowledge to convert ideas into usable assets to promote our charity shop. Maybe see you at the shop one day!"
 testimonial_author: "Marie, course participant"
 services: ["Brand creation", "Programme design", "Programme delivery", "Communications", "Print design"]
+main_alt: ""
 ---
 Tech–ish is a bespoke digital skills training scheme we delivered in
 partnership with Outlandish co-operative for Islington residents.
