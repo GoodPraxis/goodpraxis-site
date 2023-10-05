@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import DetailsBox from '../details-box';
 import MenuList from '../menu-list';
 import EmailLink from '../email-link';
@@ -37,10 +38,10 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
       <MenuList data={MENU_ITEMS} renderer={renderLink} active={active} />
       <div className="menu-inner-details grid">
         <div className="menu-inner-photo">
-          <img
-            src="/images/building.jpg"
+          <StaticImage
+            src="./building.jpg"
             className="office-photo"
-            alt="The front of the office building at 149 Fonthill Road. It's white with a colored door."
+            alt="The front of the office building at 149 Fonthill Road. It's white with a coloured door."
           />
         </div>
         <div className="menu-inner-address">
@@ -61,8 +62,8 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="/images/coop.png"
+              <StaticImage
+                src="./coop.png"
                 alt="We are a co-operative"
                 loading="lazy"
               />
@@ -72,9 +73,9 @@ const MenuInner = ({ activeItem }: MenuInnerProps) => {
               target="_blank"
               rel="noreferrer"
             >
-              <img
-                src="/images/living-wage.png"
-                alt="We are a living wage employer"
+              <StaticImage
+                src="./living-wage.png"
+                alt="The Living Wage logo saying: we are a living wage employer"
                 loading="lazy"
               />
             </a>
