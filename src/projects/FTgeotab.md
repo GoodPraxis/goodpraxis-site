@@ -5,14 +5,14 @@ client: "Financial Times/Geotab"
 date: "2024-02-01"
 description: "Data visualistion project to support Geotab's Electric Vehicle Suitability Assesment (EVSA) tool."
 live_url: "WIP..."
-main_image: ../images/projects/FTgeotab/hero.png
+main_image: ../images/projects/FTgeotab/mainhq.png
 hero_image:
 hero_image_mobile:
-image_1: ../images/projects/FTgeotab/map.png
-image_1_mobile: ../images/projects/FTgeotab/map2.png
+image_1: ../images/projects/FTgeotab/maphq.png
+image_1_mobile: ../images/projects/FTgeotab/maphq.png
 image_1_border: true
-image_2: ../images/projects/FTgeotab/chart.png
-image_2_mobile: ../images/projects/FTgeotab/chart2.png
+image_2: ../images/projects/FTgeotab/charthq.png
+image_2_mobile: ../images/projects/FTgeotab/charthq.png
 image_2_border: true
 featured: true
 main_featured: false
