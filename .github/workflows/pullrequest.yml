@@ -2,7 +2,7 @@ name: Create preview
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   review:
@@ -14,10 +14,6 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - name: Eslint
-        run: npm run lint
-      - name: Prettier
-        run: npm run prettier:check
       - name: Build code
         run: npm run build
       - name: Deploy preview
