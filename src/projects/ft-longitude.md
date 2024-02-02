@@ -21,13 +21,6 @@ testimonial_author: ""
 main_alt: "A colourful dot graph."
 ---
 
-Leading progressive think tank IPPR engaged us to design and build their
-landmark Environmental Justice Commission digital report.
+FT Longitude and Ninety One engaged us to build a data visualisation experience to accompany their Planetary Pulse report, a report weighing the risks and opportunities of investing in an inclusive energy transition for asset owners.
 
-Entitled Fairness and Opportunity, it is a fully realised blueprint for the
-transition to net zero. The report puts people at the heart of this plan, so we
-focused on a seamless reading experience that holds the attention of time-poor
-and easily distracted web users. Simple infographics, diagrams, subtle
-animations and beautiful illustrations by Lottie Kingslake combine in this
-interactive piece to ensure readers grasp the urgency and relevance of climate
-change to them.
+The build combines attractive infographics, illustrations, and subtle animations to engage users and display a seamless, scroll actuated reading experience.
