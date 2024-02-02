@@ -22,7 +22,7 @@ style: "light"
 services: ["Data visulisation"]
 testimonial: ""
 testimonial_author: ""
-main_alt: "To Do"
+main_alt: "Colourful map chart"
 ---
 
 Geotab is an industry leading telematics company that specializes in connecting commercial vehicles to the internet, and providing web-based analytics for fleet management. The Electric Vehicle Suitability Assesment (EVSA) tool is one of their sustainability solutions to help enable fleets to go electric and improve their environmental performance. Our data visualisation project supported the EVSA tool by illustrating the potential benefits of converting to EVs.
