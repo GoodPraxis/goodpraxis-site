@@ -1,0 +1,19 @@
+name: Delete preview
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: delete preview
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: staticpreview.goodpraxis.coop
+          username: root
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: rm -rf /srv/nginx/pages/${{ github.event.repository.name }}-${{ github.event.number }}

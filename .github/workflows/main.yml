@@ -1,46 +1,26 @@
-name: CI
+name: Deploy to staging
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches:
+      - main
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '18.x'
-    - name: Cache node modules
-      uses: actions/cache@v1
-      env:
-        cache-name: cache-node-modules
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-    - name: Install dependencies
-      run: npm ci
-    - name: Run test build
-      run: npm run build
-    - name: Run code linter
-      run: npm run lint
-    - name: Run unit test
-      run: npm run test:unit
-    - name: Run E2E test
-      run: npm run test:e2e:ci
-      env:
-        CI: true
-    - uses: actions/upload-artifact@v2
-      if: failure()
-      with:
-        name: cypress-screenshots
-        path: 'cypress/screenshots/'
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run build
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -av --delete --mkpath
+          path: public/
+          remote_path: /srv/nginx/pages/${{ github.event.repository.name }}-staging/public
+          remote_host: staticpreview.goodpraxis.coop
+          remote_user: root
+          remote_key: ${{ secrets.DEPLOY_KEY }}
