@@ -1,0 +1,38 @@
+name: Create preview
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - name: Eslint
+        run: npm run lint
+      - name: Prettier
+        run: npm run prettier:check
+      - name: Build code
+        run: npm run build
+      - name: Deploy preview
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -av --delete --mkpath
+          path: public/
+          remote_path: /srv/nginx/pages/${{ github.event.repository.name }}-${{ github.event.number }}/public
+          remote_host: staticpreview.goodpraxis.coop
+          remote_user: root
+          remote_key: ${{ secrets.DEPLOY_KEY }}
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.number }}
+          body: |
+            Latest preview (based on commit ${{ github.event.pull_request.head.sha }}):
+            https://${{ github.event.repository.name }}-${{ github.event.number }}.staticpreview.goodpraxis.coop
