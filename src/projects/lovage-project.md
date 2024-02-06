@@ -16,8 +16,8 @@ main_featured: false
 color: "#90C45F"
 type: "Campaign website"
 style: "light"
-services: ["Website design","development"]
-testimonial: "Working with Good Praxis was a pleasant experience. The friendly and professional team that I worked with really listened to help translate my ideas into a website that I am proud of. They had extensive knowledge of website building but also took on my suggestions so it felt very collaborative"
+services: ["Website design", "development"]
+testimonial: "Working with Good Praxis was a pleasant experience. The friendly and professional team that I worked with really listened to help translate my ideas into a website that I am proud of. They had extensive knowledge of website building but also took on my suggestions so it felt very collaborative."
 testimonial_author: "Iga Strapko, Co-founder"
 main_alt: "A selection of vegetables is placed on a wooden surface."
 ---

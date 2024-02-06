@@ -191,16 +191,16 @@
     background-image: repeating-linear-gradient(
       transparent,
       transparent 40px,
-      rgba($white, 0.05) 40px,
-      rgba($white, 0.05) 41px
+      rgba($white, .05) 40px,
+      rgba($white, .05) 41px
     );
 
     @media (min-width: $breakpoint-l) {
       background-image: repeating-linear-gradient(
         transparent,
         transparent 59px,
-        rgba($white, 0.05) 59px,
-        rgba($white, 0.05) 60px
+        rgba($white, .05) 59px,
+        rgba($white, .05) 60px
       );
     }
   }
@@ -213,8 +213,8 @@
     @media (min-width: $breakpoint-m) {
       background-image: linear-gradient(
         to right,
-        rgba($white, 0.05),
-        rgba($white, 0.05) 1px,
+        rgba($white, .05),
+        rgba($white, .05) 1px,
         transparent 1px
       );
     }
@@ -254,6 +254,7 @@ $color-settle: #e6d5c8;
 $color-bwb: #86acfe;
 $color-lovage: #90c45f;
 $skr-exhibition: #ffcab1;
+$color-ft-geotab: #e8db8a;
 
 .project-netil-radio {
   background-color: $color-netil;
@@ -303,4 +304,7 @@ $skr-exhibition: #ffcab1;
 
 .project-skr-exhibition {
   background-color: $skr-exhibition;
+
+  .project-ft-geotab-project {
+  background-color: $color-ft-geotab;
 }
