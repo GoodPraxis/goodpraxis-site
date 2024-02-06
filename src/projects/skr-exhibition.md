@@ -22,11 +22,9 @@ style: "light"
 services: ["Front-end development"]
 testimonial: ""
 testimonial_author: ""
-main_alt: "Colourful map chart"
+main_alt: "Automated by design exhibition logo"
 ---
 
-The Stop Killer Robots (SKR) campaign raises awareness about the dangers of digital dehumanisation and autonomous weapon systems. 'Automated by Design' is an in-person exhibiton curated by Identity 2.0 for SKR in partnership with Amnesty International and Soka Gakkai International.
+The Stop Killer Robots (SKR) campaign raises awareness about the dangers of digital dehumanisation and autonomous weapon systems. 'Automated by Design' is an in-person exhibiton curated by Identity 2.0 for SKR in partnership with Amnesty International and Soka Gakkai International. It explores the ways in which automated decision making impacts people's lives.
 
-SKR commissioned us to build a site for a digital verison of the exhibition. This digital version included interactive videos, posters, and audio recordings.
-
-The website was built using React.js, TypeScript, and Gatsby.
+SKR commissioned us to build a site for a digital verison of the exhibition. This digital version included interactive videos, posters, and audio recordings. The website, which showcases the exhibits, was built using React.js, TypeScript, and Gatsby. Throughout the development process, we focused on creating an engaging user experience and ensuring multimedia content was integrated seamlessly. Challenges included optimizing the site's performance to handle high-quality media and maintaining responsiveness across various devices. Overall, the digital exhibition serves as a powerful tool for raising awareness and fostering dialogue on critical issues surrounding digital ethics.
