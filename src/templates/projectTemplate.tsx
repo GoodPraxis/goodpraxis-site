@@ -95,6 +95,12 @@ const Template = ({
     );
   }
 
+  let displayURL = liveUrl.split('://')[1];
+
+  if (liveUrl.split('://')[1].length > 30) {
+    displayURL = `${liveUrl.substring(0, 28)}...`;
+  }
+
   useEffect(() => {
     const className = `project-${slug}`;
     document.body.classList.add(className);
@@ -155,7 +161,7 @@ const Template = ({
             ? (
               <DetailsBox title="Website">
                 <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                  {liveUrl.split('://')[1]}
+                  {displayURL}
                 </a>
               </DetailsBox>
             )
