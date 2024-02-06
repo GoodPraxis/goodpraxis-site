@@ -95,10 +95,15 @@ const Template = ({
     );
   }
 
-  let displayURL = liveUrl.split('://')[1];
+  let displayURL = '';
 
-  if (liveUrl.split('://')[1].length > 30) {
-    displayURL = `${liveUrl.substring(0, 28)}...`;
+  if (liveUrl && liveUrl.includes('://')) {
+    const urlParts = liveUrl.split('://');
+    if (urlParts[1].length > 30) {
+      displayURL = `${urlParts[1].substring(0, 28)}...`;
+    } else {
+      displayURL = liveUrl;
+    }
   }
 
   useEffect(() => {
