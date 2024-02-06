@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .project-page {
   padding-bottom: 70px;
@@ -7,7 +7,7 @@
   &::before {
     background: $current-color;
     box-sizing: border-box;
-    content: '';
+    content: "";
     display: block;
     height: 1px;
     left: 15px;
@@ -72,7 +72,7 @@
     grid-column: 1 / span 4;
   }
 
-  .project-page-image~.project-page-image {
+  .project-page-image ~ .project-page-image {
     margin-top: 31px;
   }
 }
@@ -111,7 +111,7 @@
     grid-column: 1 / span 4;
     grid-template-columns: 2.09fr 1fr;
 
-    >figcaption {
+    > figcaption {
       align-self: self-end;
       font-size: 18px;
       margin-bottom: 2em;
@@ -130,12 +130,12 @@
   position: relative;
 
   &::before {
-    content: '“';
+    content: "“";
     display: inline;
   }
 
   &::after {
-    content: '”';
+    content: "”";
     display: inline;
   }
 
@@ -188,10 +188,20 @@
   }
 
   footer .menu-list {
-    background-image: repeating-linear-gradient(transparent, transparent 40px, rgba($white, .05) 40px, rgba($white, .05) 41px);
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 40px,
+      rgba($white, .05) 40px,
+      rgba($white, .05) 41px
+    );
 
     @media (min-width: $breakpoint-l) {
-      background-image: repeating-linear-gradient(transparent, transparent 59px, rgba($white, .05) 59px, rgba($white, .05) 60px);
+      background-image: repeating-linear-gradient(
+        transparent,
+        transparent 59px,
+        rgba($white, .05) 59px,
+        rgba($white, .05) 60px
+      );
     }
   }
 
@@ -201,7 +211,12 @@
 
   .grid-lines {
     @media (min-width: $breakpoint-m) {
-      background-image: linear-gradient(to right, rgba($white, .05), rgba($white, .05) 1px, transparent 1px);
+      background-image: linear-gradient(
+        to right,
+        rgba($white, .05),
+        rgba($white, .05) 1px,
+        transparent 1px
+      );
     }
   }
 
@@ -211,7 +226,7 @@
   }
 
   hr {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTExNyIgaGVpZ2h0PSIyNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wOCkiPjxwYXRoIGQ9Ik04MjkuOTM2IDIwMS4wN0w1NzQuNDk3IDUwbC0uNDMyLjkzTDgyOS41MDQgMjAybC40MzItLjkzek0yODcuMDY0IDIwMS4wN0w1NDIuNTAzIDUwbC40MzIuOTNMMjg3LjQ5NiAyMDJsLS40MzItLjkzek04NjEuMDY0IDIwMS4wN0wxMTE2LjUgNTBsLjQ0LjkzTDg2MS40OTYgMjAybC0uNDMyLS45M3pNMjU1LjkzNiAyMDEuMDdMLjQ5NzIzNyA1MGwtLjQzMjM4NTUuOTNMMjU1LjUwNCAyMDJsLjQzMi0uOTN6Ii8+PC9nPjwvc3ZnPg==');
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTExNyIgaGVpZ2h0PSIyNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wOCkiPjxwYXRoIGQ9Ik04MjkuOTM2IDIwMS4wN0w1NzQuNDk3IDUwbC0uNDMyLjkzTDgyOS41MDQgMjAybC40MzItLjkzek0yODcuMDY0IDIwMS4wN0w1NDIuNTAzIDUwbC40MzIuOTNMMjg3LjQ5NiAyMDJsLS40MzItLjkzek04NjEuMDY0IDIwMS4wN0wxMTE2LjUgNTBsLjQ0LjkzTDg2MS40OTYgMjAybC0uNDMyLS45M3pNMjU1LjkzNiAyMDEuMDdMLjQ5NzIzNyA1MGwtLjQzMjM4NTUuOTNMMjU1LjUwNCAyMDJsLjQzMi0uOTN6Ii8+PC9nPjwvc3ZnPg==");
   }
 
   img[src='/images/coop.png'] { /* stylelint-disable-line */
@@ -237,6 +252,7 @@ $color-vc: #5c7d74;
 $color-settle: #e6d5c8;
 $color-bwb: #86acfe;
 $color-lovage: #90c45f;
+$color-ft-geotab: #e8db8a;
 
 .project-netil-radio {
   background-color: $color-netil;
@@ -282,4 +298,8 @@ $color-lovage: #90c45f;
 
 .project-lovage-project {
   background-color: $color-lovage;
+}
+
+.project-ft-geotab-project {
+  background-color: $color-ft-geotab;
 }
