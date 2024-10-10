@@ -5,7 +5,7 @@ client: "Gallery Climate Coalition"
 date: "2024-10-07"
 description: "Data collection and visualisation application to support GCC's primary goal of reducing the arts sector's CO₂e emissions by a minimum of 50% by 2030."
 live_url: "https://measure.galleryclimatecoalition.org/"
-main_image: ../images/projects/GCC/thumb.png
+main_image: ../images/projects/GCC/thumb2.png
 hero_image: ../images/projects/GCC/dashboard-light.png
 hero_image_mobile: ../images/projects/GCC/dashboard-light.png
 image_1: ../images/projects/GCC/calculator-dark.png
