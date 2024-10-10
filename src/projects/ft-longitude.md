@@ -23,4 +23,4 @@ main_alt: "A colourful dot graph."
 
 FT Longitude and Ninety One engaged us to build a data visualisation experience to accompany their Planetary Pulse report, a report weighing the risks and opportunities of investing in an inclusive energy transition for asset owners.
 
-The build combines attractive infographics, illustrations, and subtle animations to engage users and display a seamless, scroll actuated reading experience.
+The build combines attractive infographics, illustrations, and subtle animations to engage users and display a seamless, scroll-actuated reading experience.
