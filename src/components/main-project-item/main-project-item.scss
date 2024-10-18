@@ -1,0 +1,25 @@
+@import "variables";
+
+.main-hero-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 82px;
+  gap: 5rem;
+  justify-content: center;
+  padding: 100px 0;
+  width: 100%;
+
+  @media (min-width: $breakpoint-m) {
+    flex-direction: row;
+    padding: 150px 0;
+  }
+}
+
+.main-hero_image-container {
+  width: 50%;
+
+  @media (min-width: $breakpoint-m) {
+    width: 20%;
+  }
+}
