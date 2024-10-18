@@ -12,6 +12,7 @@ import SEO from '../components/seo';
 import './main.scss';
 
 const clients = [
+  { name: 'The Modern House', image: 'logo-the-modern-house.svg' },
   { name: 'Pentagram', image: 'logo-pentagram-cell.svg' },
   { name: 'Hasbro', image: 'logo-hasbro-cell.svg' },
   { name: 'Settle', image: 'logo-settle-cell.svg' },
